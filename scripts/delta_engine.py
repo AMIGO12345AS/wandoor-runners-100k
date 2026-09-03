@@ -2,11 +2,10 @@
 Delta Engine: Converts Strava's weekly cumulative leaderboard into day-by-day running records.
 Handles:
 - Indian Standard Time (IST - Asia/Kolkata UTC+5:30)
-- Intra-day idempotent re-runs (running sync multiple times never reduces mileage)
-- Daily distance, runs, elevation deltas (Today - Yesterday Baseline)
-- Weekly resets (Monday rollover where Strava restarts cumulative from 0)
-- Overall 100k Challenge cumulative tracking
-- Consistency streaks and daily calculations
+- Intra-day idempotent re-runs (running sync every hour never reduces mileage)
+- Monday Weekly Reset (Strava resets to 0 on Monday; never subtracts Sunday's total)
+- Activity deletion/privacy protection (prevents negative mileage)
+- 100k Challenge cumulative tracking & streaks
 """
 
 import os
@@ -18,15 +17,18 @@ from datetime import datetime, timezone, timedelta
 IST = timezone(timedelta(hours=5, minutes=30))
 
 
+def get_ist_now():
+    return datetime.now(IST)
+
+
 def get_ist_today_str():
-    return datetime.now(IST).strftime("%Y-%m-%d")
+    return get_ist_now().strftime("%Y-%m-%d")
 
 
 def clean_name(name):
     if not name:
         return "Runner"
     text = str(name).strip()
-    # Strip emojis, symbols, and trim extra whitespace
     cleaned = re.sub(r"[^\w\s\.\-]", "", text)
     return " ".join(cleaned.split()).strip()
 
@@ -49,11 +51,16 @@ def save_json(filepath, data):
 
 def process_daily_delta(current_athletes, today_str=None, data_dir="data", target_km=100.0):
     """
-    Computes daily delta from yesterday's baseline and updates club history.
-    100% IST compliant, idempotent for multiple runs on the same calendar day.
+    Computes daily delta from baseline and updates club history.
+    Handles hourly runs, Monday week rollovers, and protects historical data.
     """
+    now_ist = get_ist_now()
     if not today_str:
-        today_str = get_ist_today_str()
+        today_str = now_ist.strftime("%Y-%m-%d")
+
+    # Day of week: Monday is 0, Sunday is 6
+    today_weekday = datetime.strptime(today_str, "%Y-%m-%d").weekday()
+    is_monday = (today_weekday == 0)
 
     snapshot_file = os.path.join(data_dir, "latest_snapshot.json")
     baseline_file = os.path.join(data_dir, "yesterday_baseline.json")
@@ -71,23 +78,26 @@ def process_daily_delta(current_athletes, today_str=None, data_dir="data", targe
         "athlete_totals": {}
     })
 
-    # CRITICAL BUG FIX (Intra-day re-runs):
-    # If the latest snapshot is from a PREVIOUS day, save it as yesterday's baseline!
-    # If the latest snapshot is already from TODAY, keep using yesterday's baseline
-    # so we measure the true day-long progress, avoiding double deductions.
+    # Intra-day baseline handling:
+    # If the previous snapshot is from a PRIOR day, save it as yesterday's baseline.
+    # If today is Monday, Strava reset to 0 at midnight, so Sunday's distance must NOT be subtracted!
     snapshot_date = previous_snapshot.get("date")
     if snapshot_date and snapshot_date < today_str:
         yesterday_baseline = previous_snapshot
         save_json(baseline_file, yesterday_baseline)
 
-    # Use baseline to compute today's delta
     base_athletes_map = {}
-    if yesterday_baseline and "athletes" in yesterday_baseline:
-        for a in yesterday_baseline["athletes"]:
-            base_athletes_map[str(a["athlete_id"])] = a
-    elif previous_snapshot and "athletes" in previous_snapshot and snapshot_date < today_str:
-        for a in previous_snapshot["athletes"]:
-            base_athletes_map[str(a["athlete_id"])] = a
+    if not is_monday:
+        # On Tue-Sun, we compare against yesterday's end-of-day reading from the same week
+        if yesterday_baseline and "athletes" in yesterday_baseline:
+            for a in yesterday_baseline["athletes"]:
+                base_athletes_map[str(a["athlete_id"])] = a
+        elif previous_snapshot and "athletes" in previous_snapshot and snapshot_date < today_str:
+            for a in previous_snapshot["athletes"]:
+                base_athletes_map[str(a["athlete_id"])] = a
+    else:
+        # On Monday, Strava starts at 0.0 km. Baseline is 0 for everyone!
+        base_athletes_map = {}
 
     daily_logs = []
     
@@ -98,40 +108,33 @@ def process_daily_delta(current_athletes, today_str=None, data_dir="data", targe
         curr_runs = a.get("runs_count", 0)
         curr_elev = a.get("elev_gain_m", 0)
 
-        base_a = base_athletes_map.get(aid)
-        
-        if base_a is None:
-            # Athlete is new or not in baseline
-            # Check if we already have this athlete logged in today's records
-            existing_today = None
-            if today_str in history.get("daily_records", {}):
-                for rec in history["daily_records"][today_str]:
-                    if str(rec.get("athlete_id")) == aid:
-                        existing_today = rec
-                        break
-            
-            if existing_today:
-                daily_dist = existing_today.get("daily_distance_km", curr_dist)
-                daily_runs = existing_today.get("daily_runs", curr_runs)
-                daily_elev = existing_today.get("daily_elev_gain_m", curr_elev)
-            else:
-                daily_dist = curr_dist
-                daily_runs = curr_runs
-                daily_elev = curr_elev
+        if is_monday:
+            # Monday: All mileage on Strava today is from today (started from 0)
+            daily_dist = curr_dist
+            daily_runs = curr_runs
+            daily_elev = curr_elev
         else:
-            base_dist = base_a.get("distance_km", 0.0)
-            base_runs = base_a.get("runs_count", 0)
-            base_elev = base_a.get("elev_gain_m", 0)
-
-            # Check if Strava reset week on Monday
-            if curr_dist < base_dist:
+            base_a = base_athletes_map.get(aid)
+            if base_a is None:
+                # First time seeing this athlete this week
                 daily_dist = curr_dist
                 daily_runs = curr_runs
                 daily_elev = curr_elev
             else:
-                daily_dist = round(curr_dist - base_dist, 2)
-                daily_runs = max(0, curr_runs - base_runs)
-                daily_elev = max(0, curr_elev - base_elev)
+                base_dist = base_a.get("distance_km", 0.0)
+                base_runs = base_a.get("runs_count", 0)
+                base_elev = base_a.get("elev_gain_m", 0)
+
+                # Check if athlete deleted activity or if Strava had a mid-week anomaly
+                if curr_dist < base_dist:
+                    # Protection: do not produce negative distance
+                    daily_dist = 0.0
+                    daily_runs = 0
+                    daily_elev = 0
+                else:
+                    daily_dist = round(curr_dist - base_dist, 2)
+                    daily_runs = max(0, curr_runs - base_runs)
+                    daily_elev = max(0, curr_elev - base_elev)
 
         daily_log = {
             "date": today_str,
@@ -174,15 +177,12 @@ def process_daily_delta(current_athletes, today_str=None, data_dir="data", targe
         rec["avatar_url"] = log["avatar_url"]
         rec["latest_pace"] = log["avg_pace"]
         
-        # Check previous value for today if it existed
         prev_today_dist = rec.get("daily_breakdown", {}).get(today_str, 0.0)
         
-        # Adjust total challenge distance accurately
         diff = round(dist - prev_today_dist, 2)
         rec["total_challenge_km"] = max(0.0, round(rec.get("total_challenge_km", 0.0) + diff, 2))
         rec["daily_breakdown"][today_str] = dist
 
-        # Recalculate active days and streaks accurately
         active_days = sum(1 for d, val in rec["daily_breakdown"].items() if val > 0)
         best_day = max(rec["daily_breakdown"].values()) if rec["daily_breakdown"] else 0.0
         
@@ -199,15 +199,15 @@ def process_daily_delta(current_athletes, today_str=None, data_dir="data", targe
 
     history["daily_records"][today_str] = daily_logs
     history["athlete_totals"] = athlete_totals
-    history["last_updated"] = datetime.now(IST).isoformat()
+    history["last_updated"] = now_ist.isoformat()
 
     # Save latest snapshot with IST date
     save_json(snapshot_file, {
-        "timestamp": datetime.now(IST).isoformat(),
+        "timestamp": now_ist.isoformat(),
         "date": today_str,
         "athletes": current_athletes
     })
     save_json(history_file, history)
 
-    print(f"[+] Delta engine processed {len(daily_logs)} runners for {today_str} (IST).")
+    print(f"[+] Delta engine processed {len(daily_logs)} runners for {today_str} (IST). Monday={is_monday}")
     return daily_logs, history
