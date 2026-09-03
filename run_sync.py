@@ -42,17 +42,11 @@ def main():
         print("[*] Attempting unauthenticated/public fetch...")
         athletes, _ = fetch_club_leaderboard(club_id, None)
 
-    # Fallback to initial seed data if fetch failed (e.g. cookie needed for invite-only club)
+    # Safety Protection: If fetch returns 0 athletes (temporary network glitch or cookie expiry),
+    # abort immediately to protect the database from being corrupted.
     if not athletes:
-        print("[!] Live fetch returned 0 athletes (requires session cookie for invite-only club).")
-        sample_file = os.path.join("data", "sample_initial_data.json")
-        if os.path.exists(sample_file):
-            print("[*] Loading baseline seed data from data/sample_initial_data.json...")
-            sample_data = load_json(sample_file, {})
-            athletes = sample_data.get("athletes", [])
-        else:
-            print("[X] Error: No data available to process.")
-            sys.exit(1)
+        print("[!] Warning: Live fetch returned 0 athletes. Aborting sync to preserve database integrity.")
+        sys.exit(1)
 
     print(f"[+] Successfully loaded {len(athletes)} athletes.")
 
