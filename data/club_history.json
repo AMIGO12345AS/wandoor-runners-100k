@@ -1,7 +1,7 @@
 {
   "club_name": "Wandoor Runners Monsoon 100k challenge 2026",
   "target_km": 100.0,
-  "last_updated": "2026-09-04T01:05:00",
+  "last_updated": "2026-09-03T19:41:02.904313",
   "dates": [
     "2026-09-01",
     "2026-09-02",
@@ -663,26 +663,79 @@
     "2026-09-03": [
       {
         "date": "2026-09-03",
-        "athlete_id": "154857428",
-        "name": "Mohandas k",
-        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtELjRhLZv7nKW99d0QXJHfE1aVCcYHGeavjCSn-riLgoGbA=s96-c",
-        "daily_distance_km": 20.56,
-        "daily_runs": 1,
-        "avg_pace": "6.35",
-        "duration": "2h 15mm",
+        "athlete_id": "157557051",
+        "name": "Mohamed Shajahan Parancheri",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/157557051/40277753/1/medium.jpg",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
         "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 46.32
+        "avg_pace": "6:04",
+        "weekly_cumulative_km": 40.43
       },
       {
         "date": "2026-09-03",
-        "athlete_id": "1753145775",
-        "name": "Binu Naduvath",
-        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIwpGeXvJCbM6mTqM3mWlGJMOCz52tDIFjuwhC5wI-7hCPwQxEM=s96-c",
-        "daily_distance_km": 11.26,
-        "daily_runs": 1,
-        "avg_pace": "5.14",
-        "duration": "58.58",
+        "athlete_id": "35422762",
+        "name": "JustinTX Cherai   🚴🏃🚴🏃🇮🇳",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/35422762/47666145/1/medium.jpg",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
         "daily_elev_gain_m": 0,
+        "avg_pace": "5:12",
+        "weekly_cumulative_km": 34.04
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "200401844",
+        "name": "Rinshid tp",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "5:16",
+        "weekly_cumulative_km": 31.07
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "154857428",
+        "name": "Mohandas K",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtELjRhLZv7nKW99d0QXJHfE1aVCcYHGeavjCSn-riLgoGbA=s96-c",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "6:20",
+        "weekly_cumulative_km": 30.69
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "197716094",
+        "name": "Ajeesh Tp",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIn2BnUnM1erb9PIoCISdpwW45KNA9-0V_9uTJ5Ni4A3zIK7kio=s96-c",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "5:38",
+        "weekly_cumulative_km": 30.19
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "77103625",
+        "name": "Razaq Kinassery",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/77103625/19201543/5/medium.jpg",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "5:19",
+        "weekly_cumulative_km": 26.51
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "198876934",
+        "name": "Ahamed Shameer",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtzpVGo98siGMvxQDd2RM-DlgWJ7rWMdatRWwS9AeWWZCyA18=s96-c",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "6:35",
         "weekly_cumulative_km": 25.07
       },
       {
@@ -690,216 +743,88 @@
         "athlete_id": "158361240",
         "name": "Prakasan C T",
         "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
-        "daily_distance_km": 11.02,
-        "daily_runs": 1,
-        "avg_pace": "6.57",
-        "duration": "1h 16m",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
         "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 23.89
-      },
-      {
-        "date": "2026-09-03",
-        "athlete_id": "200401844",
-        "name": "Rinshid TP",
-        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
-        "daily_distance_km": 11.01,
-        "daily_runs": 1,
-        "avg_pace": "5.38",
-        "duration": "1h 2m",
-        "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 31.05
-      },
-      {
-        "date": "2026-09-03",
-        "athlete_id": "198876934",
-        "name": "Ahamed Shameer",
-        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtzpVGo98siGMvxQDd2RM-DlgWJ7rWMdatRWwS9AeWWZCyA18=s96-c",
-        "daily_distance_km": 10.4,
-        "daily_runs": 1,
-        "avg_pace": "6.54",
-        "duration": "1hh.11mm",
-        "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 19.83
-      },
-      {
-        "date": "2026-09-03",
-        "athlete_id": "197716094",
-        "name": "Ajeesh TP",
-        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIn2BnUnM1erb9PIoCISdpwW45KNA9-0V_9uTJ5Ni4A3zIK7kio=s96-c",
-        "daily_distance_km": 10.06,
-        "daily_runs": 1,
-        "avg_pace": "5.51",
-        "duration": "58.57",
-        "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 30.17
+        "avg_pace": "6:30",
+        "weekly_cumulative_km": 23.91
       },
       {
         "date": "2026-09-03",
         "athlete_id": "1065960870",
-        "name": "Razthan Faris CK",
+        "name": "RAZTHAN FARIS CK",
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocKzT7RnayALfckrylsbnE9uSiAeZ-sEpcYdstGh86fYJRar1w=s96-c",
-        "daily_distance_km": 7.3,
-        "daily_runs": 1,
-        "avg_pace": "--",
-        "duration": "42.19",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
         "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 18.01
-      },
-      {
-        "date": "2026-09-03",
-        "athlete_id": "196277863",
-        "name": "Ibnusiyad",
-        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/196277863/42165622/1/medium.jpg",
-        "daily_distance_km": 6.02,
-        "daily_runs": 1,
-        "avg_pace": "6.2",
-        "duration": "38.6",
-        "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 20.04
-      },
-      {
-        "date": "2026-09-03",
-        "athlete_id": "1813285393",
-        "name": "Firshad P",
-        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJa_WRhwvx6bB5h5nbhdgNOC1IizrdLHkvjkYQx3MVsASjiHg=s96-c",
-        "daily_distance_km": 5.51,
-        "daily_runs": 1,
-        "avg_pace": "--",
-        "duration": "34.33",
-        "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 15.08
-      },
-      {
-        "date": "2026-09-03",
-        "athlete_id": "188992089",
-        "name": "Ali Faisal KT",
-        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocL_zlX94UMReiJ7AC1vVKu8rUpUzkIvEZOyy8QY7IQz3FNwIRnh=s96-c",
-        "daily_distance_km": 5.23,
-        "daily_runs": 1,
-        "avg_pace": "6.07",
-        "duration": "32.2",
-        "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 16.54
-      },
-      {
-        "date": "2026-09-03",
-        "athlete_id": "49239362",
-        "name": "Arun narayanan UC",
-        "avatar_url": "https://lh5.googleusercontent.com/-jVkxuoxvpOs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcvQClqtxPHzsLdypfr_jngilPTyA/photo.jpg",
-        "daily_distance_km": 5.06,
-        "daily_runs": 1,
-        "avg_pace": "6.42",
-        "duration": "33.54",
-        "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 10.11
-      },
-      {
-        "date": "2026-09-03",
-        "athlete_id": "418185437",
-        "name": "Ajmal V",
-        "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
-        "daily_distance_km": 5.0,
-        "daily_runs": 1,
-        "avg_pace": "5.48",
-        "duration": "29.2",
-        "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 16.0
+        "avg_pace": "6:03",
+        "weekly_cumulative_km": 23.29
       },
       {
         "date": "2026-09-03",
         "athlete_id": "206125985",
-        "name": "Sarath porur",
+        "name": "Sarath P Narayanan",
         "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/206125985/43657685/1/medium.jpg",
-        "daily_distance_km": 4.53,
-        "daily_runs": 1,
-        "avg_pace": "--",
-        "duration": "28.29",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
         "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 14.24
+        "avg_pace": "6:26",
+        "weekly_cumulative_km": 21.03
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "188992089",
+        "name": "Ali Faisal",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocL_zlX94UMReiJ7AC1vVKu8rUpUzkIvEZOyy8QY7IQz3FNwIRnh=s96-c",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "5:54",
+        "weekly_cumulative_km": 20.88
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "159255088",
+        "name": "Muhammed Shafi K",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/159255088/35836758/1/medium.jpg",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "4:14",
+        "weekly_cumulative_km": 20.37
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "196277863",
+        "name": "ibnusiyad siyad",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/196277863/42165622/1/medium.jpg",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "6:26",
+        "weekly_cumulative_km": 20.05
       },
       {
         "date": "2026-09-03",
         "athlete_id": "172504669",
-        "name": "Sunilbabu",
+        "name": "Sunil Babu",
         "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
-        "daily_distance_km": 4.12,
-        "daily_runs": 1,
-        "avg_pace": "--",
-        "duration": "28.29",
-        "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 18.62
-      },
-      {
-        "date": "2026-09-03",
-        "athlete_id": "1643927358",
-        "name": "Anwer Hussain",
-        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK0uh6ILNKzgK_2bHq0MDIg3ncQxC3kdiS4oOqIGIomnCZRMg=s96-c",
-        "daily_distance_km": 3.86,
-        "daily_runs": 1,
-        "avg_pace": "--",
-        "duration": "27.28",
-        "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 4.94
-      },
-      {
-        "date": "2026-09-03",
-        "athlete_id": "201415432",
-        "name": "Fahis",
-        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/201415432/57855402/1/medium.jpg",
-        "daily_distance_km": 3.76,
-        "daily_runs": 1,
-        "avg_pace": "6.12",
-        "duration": "23.2",
-        "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 3.76
-      },
-      {
-        "date": "2026-09-03",
-        "athlete_id": "112220469",
-        "name": "Santhosh Porur",
-        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/112220469/48637416/1/medium.jpg",
-        "daily_distance_km": 3.56,
-        "daily_runs": 1,
-        "avg_pace": "5.02",
-        "duration": "17.54",
-        "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 9.12
-      },
-      {
-        "date": "2026-09-03",
-        "athlete_id": "athlete_27",
-        "name": "Akhileswary",
-        "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
-        "daily_distance_km": 3.21,
-        "daily_runs": 1,
-        "avg_pace": "6.4",
-        "duration": "21.28",
-        "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 3.21
-      },
-      {
-        "date": "2026-09-03",
-        "athlete_id": "39295926",
-        "name": "Khaliq KT",
-        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/39295926/15365395/2/medium.jpg",
-        "daily_distance_km": 3.02,
-        "daily_runs": 1,
-        "avg_pace": "5.43",
-        "duration": "17.15",
-        "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 9.13
-      },
-      {
-        "date": "2026-09-03",
-        "athlete_id": "157557051",
-        "name": "Mohamed Shajahan Parancheri",
-        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/157557051/40277753/1/medium.jpg",
         "daily_distance_km": 0.0,
         "daily_runs": 0,
-        "avg_pace": "--",
-        "duration": "",
         "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 18.28
+        "avg_pace": "6:58",
+        "weekly_cumulative_km": 18.64
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "61176348",
+        "name": "Porur Sarath",
+        "avatar_url": "https://graph.facebook.com/1357027104491215/picture?height=256&width=256",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "6:11",
+        "weekly_cumulative_km": 18.62
       },
       {
         "date": "2026-09-03",
@@ -908,58 +833,31 @@
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJ9T2PxlX_3t_ydhMA_h_xUFMQjKPkCrqMIVpTwPloQsQuFlw=s96-c",
         "daily_distance_km": 0.0,
         "daily_runs": 0,
-        "avg_pace": "--",
-        "duration": "",
         "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 17.56
+        "avg_pace": "4:56",
+        "weekly_cumulative_km": 17.58
       },
       {
         "date": "2026-09-03",
-        "athlete_id": "153813910",
-        "name": "Unnikrishnan k",
-        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/153813910/34587108/1/medium.jpg",
+        "athlete_id": "1882708307",
+        "name": "Nijin Prajeesh",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLbLc8FjrMYDUzSHHyuZOzEpK3GFh-9m6Vu-e4BkjlVl5P44CI3=s96-c",
         "daily_distance_km": 0.0,
         "daily_runs": 0,
-        "avg_pace": "--",
-        "duration": "",
         "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 11.7
+        "avg_pace": "8:26",
+        "weekly_cumulative_km": 17.17
       },
       {
         "date": "2026-09-03",
-        "athlete_id": "61176348",
-        "name": "Nidheesh Porur",
-        "avatar_url": "https://graph.facebook.com/1357027104491215/picture?height=256&width=256",
+        "athlete_id": "1549040789",
+        "name": "Muhammed Rishad",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/1549040789/57786553/1/medium.jpg",
         "daily_distance_km": 0.0,
         "daily_runs": 0,
-        "avg_pace": "--",
-        "duration": "",
         "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 10.26
-      },
-      {
-        "date": "2026-09-03",
-        "athlete_id": "197960058",
-        "name": "Mohammad Mazin",
-        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJWMlJ1W_hjr2sm_9L91ATM-Yun7SX1yK7E9wGWuVqSaUqGQtsq=s96-c",
-        "daily_distance_km": 0.0,
-        "daily_runs": 0,
-        "avg_pace": "--",
-        "duration": "",
-        "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 7.63
-      },
-      {
-        "date": "2026-09-03",
-        "athlete_id": "1106664010",
-        "name": "Biju Mon",
-        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJspa7xT9_CM5EnvdhLf7pXENN6tyO9N7CVtQd1GpHiypNKmA=s96-c",
-        "daily_distance_km": 0.0,
-        "daily_runs": 0,
-        "avg_pace": "--",
-        "duration": "",
-        "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 6.69
+        "avg_pace": "7:24",
+        "weekly_cumulative_km": 16.48
       },
       {
         "date": "2026-09-03",
@@ -968,10 +866,174 @@
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK87pkzhhRwp8fqyLeyY-tx0o2_fi-qcVyN3irHkr_2hPIEsm5j=s96-c",
         "daily_distance_km": 0.0,
         "daily_runs": 0,
-        "avg_pace": "--",
-        "duration": "",
         "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 5.01
+        "avg_pace": "10:51",
+        "weekly_cumulative_km": 16.31
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "418185437",
+        "name": "Ajmal V",
+        "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "5:54",
+        "weekly_cumulative_km": 16.02
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "1813285393",
+        "name": "Firshad p Firshad p",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJa_WRhwvx6bB5h5nbhdgNOC1IizrdLHkvjkYQx3MVsASjiHg=s96-c",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "6:13",
+        "weekly_cumulative_km": 15.1
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "153813910",
+        "name": "UNNIKRISHNAN K",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/153813910/34587108/1/medium.jpg",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "6:26",
+        "weekly_cumulative_km": 14.83
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "159419010",
+        "name": "krishna prasad. M Kp",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/159419010/43242834/2/medium.jpg",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "6:03",
+        "weekly_cumulative_km": 12.49
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "112220469",
+        "name": "santhosh porur",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/112220469/48637416/1/medium.jpg",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "6:37",
+        "weekly_cumulative_km": 12.16
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "49335106",
+        "name": "Rupesh Shenoy D/FCR",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/49335106/13664358/17/medium.jpg",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "6:11",
+        "weekly_cumulative_km": 11.12
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "62712350",
+        "name": "Sabeel Oravungal",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/62712350/57828553/1/medium.jpg",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "6:37",
+        "weekly_cumulative_km": 10.69
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "195111666",
+        "name": "SUNEESH K",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK8EUTllQuqmupowzW7MSjGO_EdftITvyXSxKGcJNf8yU_r9put=s96-c",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "6:55",
+        "weekly_cumulative_km": 10.3
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "40420193",
+        "name": "Nidheesh Edappalli",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/40420193/11842503/8/medium.jpg",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "6:36",
+        "weekly_cumulative_km": 10.27
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "49239362",
+        "name": "Arun Savitha",
+        "avatar_url": "https://lh5.googleusercontent.com/-jVkxuoxvpOs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcvQClqtxPHzsLdypfr_jngilPTyA/photo.jpg",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "6:39",
+        "weekly_cumulative_km": 10.11
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "1753145775",
+        "name": "binu naduvath",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIwpGeXvJCbM6mTqM3mWlGJMOCz52tDIFjuwhC5wI-7hCPwQxEM=s96-c",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "5:28",
+        "weekly_cumulative_km": 9.68
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "190287524",
+        "name": "Anas EV",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/190287524/57772487/1/medium.jpg",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "6:40",
+        "weekly_cumulative_km": 9.16
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "39295926",
+        "name": "khaliq kt",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/39295926/15365395/2/medium.jpg",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "5:40",
+        "weekly_cumulative_km": 9.14
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "201415432",
+        "name": "Fahis Fahi",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/201415432/57855402/1/medium.jpg",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "5:58",
+        "weekly_cumulative_km": 8.11
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "197960058",
+        "name": "Mohammad Mazin",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJWMlJ1W_hjr2sm_9L91ATM-Yun7SX1yK7E9wGWuVqSaUqGQtsq=s96-c",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "5:41",
+        "weekly_cumulative_km": 7.64
       },
       {
         "date": "2026-09-03",
@@ -980,10 +1042,75 @@
         "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
         "daily_distance_km": 0.0,
         "daily_runs": 0,
-        "avg_pace": "--",
-        "duration": "",
         "daily_elev_gain_m": 0,
-        "weekly_cumulative_km": 3.1
+        "avg_pace": "6:20",
+        "weekly_cumulative_km": 6.88
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "1106664010",
+        "name": "Biju Mon",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJspa7xT9_CM5EnvdhLf7pXENN6tyO9N7CVtQd1GpHiypNKmA=s96-c",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "8:56",
+        "weekly_cumulative_km": 6.7
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "1923419136",
+        "name": "Gaming With Rahman",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocI81nTBasbwN6at8BA3qUYigFx1RseVCiHe9DDXLG4fy0j_xIk=s96-c",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "6:43",
+        "weekly_cumulative_km": 5.44
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "1009893599",
+        "name": "Diljith P",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIt1xE8j6dgbNbXnzd-tWkINISp4f8uIrD4IGU0wNcTkyfNlOk=s96-c",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "4:42",
+        "weekly_cumulative_km": 5.01
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "1737669347",
+        "name": "NITHIN KC",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/1737669347/57713853/1/medium.jpg",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "4:42",
+        "weekly_cumulative_km": 4.01
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "1643927358",
+        "name": "Anwer Hussain",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK0uh6ILNKzgK_2bHq0MDIg3ncQxC3kdiS4oOqIGIomnCZRMg=s96-c",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "7:12",
+        "weekly_cumulative_km": 3.95
+      },
+      {
+        "date": "2026-09-03",
+        "athlete_id": "1994677546",
+        "name": "Anoop K",
+        "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "5:00",
+        "weekly_cumulative_km": 3.59
       }
     ]
   },
@@ -994,19 +1121,20 @@
       "name": "Mohandas k",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtELjRhLZv7nKW99d0QXJHfE1aVCcYHGeavjCSn-riLgoGbA=s96-c",
       "mobile": "9446213680",
-      "total_challenge_km": 46.32,
+      "total_challenge_km": 25.76,
       "target_km": 100.0,
       "active_days": 3,
       "current_streak": 3,
       "best_day_km": 20.56,
-      "pct_completed": 46.3,
+      "pct_completed": 25.8,
       "is_finisher": false,
-      "remaining_km": 53.68,
+      "remaining_km": 74.24,
       "daily_breakdown": {
         "2026-09-01": 10.13,
         "2026-09-02": 15.63,
-        "2026-09-03": 20.56
-      }
+        "2026-09-03": 0.0
+      },
+      "latest_pace": "6:20"
     },
     "200401844": {
       "athlete_id": "200401844",
@@ -1014,19 +1142,20 @@
       "name": "Rinshid TP",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
       "mobile": "7025389330",
-      "total_challenge_km": 31.05,
+      "total_challenge_km": 20.04,
       "target_km": 100.0,
       "active_days": 3,
       "current_streak": 3,
       "best_day_km": 11.01,
-      "pct_completed": 31.1,
+      "pct_completed": 20.0,
       "is_finisher": false,
-      "remaining_km": 68.95,
+      "remaining_km": 79.96,
       "daily_breakdown": {
         "2026-09-01": 10.03,
         "2026-09-02": 10.01,
-        "2026-09-03": 11.01
-      }
+        "2026-09-03": 0.0
+      },
+      "latest_pace": "5:16"
     },
     "197716094": {
       "athlete_id": "197716094",
@@ -1034,19 +1163,20 @@
       "name": "Ajeesh TP",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIn2BnUnM1erb9PIoCISdpwW45KNA9-0V_9uTJ5Ni4A3zIK7kio=s96-c",
       "mobile": "7907432881",
-      "total_challenge_km": 30.17,
+      "total_challenge_km": 20.11,
       "target_km": 100.0,
       "active_days": 3,
       "current_streak": 3,
       "best_day_km": 10.09,
-      "pct_completed": 30.2,
+      "pct_completed": 20.1,
       "is_finisher": false,
-      "remaining_km": 69.83,
+      "remaining_km": 79.89,
       "daily_breakdown": {
         "2026-09-01": 10.09,
         "2026-09-02": 10.02,
-        "2026-09-03": 10.06
-      }
+        "2026-09-03": 0.0
+      },
+      "latest_pace": "5:38"
     },
     "1753145775": {
       "athlete_id": "1753145775",
@@ -1054,19 +1184,20 @@
       "name": "Binu Naduvath",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIwpGeXvJCbM6mTqM3mWlGJMOCz52tDIFjuwhC5wI-7hCPwQxEM=s96-c",
       "mobile": "9995463548",
-      "total_challenge_km": 25.07,
+      "total_challenge_km": 13.81,
       "target_km": 100.0,
       "active_days": 2,
       "current_streak": 1,
       "best_day_km": 13.81,
-      "pct_completed": 25.1,
+      "pct_completed": 13.8,
       "is_finisher": false,
-      "remaining_km": 74.93,
+      "remaining_km": 86.19,
       "daily_breakdown": {
         "2026-09-01": 13.81,
         "2026-09-02": 0.0,
-        "2026-09-03": 11.26
-      }
+        "2026-09-03": 0.0
+      },
+      "latest_pace": "5:28"
     },
     "158361240": {
       "athlete_id": "158361240",
@@ -1074,19 +1205,20 @@
       "name": "Prakasan C T",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
       "mobile": "9446714101",
-      "total_challenge_km": 23.89,
+      "total_challenge_km": 12.87,
       "target_km": 100.0,
       "active_days": 3,
       "current_streak": 3,
       "best_day_km": 11.02,
-      "pct_completed": 23.9,
+      "pct_completed": 12.9,
       "is_finisher": false,
-      "remaining_km": 76.11,
+      "remaining_km": 87.13,
       "daily_breakdown": {
         "2026-09-01": 5.72,
         "2026-09-02": 7.15,
-        "2026-09-03": 11.02
-      }
+        "2026-09-03": 0.0
+      },
+      "latest_pace": "6:30"
     },
     "196277863": {
       "athlete_id": "196277863",
@@ -1094,19 +1226,20 @@
       "name": "Ibnusiyad",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/196277863/42165622/1/medium.jpg",
       "mobile": "9947703932",
-      "total_challenge_km": 20.04,
+      "total_challenge_km": 14.02,
       "target_km": 100.0,
       "active_days": 3,
       "current_streak": 3,
       "best_day_km": 8.01,
-      "pct_completed": 20.0,
+      "pct_completed": 14.0,
       "is_finisher": false,
-      "remaining_km": 79.96,
+      "remaining_km": 85.98,
       "daily_breakdown": {
         "2026-09-01": 6.01,
         "2026-09-02": 8.01,
-        "2026-09-03": 6.02
-      }
+        "2026-09-03": 0.0
+      },
+      "latest_pace": "6:26"
     },
     "198876934": {
       "athlete_id": "198876934",
@@ -1114,19 +1247,20 @@
       "name": "Ahamed Shameer",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtzpVGo98siGMvxQDd2RM-DlgWJ7rWMdatRWwS9AeWWZCyA18=s96-c",
       "mobile": "9447947425",
-      "total_challenge_km": 19.83,
+      "total_challenge_km": 9.43,
       "target_km": 100.0,
       "active_days": 3,
       "current_streak": 3,
       "best_day_km": 10.4,
-      "pct_completed": 19.8,
+      "pct_completed": 9.4,
       "is_finisher": false,
-      "remaining_km": 80.17,
+      "remaining_km": 90.57,
       "daily_breakdown": {
         "2026-09-01": 4.29,
         "2026-09-02": 5.14,
-        "2026-09-03": 10.4
-      }
+        "2026-09-03": 0.0
+      },
+      "latest_pace": "6:35"
     },
     "172504669": {
       "athlete_id": "172504669",
@@ -1134,19 +1268,20 @@
       "name": "Sunilbabu",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
       "mobile": "9497662430",
-      "total_challenge_km": 18.62,
+      "total_challenge_km": 14.5,
       "target_km": 100.0,
       "active_days": 3,
       "current_streak": 3,
       "best_day_km": 8.08,
-      "pct_completed": 18.6,
+      "pct_completed": 14.5,
       "is_finisher": false,
-      "remaining_km": 81.38,
+      "remaining_km": 85.5,
       "daily_breakdown": {
         "2026-09-01": 8.08,
         "2026-09-02": 6.42,
-        "2026-09-03": 4.12
-      }
+        "2026-09-03": 0.0
+      },
+      "latest_pace": "6:58"
     },
     "157557051": {
       "athlete_id": "157557051",
@@ -1166,7 +1301,8 @@
         "2026-09-01": 7.12,
         "2026-09-02": 11.16,
         "2026-09-03": 0.0
-      }
+      },
+      "latest_pace": "6:04"
     },
     "1065960870": {
       "athlete_id": "1065960870",
@@ -1174,19 +1310,20 @@
       "name": "Razthan Faris CK",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocKzT7RnayALfckrylsbnE9uSiAeZ-sEpcYdstGh86fYJRar1w=s96-c",
       "mobile": "8943864380",
-      "total_challenge_km": 18.01,
+      "total_challenge_km": 10.71,
       "target_km": 100.0,
       "active_days": 3,
       "current_streak": 3,
       "best_day_km": 7.3,
-      "pct_completed": 18.0,
+      "pct_completed": 10.7,
       "is_finisher": false,
-      "remaining_km": 81.99,
+      "remaining_km": 89.29,
       "daily_breakdown": {
         "2026-09-01": 5.39,
         "2026-09-02": 5.32,
-        "2026-09-03": 7.3
-      }
+        "2026-09-03": 0.0
+      },
+      "latest_pace": "6:03"
     },
     "1909549551": {
       "athlete_id": "1909549551",
@@ -1206,7 +1343,8 @@
         "2026-09-01": 7.09,
         "2026-09-02": 10.47,
         "2026-09-03": 0.0
-      }
+      },
+      "latest_pace": "4:56"
     },
     "188992089": {
       "athlete_id": "188992089",
@@ -1214,19 +1352,20 @@
       "name": "Ali Faisal KT",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocL_zlX94UMReiJ7AC1vVKu8rUpUzkIvEZOyy8QY7IQz3FNwIRnh=s96-c",
       "mobile": "9447771583",
-      "total_challenge_km": 16.54,
+      "total_challenge_km": 11.31,
       "target_km": 100.0,
       "active_days": 3,
       "current_streak": 3,
       "best_day_km": 6.08,
-      "pct_completed": 16.5,
+      "pct_completed": 11.3,
       "is_finisher": false,
-      "remaining_km": 83.46,
+      "remaining_km": 88.69,
       "daily_breakdown": {
         "2026-09-01": 5.23,
         "2026-09-02": 6.08,
-        "2026-09-03": 5.23
-      }
+        "2026-09-03": 0.0
+      },
+      "latest_pace": "5:54"
     },
     "418185437": {
       "athlete_id": "418185437",
@@ -1234,19 +1373,20 @@
       "name": "Ajmal V",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
       "mobile": "6282921012",
-      "total_challenge_km": 16.0,
+      "total_challenge_km": 11.0,
       "target_km": 100.0,
       "active_days": 3,
       "current_streak": 3,
       "best_day_km": 6.0,
-      "pct_completed": 16.0,
+      "pct_completed": 11.0,
       "is_finisher": false,
-      "remaining_km": 84.0,
+      "remaining_km": 89.0,
       "daily_breakdown": {
         "2026-09-01": 6.0,
         "2026-09-02": 5.0,
-        "2026-09-03": 5.0
-      }
+        "2026-09-03": 0.0
+      },
+      "latest_pace": "5:54"
     },
     "1813285393": {
       "athlete_id": "1813285393",
@@ -1254,19 +1394,20 @@
       "name": "Firshad P",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJa_WRhwvx6bB5h5nbhdgNOC1IizrdLHkvjkYQx3MVsASjiHg=s96-c",
       "mobile": "9048736113",
-      "total_challenge_km": 15.08,
+      "total_challenge_km": 9.57,
       "target_km": 100.0,
       "active_days": 3,
       "current_streak": 3,
       "best_day_km": 5.51,
-      "pct_completed": 15.1,
+      "pct_completed": 9.6,
       "is_finisher": false,
-      "remaining_km": 84.92,
+      "remaining_km": 90.43,
       "daily_breakdown": {
         "2026-09-01": 4.56,
         "2026-09-02": 5.01,
-        "2026-09-03": 5.51
-      }
+        "2026-09-03": 0.0
+      },
+      "latest_pace": "6:13"
     },
     "206125985": {
       "athlete_id": "206125985",
@@ -1274,19 +1415,20 @@
       "name": "Sarath porur",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/206125985/43657685/1/medium.jpg",
       "mobile": "96056 88857",
-      "total_challenge_km": 14.24,
+      "total_challenge_km": 9.71,
       "target_km": 100.0,
       "active_days": 3,
       "current_streak": 3,
       "best_day_km": 5.23,
-      "pct_completed": 14.2,
+      "pct_completed": 9.7,
       "is_finisher": false,
-      "remaining_km": 85.76,
+      "remaining_km": 90.29,
       "daily_breakdown": {
         "2026-09-01": 4.48,
         "2026-09-02": 5.23,
-        "2026-09-03": 4.53
-      }
+        "2026-09-03": 0.0
+      },
+      "latest_pace": "6:26"
     },
     "153813910": {
       "athlete_id": "153813910",
@@ -1306,7 +1448,8 @@
         "2026-09-01": 5.21,
         "2026-09-02": 6.49,
         "2026-09-03": 0.0
-      }
+      },
+      "latest_pace": "6:26"
     },
     "61176348": {
       "athlete_id": "61176348",
@@ -1326,7 +1469,8 @@
         "2026-09-01": 5.24,
         "2026-09-02": 5.02,
         "2026-09-03": 0.0
-      }
+      },
+      "latest_pace": "6:11"
     },
     "49239362": {
       "athlete_id": "49239362",
@@ -1334,19 +1478,20 @@
       "name": "Arun narayanan UC",
       "avatar_url": "https://lh5.googleusercontent.com/-jVkxuoxvpOs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcvQClqtxPHzsLdypfr_jngilPTyA/photo.jpg",
       "mobile": "80862 20552",
-      "total_challenge_km": 10.11,
+      "total_challenge_km": 5.05,
       "target_km": 100.0,
       "active_days": 2,
       "current_streak": 2,
       "best_day_km": 5.06,
-      "pct_completed": 10.1,
+      "pct_completed": 5.0,
       "is_finisher": false,
-      "remaining_km": 89.89,
+      "remaining_km": 94.95,
       "daily_breakdown": {
         "2026-09-01": 0.0,
         "2026-09-02": 5.05,
-        "2026-09-03": 5.06
-      }
+        "2026-09-03": 0.0
+      },
+      "latest_pace": "6:39"
     },
     "39295926": {
       "athlete_id": "39295926",
@@ -1354,19 +1499,20 @@
       "name": "Khaliq KT",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/39295926/15365395/2/medium.jpg",
       "mobile": "8086026363",
-      "total_challenge_km": 9.13,
+      "total_challenge_km": 6.11,
       "target_km": 100.0,
       "active_days": 3,
       "current_streak": 3,
       "best_day_km": 3.09,
-      "pct_completed": 9.1,
+      "pct_completed": 6.1,
       "is_finisher": false,
-      "remaining_km": 90.87,
+      "remaining_km": 93.89,
       "daily_breakdown": {
         "2026-09-01": 3.09,
         "2026-09-02": 3.02,
-        "2026-09-03": 3.02
-      }
+        "2026-09-03": 0.0
+      },
+      "latest_pace": "5:40"
     },
     "112220469": {
       "athlete_id": "112220469",
@@ -1374,19 +1520,20 @@
       "name": "Santhosh Porur",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/112220469/48637416/1/medium.jpg",
       "mobile": "86066 02209",
-      "total_challenge_km": 9.12,
+      "total_challenge_km": 5.56,
       "target_km": 100.0,
       "active_days": 2,
       "current_streak": 2,
       "best_day_km": 5.56,
-      "pct_completed": 9.1,
+      "pct_completed": 5.6,
       "is_finisher": false,
-      "remaining_km": 90.88,
+      "remaining_km": 94.44,
       "daily_breakdown": {
         "2026-09-01": 0.0,
         "2026-09-02": 5.56,
-        "2026-09-03": 3.56
-      }
+        "2026-09-03": 0.0
+      },
+      "latest_pace": "6:37"
     },
     "197960058": {
       "athlete_id": "197960058",
@@ -1406,7 +1553,8 @@
         "2026-09-01": 0.0,
         "2026-09-02": 7.63,
         "2026-09-03": 0.0
-      }
+      },
+      "latest_pace": "5:41"
     },
     "1106664010": {
       "athlete_id": "1106664010",
@@ -1426,7 +1574,8 @@
         "2026-09-01": 6.69,
         "2026-09-02": 0.0,
         "2026-09-03": 0.0
-      }
+      },
+      "latest_pace": "8:56"
     },
     "1463852982": {
       "athlete_id": "1463852982",
@@ -1446,7 +1595,8 @@
         "2026-09-01": 5.01,
         "2026-09-02": 0.0,
         "2026-09-03": 0.0
-      }
+      },
+      "latest_pace": "10:51"
     },
     "1643927358": {
       "athlete_id": "1643927358",
@@ -1454,19 +1604,20 @@
       "name": "Anwer Hussain",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK0uh6ILNKzgK_2bHq0MDIg3ncQxC3kdiS4oOqIGIomnCZRMg=s96-c",
       "mobile": "9745197890",
-      "total_challenge_km": 4.94,
+      "total_challenge_km": 1.08,
       "target_km": 100.0,
       "active_days": 2,
       "current_streak": 2,
       "best_day_km": 3.86,
-      "pct_completed": 4.9,
+      "pct_completed": 1.1,
       "is_finisher": false,
-      "remaining_km": 95.06,
+      "remaining_km": 98.92,
       "daily_breakdown": {
         "2026-09-01": 0.0,
         "2026-09-02": 1.08,
-        "2026-09-03": 3.86
-      }
+        "2026-09-03": 0.0
+      },
+      "latest_pace": "7:12"
     },
     "201415432": {
       "athlete_id": "201415432",
@@ -1474,19 +1625,20 @@
       "name": "Fahis",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/201415432/57855402/1/medium.jpg",
       "mobile": "9567402014",
-      "total_challenge_km": 3.76,
+      "total_challenge_km": 0.0,
       "target_km": 100.0,
       "active_days": 1,
       "current_streak": 1,
       "best_day_km": 3.76,
-      "pct_completed": 3.8,
+      "pct_completed": 0.0,
       "is_finisher": false,
-      "remaining_km": 96.24,
+      "remaining_km": 100.0,
       "daily_breakdown": {
         "2026-09-01": 0.0,
         "2026-09-02": 0.0,
-        "2026-09-03": 3.76
-      }
+        "2026-09-03": 0.0
+      },
+      "latest_pace": "5:58"
     },
     "athlete_27": {
       "athlete_id": "athlete_27",
@@ -1526,7 +1678,263 @@
         "2026-09-01": 3.1,
         "2026-09-02": 0.0,
         "2026-09-03": 0.0
-      }
+      },
+      "latest_pace": "6:20"
+    },
+    "35422762": {
+      "athlete_id": "35422762",
+      "name": "JustinTX Cherai   🚴🏃🚴🏃🇮🇳",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/35422762/47666145/1/medium.jpg",
+      "total_challenge_km": 0.0,
+      "target_km": 100.0,
+      "active_days": 0,
+      "current_streak": 0,
+      "best_day_km": 0.0,
+      "latest_pace": "5:12",
+      "daily_breakdown": {
+        "2026-09-03": 0.0
+      },
+      "pct_completed": 0.0,
+      "is_finisher": false,
+      "remaining_km": 100.0
+    },
+    "77103625": {
+      "athlete_id": "77103625",
+      "name": "Razaq Kinassery",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/77103625/19201543/5/medium.jpg",
+      "total_challenge_km": 0.0,
+      "target_km": 100.0,
+      "active_days": 0,
+      "current_streak": 0,
+      "best_day_km": 0.0,
+      "latest_pace": "5:19",
+      "daily_breakdown": {
+        "2026-09-03": 0.0
+      },
+      "pct_completed": 0.0,
+      "is_finisher": false,
+      "remaining_km": 100.0
+    },
+    "159255088": {
+      "athlete_id": "159255088",
+      "name": "Muhammed Shafi K",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/159255088/35836758/1/medium.jpg",
+      "total_challenge_km": 0.0,
+      "target_km": 100.0,
+      "active_days": 0,
+      "current_streak": 0,
+      "best_day_km": 0.0,
+      "latest_pace": "4:14",
+      "daily_breakdown": {
+        "2026-09-03": 0.0
+      },
+      "pct_completed": 0.0,
+      "is_finisher": false,
+      "remaining_km": 100.0
+    },
+    "1882708307": {
+      "athlete_id": "1882708307",
+      "name": "Nijin Prajeesh",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLbLc8FjrMYDUzSHHyuZOzEpK3GFh-9m6Vu-e4BkjlVl5P44CI3=s96-c",
+      "total_challenge_km": 0.0,
+      "target_km": 100.0,
+      "active_days": 0,
+      "current_streak": 0,
+      "best_day_km": 0.0,
+      "latest_pace": "8:26",
+      "daily_breakdown": {
+        "2026-09-03": 0.0
+      },
+      "pct_completed": 0.0,
+      "is_finisher": false,
+      "remaining_km": 100.0
+    },
+    "1549040789": {
+      "athlete_id": "1549040789",
+      "name": "Muhammed Rishad",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/1549040789/57786553/1/medium.jpg",
+      "total_challenge_km": 0.0,
+      "target_km": 100.0,
+      "active_days": 0,
+      "current_streak": 0,
+      "best_day_km": 0.0,
+      "latest_pace": "7:24",
+      "daily_breakdown": {
+        "2026-09-03": 0.0
+      },
+      "pct_completed": 0.0,
+      "is_finisher": false,
+      "remaining_km": 100.0
+    },
+    "159419010": {
+      "athlete_id": "159419010",
+      "name": "krishna prasad. M Kp",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/159419010/43242834/2/medium.jpg",
+      "total_challenge_km": 0.0,
+      "target_km": 100.0,
+      "active_days": 0,
+      "current_streak": 0,
+      "best_day_km": 0.0,
+      "latest_pace": "6:03",
+      "daily_breakdown": {
+        "2026-09-03": 0.0
+      },
+      "pct_completed": 0.0,
+      "is_finisher": false,
+      "remaining_km": 100.0
+    },
+    "49335106": {
+      "athlete_id": "49335106",
+      "name": "Rupesh Shenoy D/FCR",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/49335106/13664358/17/medium.jpg",
+      "total_challenge_km": 0.0,
+      "target_km": 100.0,
+      "active_days": 0,
+      "current_streak": 0,
+      "best_day_km": 0.0,
+      "latest_pace": "6:11",
+      "daily_breakdown": {
+        "2026-09-03": 0.0
+      },
+      "pct_completed": 0.0,
+      "is_finisher": false,
+      "remaining_km": 100.0
+    },
+    "62712350": {
+      "athlete_id": "62712350",
+      "name": "Sabeel Oravungal",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/62712350/57828553/1/medium.jpg",
+      "total_challenge_km": 0.0,
+      "target_km": 100.0,
+      "active_days": 0,
+      "current_streak": 0,
+      "best_day_km": 0.0,
+      "latest_pace": "6:37",
+      "daily_breakdown": {
+        "2026-09-03": 0.0
+      },
+      "pct_completed": 0.0,
+      "is_finisher": false,
+      "remaining_km": 100.0
+    },
+    "195111666": {
+      "athlete_id": "195111666",
+      "name": "SUNEESH K",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK8EUTllQuqmupowzW7MSjGO_EdftITvyXSxKGcJNf8yU_r9put=s96-c",
+      "total_challenge_km": 0.0,
+      "target_km": 100.0,
+      "active_days": 0,
+      "current_streak": 0,
+      "best_day_km": 0.0,
+      "latest_pace": "6:55",
+      "daily_breakdown": {
+        "2026-09-03": 0.0
+      },
+      "pct_completed": 0.0,
+      "is_finisher": false,
+      "remaining_km": 100.0
+    },
+    "40420193": {
+      "athlete_id": "40420193",
+      "name": "Nidheesh Edappalli",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/40420193/11842503/8/medium.jpg",
+      "total_challenge_km": 0.0,
+      "target_km": 100.0,
+      "active_days": 0,
+      "current_streak": 0,
+      "best_day_km": 0.0,
+      "latest_pace": "6:36",
+      "daily_breakdown": {
+        "2026-09-03": 0.0
+      },
+      "pct_completed": 0.0,
+      "is_finisher": false,
+      "remaining_km": 100.0
+    },
+    "190287524": {
+      "athlete_id": "190287524",
+      "name": "Anas EV",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/190287524/57772487/1/medium.jpg",
+      "total_challenge_km": 0.0,
+      "target_km": 100.0,
+      "active_days": 0,
+      "current_streak": 0,
+      "best_day_km": 0.0,
+      "latest_pace": "6:40",
+      "daily_breakdown": {
+        "2026-09-03": 0.0
+      },
+      "pct_completed": 0.0,
+      "is_finisher": false,
+      "remaining_km": 100.0
+    },
+    "1923419136": {
+      "athlete_id": "1923419136",
+      "name": "Gaming With Rahman",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocI81nTBasbwN6at8BA3qUYigFx1RseVCiHe9DDXLG4fy0j_xIk=s96-c",
+      "total_challenge_km": 0.0,
+      "target_km": 100.0,
+      "active_days": 0,
+      "current_streak": 0,
+      "best_day_km": 0.0,
+      "latest_pace": "6:43",
+      "daily_breakdown": {
+        "2026-09-03": 0.0
+      },
+      "pct_completed": 0.0,
+      "is_finisher": false,
+      "remaining_km": 100.0
+    },
+    "1009893599": {
+      "athlete_id": "1009893599",
+      "name": "Diljith P",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIt1xE8j6dgbNbXnzd-tWkINISp4f8uIrD4IGU0wNcTkyfNlOk=s96-c",
+      "total_challenge_km": 0.0,
+      "target_km": 100.0,
+      "active_days": 0,
+      "current_streak": 0,
+      "best_day_km": 0.0,
+      "latest_pace": "4:42",
+      "daily_breakdown": {
+        "2026-09-03": 0.0
+      },
+      "pct_completed": 0.0,
+      "is_finisher": false,
+      "remaining_km": 100.0
+    },
+    "1737669347": {
+      "athlete_id": "1737669347",
+      "name": "NITHIN KC",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/1737669347/57713853/1/medium.jpg",
+      "total_challenge_km": 0.0,
+      "target_km": 100.0,
+      "active_days": 0,
+      "current_streak": 0,
+      "best_day_km": 0.0,
+      "latest_pace": "4:42",
+      "daily_breakdown": {
+        "2026-09-03": 0.0
+      },
+      "pct_completed": 0.0,
+      "is_finisher": false,
+      "remaining_km": 100.0
+    },
+    "1994677546": {
+      "athlete_id": "1994677546",
+      "name": "Anoop K",
+      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
+      "total_challenge_km": 0.0,
+      "target_km": 100.0,
+      "active_days": 0,
+      "current_streak": 0,
+      "best_day_km": 0.0,
+      "latest_pace": "5:00",
+      "daily_breakdown": {
+        "2026-09-03": 0.0
+      },
+      "pct_completed": 0.0,
+      "is_finisher": false,
+      "remaining_km": 100.0
     }
   }
 }
