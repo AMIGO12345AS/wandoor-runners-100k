@@ -96,6 +96,7 @@ function setupEventListeners() {
 function renderDashboard() {
   populateDateDropdown();
   renderKPIs();
+  renderPodium();
   renderTable();
 }
 
@@ -131,6 +132,46 @@ function renderKPIs() {
   const targetKm = clubData.target_km || 100.0;
   const finishers = athletes.filter(a => (a.total_challenge_km || 0) >= targetKm);
   document.getElementById("kpiFinishersCount").textContent = finishers.length;
+}
+
+function renderPodium() {
+  const grid = document.getElementById("podiumGrid");
+  if (!grid) return;
+  grid.innerHTML = "";
+
+  const athletes = Object.values(clubData.athlete_totals || {});
+  athletes.sort((a, b) => b.total_challenge_km - a.total_challenge_km);
+
+  if (athletes.length < 3) return;
+
+  const top1 = athletes[0];
+  const top2 = athletes[1];
+  const top3 = athletes[2];
+
+  // Olympic podium order: [Rank 2, Rank 1, Rank 3]
+  const podiumOrder = [
+    { athlete: top2, rank: 2, badgeClass: "rank-silver", label: "2nd Place" },
+    { athlete: top1, rank: 1, badgeClass: "rank-gold", label: "Leading Challenge" },
+    { athlete: top3, rank: 3, badgeClass: "rank-bronze", label: "3rd Place" }
+  ];
+
+  podiumOrder.forEach(item => {
+    const a = item.athlete;
+    const cleanName = cleanAthleteName(a.name);
+    const card = document.createElement("div");
+    card.className = `podium-card ${item.badgeClass}`;
+    card.innerHTML = `
+      <div class="podium-badge">${item.rank}</div>
+      <img src="${a.avatar_url || 'https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png'}" 
+           onerror="this.src='https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png'" 
+           class="podium-avatar" alt="">
+      <div class="podium-name" title="${cleanName}">${cleanName}</div>
+      <div class="podium-km">${a.total_challenge_km.toFixed(1)} <span style="font-size: 13px; font-weight: 600; color: var(--text-secondary);">km</span></div>
+      <div class="podium-pct">${a.pct_completed || 0}% of 100k</div>
+    `;
+    card.addEventListener("click", () => openAthleteModal(a.athlete_id));
+    grid.appendChild(card);
+  });
 }
 
 function renderTable() {
