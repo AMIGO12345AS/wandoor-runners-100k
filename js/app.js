@@ -100,15 +100,26 @@ function renderDashboard() {
   renderTable();
 }
 
+function getLocalISTDateStr() {
+  // Always get exact calendar date in Indian Standard Time (Asia/Kolkata)
+  try {
+    return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata' }).format(new Date());
+  } catch (e) {
+    const now = new Date();
+    return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+  }
+}
+
 function populateDateDropdown() {
   const dateSelect = document.getElementById("dateSelect");
   dateSelect.innerHTML = "";
   const dates = clubData.dates || [selectedDate];
+  const todayStr = getLocalISTDateStr();
 
   [...dates].reverse().forEach(d => {
     const opt = document.createElement("option");
     opt.value = d;
-    opt.textContent = (d === new Date().toISOString().split("T")[0]) ? `Today (${d})` : d;
+    opt.textContent = (d === todayStr) ? `Today (${d})` : d;
     if (d === selectedDate) opt.selected = true;
     dateSelect.appendChild(opt);
   });
@@ -184,14 +195,14 @@ function renderTable() {
   if (currentTab === "daily") {
     // Day-by-Day columns
     thead.innerHTML = `
-      <th style="width: 70px;">Rank</th>
+      <th style="width: 50px; text-align: center;">Rank</th>
       <th>Athlete</th>
-      <th>Distance Today</th>
-      <th>Runs</th>
+      <th>Distance</th>
+      <th class="col-hide-mobile">Runs</th>
       <th>Avg. Pace</th>
-      <th>Elevation</th>
-      <th>Week Total</th>
-      <th style="text-align: right; width: 110px;">Details</th>
+      <th class="col-hide-mobile">Elevation</th>
+      <th class="col-hide-mobile">Week Total</th>
+      <th style="text-align: right; width: 90px;">Details</th>
     `;
 
     const dailyLogs = (clubData.daily_records && clubData.daily_records[selectedDate]) || [];
@@ -215,7 +226,7 @@ function renderTable() {
       else if (idx === 2) rankClass += " rank-top-3";
 
       tr.innerHTML = `
-        <td><span class="${rankClass}">#${idx + 1}</span></td>
+        <td style="text-align: center;"><span class="${rankClass}">#${idx + 1}</span></td>
         <td>
           <div class="athlete-profile">
             <img src="${r.avatar_url || 'https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png'}" 
@@ -225,12 +236,12 @@ function renderTable() {
           </div>
         </td>
         <td><span class="distance-bold">${r.daily_distance_km.toFixed(1)}</span> <span class="unit-gray">km</span></td>
-        <td>${r.daily_runs || 1}</td>
+        <td class="col-hide-mobile">${r.daily_runs || 1}</td>
         <td>${r.avg_pace && r.avg_pace !== '--' ? r.avg_pace + ' /km' : '--'}</td>
-        <td>${r.daily_elev_gain_m || 0} <span class="unit-gray">m</span></td>
-        <td style="color: var(--text-secondary); font-weight: 500;">${(r.weekly_cumulative_km || 0).toFixed(1)} km</td>
+        <td class="col-hide-mobile">${r.daily_elev_gain_m || 0} <span class="unit-gray">m</span></td>
+        <td class="col-hide-mobile" style="color: var(--text-secondary); font-weight: 500;">${(r.weekly_cumulative_km || 0).toFixed(1)} km</td>
         <td style="text-align: right;">
-          <button class="btn-details">${chartIconSvg}View Days</button>
+          <button class="btn-details">${chartIconSvg}Days</button>
         </td>
       `;
 
@@ -241,14 +252,14 @@ function renderTable() {
   } else {
     // 100k Challenge Leaderboard columns
     thead.innerHTML = `
-      <th style="width: 70px;">Rank</th>
+      <th style="width: 50px; text-align: center;">Rank</th>
       <th>Athlete</th>
-      <th style="width: 200px;">100k Challenge Progress</th>
-      <th>Total Completed</th>
-      <th>Remaining</th>
-      <th>Active Days</th>
-      <th>Status</th>
-      <th style="text-align: right; width: 110px;">Details</th>
+      <th style="width: 170px;">100k Progress</th>
+      <th>Total</th>
+      <th class="col-hide-mobile">Remaining</th>
+      <th class="col-hide-mobile">Active Days</th>
+      <th class="col-hide-mobile">Status</th>
+      <th style="text-align: right; width: 90px;">Details</th>
     `;
 
     const targetKm = clubData.target_km || 100.0;
@@ -282,7 +293,7 @@ function renderTable() {
       else if (pct >= 50) statusBadge = `<span class="status-tag ontrack">On Track</span>`;
 
       tr.innerHTML = `
-        <td><span class="${rankClass}">#${idx + 1}</span></td>
+        <td style="text-align: center;"><span class="${rankClass}">#${idx + 1}</span></td>
         <td>
           <div class="athlete-profile">
             <img src="${a.avatar_url || 'https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png'}" 
@@ -297,17 +308,17 @@ function renderTable() {
               <div class="progress-fill-bar ${isDone ? 'complete' : ''}" style="width: ${pct}%"></div>
             </div>
             <div class="progress-caption">
-              <span>${pct}% complete</span>
-              <span>100 km</span>
+              <span>${pct}%</span>
+              <span>100k</span>
             </div>
           </div>
         </td>
         <td><span class="distance-bold">${a.total_challenge_km.toFixed(1)}</span> <span class="unit-gray">km</span></td>
-        <td>${remaining} <span class="unit-gray">km</span></td>
-        <td>${a.active_days || 0} days</td>
-        <td>${statusBadge}</td>
+        <td class="col-hide-mobile">${remaining} <span class="unit-gray">km</span></td>
+        <td class="col-hide-mobile">${a.active_days || 0} days</td>
+        <td class="col-hide-mobile">${statusBadge}</td>
         <td style="text-align: right;">
-          <button class="btn-details">${chartIconSvg}View Days</button>
+          <button class="btn-details">${chartIconSvg}Days</button>
         </td>
       `;
 
