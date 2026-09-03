@@ -7,7 +7,7 @@ Fetches leaderboard -> Computes daily delta -> Updates Google Sheet -> Updates D
 import os
 import sys
 import json
-from datetime import datetime, date
+from datetime import datetime, date, timezone, timedelta
 
 from scripts.scraper import fetch_club_leaderboard
 from scripts.delta_engine import process_daily_delta, load_json, save_json
@@ -24,7 +24,9 @@ def main():
     target_km = float(os.environ.get("TARGET_DISTANCE_KM", config.get("target_distance_km", 100.0)))
     session_cookie = os.environ.get("STRAVA_SESSION_COOKIE", config.get("strava_session_cookie", "")).strip()
     webhook_url = os.environ.get("GOOGLE_SHEET_WEBHOOK_URL", config.get("google_sheet_webhook_url", "")).strip()
-    today_str = date.today().isoformat()
+    # Explicit IST Timezone
+    IST = timezone(timedelta(hours=5, minutes=30))
+    today_str = datetime.now(IST).strftime("%Y-%m-%d")
 
     print(f"[*] Club ID: {club_id}")
     print(f"[*] Target Challenge: {target_km} km")

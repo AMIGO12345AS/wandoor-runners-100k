@@ -33,6 +33,7 @@ jobs:
 
       - name: Run Daily Sync & Delta Calculation
         env:
+          TZ: 'Asia/Kolkata'
           STRAVA_SESSION_COOKIE: ${{ secrets.STRAVA_SESSION_COOKIE }}
           GOOGLE_SHEET_WEBHOOK_URL: ${{ secrets.GOOGLE_SHEET_WEBHOOK_URL }}
           STRAVA_CLUB_ID: '2317931'
@@ -41,11 +42,13 @@ jobs:
           python3 run_sync.py
 
       - name: Commit and Push Updated Data
+        env:
+          TZ: 'Asia/Kolkata'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "Strava Sync Bot"
           git add data/
-          git diff-index --quiet HEAD || git commit -m "Auto-sync daily Strava club stats [$(date +'%Y-%m-%d')]"
+          git diff-index --quiet HEAD || git commit -m "Auto-sync daily Strava club stats [$(TZ='Asia/Kolkata' date +'%Y-%m-%d %H:%M IST')]"
           git push
 
       - name: Setup Pages
