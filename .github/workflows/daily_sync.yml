@@ -2,8 +2,8 @@ name: Daily Strava Club Leaderboard Sync
 
 on:
   schedule:
-    # Runs at 18:15 UTC every day (23:45 IST - 11:45 PM Indian Standard Time)
-    - cron: '15 18 * * *'
+    # Runs every hour at minute 0 (24/7, 100% Free on public GitHub repo)
+    - cron: '0 * * * *'
   workflow_dispatch: # Allows manual trigger anytime from GitHub UI
   push:
     branches:
