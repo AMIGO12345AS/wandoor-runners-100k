@@ -195,14 +195,14 @@ function renderTable() {
   if (currentTab === "daily") {
     // Day-by-Day columns
     thead.innerHTML = `
-      <th style="width: 50px; text-align: center;">Rank</th>
+      <th style="width: 44px; text-align: center;">Rank</th>
       <th>Athlete</th>
-      <th>Distance</th>
-      <th class="col-hide-mobile">Runs</th>
-      <th>Avg. Pace</th>
-      <th class="col-hide-mobile">Elevation</th>
-      <th class="col-hide-mobile">Week Total</th>
-      <th style="text-align: right; width: 90px;">Details</th>
+      <th style="text-align: right;">Distance</th>
+      <th class="col-hide-mobile" style="text-align: center; width: 60px;">Runs</th>
+      <th class="col-hide-mobile" style="width: 100px;">Avg. Pace</th>
+      <th class="col-hide-mobile" style="width: 80px;">Elevation</th>
+      <th class="col-hide-mobile" style="width: 90px;">Week Total</th>
+      <th class="col-hide-mobile" style="text-align: right; width: 85px;">Details</th>
     `;
 
     const dailyLogs = (clubData.daily_records && clubData.daily_records[selectedDate]) || [];
@@ -225,6 +225,8 @@ function renderTable() {
       else if (idx === 1) rankClass += " rank-top-2";
       else if (idx === 2) rankClass += " rank-top-3";
 
+      const paceText = (r.avg_pace && r.avg_pace !== '--') ? `${r.avg_pace} /km` : '--';
+
       tr.innerHTML = `
         <td style="text-align: center;"><span class="${rankClass}">#${idx + 1}</span></td>
         <td>
@@ -232,15 +234,20 @@ function renderTable() {
             <img src="${r.avatar_url || 'https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png'}" 
                  onerror="this.src='https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png'" 
                  class="athlete-photo" alt="">
-            <span class="athlete-title-name">${cleanName}</span>
+            <span class="athlete-title-name" title="${cleanName}">${cleanName}</span>
           </div>
         </td>
-        <td><span class="distance-bold">${r.daily_distance_km.toFixed(1)}</span> <span class="unit-gray">km</span></td>
-        <td class="col-hide-mobile">${r.daily_runs || 1}</td>
-        <td>${r.avg_pace && r.avg_pace !== '--' ? r.avg_pace + ' /km' : '--'}</td>
+        <td style="text-align: right;">
+          <div class="stat-cell-stack">
+            <span class="distance-bold">${r.daily_distance_km.toFixed(1)} <span class="unit-gray">km</span></span>
+            <span class="mobile-only-sub">${paceText}</span>
+          </div>
+        </td>
+        <td class="col-hide-mobile" style="text-align: center;">${r.daily_runs || 1}</td>
+        <td class="col-hide-mobile">${paceText}</td>
         <td class="col-hide-mobile">${r.daily_elev_gain_m || 0} <span class="unit-gray">m</span></td>
         <td class="col-hide-mobile" style="color: var(--text-secondary); font-weight: 500;">${(r.weekly_cumulative_km || 0).toFixed(1)} km</td>
-        <td style="text-align: right;">
+        <td class="col-hide-mobile" style="text-align: right;">
           <button class="btn-details">${chartIconSvg}Days</button>
         </td>
       `;
@@ -252,14 +259,14 @@ function renderTable() {
   } else {
     // 100k Challenge Leaderboard columns
     thead.innerHTML = `
-      <th style="width: 50px; text-align: center;">Rank</th>
+      <th style="width: 44px; text-align: center;">Rank</th>
       <th>Athlete</th>
-      <th style="width: 170px;">100k Progress</th>
-      <th>Total</th>
-      <th class="col-hide-mobile">Remaining</th>
-      <th class="col-hide-mobile">Active Days</th>
-      <th class="col-hide-mobile">Status</th>
-      <th style="text-align: right; width: 90px;">Details</th>
+      <th style="text-align: right;">100k Progress</th>
+      <th class="col-hide-mobile" style="text-align: right; width: 90px;">Total</th>
+      <th class="col-hide-mobile" style="text-align: right; width: 90px;">Remaining</th>
+      <th class="col-hide-mobile" style="text-align: center; width: 70px;">Days</th>
+      <th class="col-hide-mobile" style="width: 80px;">Status</th>
+      <th class="col-hide-mobile" style="text-align: right; width: 85px;">Details</th>
     `;
 
     const targetKm = clubData.target_km || 100.0;
@@ -299,25 +306,23 @@ function renderTable() {
             <img src="${a.avatar_url || 'https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png'}" 
                  onerror="this.src='https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png'" 
                  class="athlete-photo" alt="">
-            <span class="athlete-title-name">${cleanName}</span>
+            <span class="athlete-title-name" title="${cleanName}">${cleanName}</span>
           </div>
         </td>
-        <td>
-          <div class="progress-group">
-            <div class="progress-track-bg">
+        <td style="text-align: right;">
+          <div class="stat-cell-stack">
+            <span class="distance-bold">${a.total_challenge_km.toFixed(1)} <span class="unit-gray">km</span></span>
+            <div class="progress-track-bg" style="height: 4px; margin-top: 3px; width: 100%;">
               <div class="progress-fill-bar ${isDone ? 'complete' : ''}" style="width: ${pct}%"></div>
             </div>
-            <div class="progress-caption">
-              <span>${pct}%</span>
-              <span>100k</span>
-            </div>
+            <span class="mobile-only-sub">${pct}% of 100k</span>
           </div>
         </td>
-        <td><span class="distance-bold">${a.total_challenge_km.toFixed(1)}</span> <span class="unit-gray">km</span></td>
-        <td class="col-hide-mobile">${remaining} <span class="unit-gray">km</span></td>
-        <td class="col-hide-mobile">${a.active_days || 0} days</td>
+        <td class="col-hide-mobile" style="text-align: right;"><span class="distance-bold">${a.total_challenge_km.toFixed(1)}</span> <span class="unit-gray">km</span></td>
+        <td class="col-hide-mobile" style="text-align: right;">${remaining} <span class="unit-gray">km</span></td>
+        <td class="col-hide-mobile" style="text-align: center;">${a.active_days || 0}d</td>
         <td class="col-hide-mobile">${statusBadge}</td>
-        <td style="text-align: right;">
+        <td class="col-hide-mobile" style="text-align: right;">
           <button class="btn-details">${chartIconSvg}Days</button>
         </td>
       `;
