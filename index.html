@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wandoor Runners - Monsoon 100k Challenge 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23FC4C02%22><path d=%22M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 8.3V13h2V9.6l1.8-.7%22/></svg>">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-wrapper">
+        <div class="brand-mark">WR</div>
+        <div class="brand-info">
+          <h1>Wandoor Runners</h1>
+          <span class="brand-subtitle">Monsoon 100k Challenge 2026</span>
+        </div>
+      </div>
+
+      <div class="header-controls">
+        <div class="status-indicator">
+          <span class="status-dot"></span>
+          <span id="syncStatusLabel">Daily Sync Active</span>
+        </div>
+        <button class="whatsapp-action-btn" id="btnOpenWhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.634.079-1.802-.407-1.423-.59-2.348-2.039-2.42-2.134-.071-.096-.582-.774-.582-1.476 0-.702.369-1.047.5-1.191.131-.144.288-.18.384-.18.096 0 .192.001.276.005.097.004.228-.037.355.269.132.318.45 1.096.489 1.176.039.08.066.174.013.28-.052.106-.079.172-.158.264-.078.093-.165.207-.235.278-.079.079-.161.165-.069.323.092.158.408.673.875 1.089.601.536 1.109.702 1.267.781.158.079.251.069.345-.039.094-.108.405-.47.513-.632.108-.162.217-.135.365-.08.149.055.945.446 1.108.527.162.081.27.122.31.189.04.067.04.389-.104.794z"/></svg>
+          Share on WhatsApp
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Dashboard Container -->
+  <main class="dashboard-content">
+
+    <!-- KPI Summary Row -->
+    <section class="kpi-row">
+      <div class="kpi-card">
+        <div class="kpi-header-label">Challenge Target</div>
+        <div class="kpi-primary-val">100 <span class="unit">km</span></div>
+        <div class="kpi-footer-sub">Per Athlete Target</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header-label">Active Runners</div>
+        <div class="kpi-primary-val" id="kpiRunnersCount">0</div>
+        <div class="kpi-footer-sub">Club Members</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header-label">Club Mileage Today</div>
+        <div class="kpi-primary-val" id="kpiTodayDistance">0.0 <span class="unit">km</span></div>
+        <div class="kpi-footer-sub" id="kpiTodayCount">0 runners logged</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header-label">Finishers (&ge;100km)</div>
+        <div class="kpi-primary-val" id="kpiFinishersCount">0</div>
+        <div class="kpi-footer-sub">Completed Target</div>
+      </div>
+    </section>
+
+    <!-- Main Leaderboard Card -->
+    <section class="leaderboard-panel">
+
+      <!-- Refined Toolbar -->
+      <div class="panel-toolbar">
+        <!-- Segmented Mode Control with Clean SVGs -->
+        <div class="mode-segmented-control">
+          <button class="mode-btn active" id="tabDaily">
+            <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM7 11h5v5H7z"/></svg>
+            Day-by-Day View
+          </button>
+          <button class="mode-btn" id="tabOverall">
+            <svg viewBox="0 0 24 24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>
+            100k Leaderboard
+          </button>
+        </div>
+
+        <!-- Filter inputs -->
+        <div class="toolbar-inputs">
+          <div id="dateFilterWrap" style="display: flex; align-items: center; gap: 8px;">
+            <label for="dateSelect" style="font-size: 11.5px; font-weight: 700; color: var(--text-secondary);">Date:</label>
+            <select id="dateSelect" class="date-dropdown"></select>
+          </div>
+          <input type="text" id="searchInput" class="runner-search-box" placeholder="Search runner...">
+        </div>
+      </div>
+
+      <!-- Athletic Table -->
+      <div class="table-wrapper">
+        <table class="athletic-table">
+          <thead>
+            <tr id="tableHeaderRow">
+              <!-- Rendered dynamically -->
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <!-- Rendered dynamically -->
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Athlete Detail Modal -->
+  <div class="modal-overlay" id="athleteModal">
+    <div class="modal-dialog">
+      <div class="modal-header-top">
+        <h3 id="modalTitle">Athlete Performance</h3>
+        <button class="btn-close-x" id="modalCloseBtn">&times;</button>
+      </div>
+      <div class="modal-main-body">
+        <div class="modal-runner-profile">
+          <img src="" id="modalAvatar" class="runner-avatar-big" alt="">
+          <div>
+            <h4 id="modalName" style="font-size: 16px; font-weight: 800; color: var(--dark-slate);">Runner Name</h4>
+            <p style="font-size: 12px; color: var(--text-muted);">Wandoor Runners &bull; Monsoon 100k Challenge</p>
+          </div>
+        </div>
+
+        <div class="modal-grid-metrics">
+          <div class="metric-tile">
+            <div class="title">Total 100k Distance</div>
+            <div class="num" id="modalTotalDist" style="color: var(--primary-orange);">0.0 km</div>
+          </div>
+          <div class="metric-tile">
+            <div class="title">Challenge Progress</div>
+            <div class="num" id="modalPct">0%</div>
+          </div>
+          <div class="metric-tile">
+            <div class="title">Best Run</div>
+            <div class="num" id="modalBestDay">0.0 km</div>
+          </div>
+          <div class="metric-tile">
+            <div class="title">Active Days</div>
+            <div class="num" id="modalStreak">0 days</div>
+          </div>
+        </div>
+
+        <h5 style="font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px;">Day-by-Day Activity Breakdown</h5>
+        <div id="modalBarChart" class="modal-bar-chart">
+          <!-- Dynamic bars -->
+        </div>
+
+        <table class="modal-history-list">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Distance</th>
+              <th>Pace</th>
+              <th>Runs</th>
+            </tr>
+          </thead>
+          <tbody id="modalHistoryTbody">
+            <!-- Dynamic rows -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Export Modal -->
+  <div class="modal-overlay" id="whatsappModal">
+    <div class="modal-dialog">
+      <div class="modal-header-top">
+        <h3>WhatsApp Club Leaderboard Update</h3>
+        <button class="btn-close-x" id="waCloseBtn">&times;</button>
+      </div>
+      <div class="modal-main-body">
+        <p style="font-size: 12px; color: var(--text-secondary); margin-bottom: 12px;">
+          Copy this formatted summary to share in the Wandoor Runners WhatsApp group:
+        </p>
+        <textarea id="whatsappText" class="whatsapp-content-box" readonly></textarea>
+        <div style="margin-top: 14px; text-align: right;">
+          <button class="whatsapp-action-btn" id="btnCopyWhatsApp">Copy to Clipboard</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Wandoor Runners &bull; Monsoon 100k Challenge 2026 &bull; Automated Tracking</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

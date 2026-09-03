@@ -1,0 +1,61 @@
+name: Daily Strava Club Leaderboard Sync
+
+on:
+  schedule:
+    # Runs at 18:15 UTC every day (23:45 IST - 11:45 PM Indian Standard Time)
+    - cron: '15 18 * * *'
+  workflow_dispatch: # Allows manual trigger anytime from GitHub UI
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Run Daily Sync & Delta Calculation
+        env:
+          STRAVA_SESSION_COOKIE: ${{ secrets.STRAVA_SESSION_COOKIE }}
+          GOOGLE_SHEET_WEBHOOK_URL: ${{ secrets.GOOGLE_SHEET_WEBHOOK_URL }}
+          STRAVA_CLUB_ID: '2317931'
+          TARGET_DISTANCE_KM: '100'
+        run: |
+          python3 run_sync.py
+
+      - name: Commit and Push Updated Data
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Strava Sync Bot"
+          git add data/
+          git diff-index --quiet HEAD || git commit -m "Auto-sync daily Strava club stats [$(date +'%Y-%m-%d')]"
+          git push
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

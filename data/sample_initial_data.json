@@ -1,0 +1,162 @@
+{
+  "club_id": "2317931",
+  "club_name": "Wandoor Runners Monsoon 100k challenge 2026",
+  "target_distance_km": 100.0,
+  "timestamp": "2026-09-03T17:07:00+05:30",
+  "athletes": [
+    {
+      "rank": 1,
+      "athlete_id": "mohamed_shajahan",
+      "name": "Mohamed Shajahan",
+      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+      "distance_km": 40.4,
+      "runs_count": 4,
+      "longest_km": 17.1,
+      "avg_pace": "6:05",
+      "elev_gain_m": 829
+    },
+    {
+      "rank": 2,
+      "athlete_id": "justintx_cherai",
+      "name": "JustinTX Cherai",
+      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+      "distance_km": 34.0,
+      "runs_count": 5,
+      "longest_km": 16.7,
+      "avg_pace": "5:12",
+      "elev_gain_m": 294
+    },
+    {
+      "rank": 3,
+      "athlete_id": "rinshid_tp",
+      "name": "Rinshid tp",
+      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+      "distance_km": 31.0,
+      "runs_count": 3,
+      "longest_km": 11.0,
+      "avg_pace": "5:17",
+      "elev_gain_m": 408
+    },
+    {
+      "rank": 4,
+      "athlete_id": "mohandas_k",
+      "name": "Mohandas K",
+      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+      "distance_km": 30.6,
+      "runs_count": 2,
+      "longest_km": 20.5,
+      "avg_pace": "6:20",
+      "elev_gain_m": 356
+    },
+    {
+      "rank": 5,
+      "athlete_id": "ajeesh_tp",
+      "name": "Ajeesh Tp",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIn2BnUnM1erb9PIoCISdpwW45KNA9-0V_9uTJ5Ni4A3zIK7kio=s96-c",
+      "distance_km": 30.1,
+      "runs_count": 3,
+      "longest_km": 10.0,
+      "avg_pace": "5:39",
+      "elev_gain_m": 408
+    },
+    {
+      "rank": 6,
+      "athlete_id": "razaq_kinassery",
+      "name": "Razaq Kinassery",
+      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+      "distance_km": 26.5,
+      "runs_count": 4,
+      "longest_km": 11.4,
+      "avg_pace": "5:19",
+      "elev_gain_m": 413
+    },
+    {
+      "rank": 7,
+      "athlete_id": "ahamed_shameer",
+      "name": "Ahamed Shameer",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtzpVGo98siGMvxQDd2RM-DlgWJ7rWMdatRWwS9AeWWZCyA18=s96-c",
+      "distance_km": 25.0,
+      "runs_count": 4,
+      "longest_km": 10.4,
+      "avg_pace": "6:36",
+      "elev_gain_m": 420
+    },
+    {
+      "rank": 8,
+      "athlete_id": "prakasan_c_t",
+      "name": "Prakasan C T",
+      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+      "distance_km": 23.9,
+      "runs_count": 3,
+      "longest_km": 11.0,
+      "avg_pace": "6:31",
+      "elev_gain_m": 191
+    },
+    {
+      "rank": 9,
+      "athlete_id": "razthan_faris_ck",
+      "name": "RAZTHAN FARIS CK",
+      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+      "distance_km": 23.2,
+      "runs_count": 4,
+      "longest_km": 7.3,
+      "avg_pace": "6:03",
+      "elev_gain_m": 606
+    },
+    {
+      "rank": 10,
+      "athlete_id": "santhosh_porur",
+      "name": "Santhosh Porur",
+      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+      "distance_km": 22.4,
+      "runs_count": 3,
+      "longest_km": 9.2,
+      "avg_pace": "5:50",
+      "elev_gain_m": 673
+    },
+    {
+      "rank": 11,
+      "athlete_id": "dr_shameer_tho",
+      "name": "Dr Shameer Tho",
+      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+      "distance_km": 21.8,
+      "runs_count": 3,
+      "longest_km": 10.1,
+      "avg_pace": "5:45",
+      "elev_gain_m": 310
+    },
+    {
+      "rank": 12,
+      "athlete_id": "adil_kurikkal",
+      "name": "Adil Kurikkal",
+      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+      "distance_km": 19.5,
+      "runs_count": 2,
+      "longest_km": 12.0,
+      "avg_pace": "5:30",
+      "elev_gain_m": 240
+    },
+    {
+      "rank": 13,
+      "athlete_id": "ajmal_v",
+      "name": "Ajmal V",
+      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+      "distance_km": 18.0,
+      "runs_count": 3,
+      "longest_km": 8.0,
+      "avg_pace": "6:10",
+      "elev_gain_m": 220
+    },
+    {
+      "rank": 28,
+      "athlete_id": "current_user",
+      "name": "Niteetsh (You)",
+      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+      "distance_km": 10.2,
+      "runs_count": 2,
+      "longest_km": 6.0,
+      "avg_pace": "5:55",
+      "elev_gain_m": 205
+    }
+  ]
+}
