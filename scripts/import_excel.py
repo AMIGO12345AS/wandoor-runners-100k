@@ -151,6 +151,7 @@ def import_from_excel(excel_path="aseem.xlsx"):
             "athlete_id": athlete_id,
             "sl_no": sl,
             "name": display_name,
+            "excel_name": name,
             "avatar_url": avatar_url,
             "mobile": mob,
             "total_challenge_km": total_km,

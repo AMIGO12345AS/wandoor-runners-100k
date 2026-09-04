@@ -207,8 +207,14 @@ function renderTable() {
 
     const dailyLogs = (clubData.daily_records && clubData.daily_records[selectedDate]) || [];
     let filtered = dailyLogs.filter(l => {
+      if (!searchQuery) return true;
       const name = cleanAthleteName(l.name).toLowerCase();
-      return !searchQuery || name.includes(searchQuery);
+      const totalInfo = (clubData.athlete_totals && clubData.athlete_totals[l.athlete_id]) || {};
+      const excelName = (totalInfo.excel_name || "").toLowerCase();
+      const mob = (totalInfo.mobile || "").replace(/\s+/g, "");
+      const cleanQ = searchQuery.replace(/\s+/g, "");
+      const sl = totalInfo.sl_no ? String(totalInfo.sl_no) : "";
+      return name.includes(searchQuery) || excelName.includes(searchQuery) || mob.includes(cleanQ) || sl === searchQuery;
     });
 
     if (filtered.length === 0) {
@@ -274,8 +280,13 @@ function renderTable() {
     athletes.sort((a, b) => b.total_challenge_km - a.total_challenge_km);
 
     let filtered = athletes.filter(a => {
+      if (!searchQuery) return true;
       const name = cleanAthleteName(a.name).toLowerCase();
-      return !searchQuery || name.includes(searchQuery);
+      const excelName = (a.excel_name || "").toLowerCase();
+      const mob = (a.mobile || "").replace(/\s+/g, "");
+      const cleanQ = searchQuery.replace(/\s+/g, "");
+      const sl = a.sl_no ? String(a.sl_no) : "";
+      return name.includes(searchQuery) || excelName.includes(searchQuery) || mob.includes(cleanQ) || sl === searchQuery;
     });
 
     if (filtered.length === 0) {
