@@ -1,7 +1,7 @@
 {
   "club_name": "Wandoor Runners Monsoon 100k challenge 2026",
   "target_km": 100.0,
-  "last_updated": "2026-09-04T20:21:31.237050+05:30",
+  "last_updated": "2026-09-04T22:55:13.836956+05:30",
   "dates": [
     "2026-09-01",
     "2026-09-02",
@@ -1199,6 +1199,17 @@
       },
       {
         "date": "2026-09-04",
+        "athlete_id": "203636939",
+        "name": "Adil Kurikkal",
+        "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
+        "daily_distance_km": 5.07,
+        "daily_runs": 1,
+        "daily_elev_gain_m": 98,
+        "avg_pace": "6:02",
+        "weekly_cumulative_km": 11.95
+      },
+      {
+        "date": "2026-09-04",
         "athlete_id": "49335106",
         "name": "Rupesh Shenoy DFCR",
         "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/49335106/13664358/17/medium.jpg",
@@ -1405,17 +1416,6 @@
         "daily_elev_gain_m": 0,
         "avg_pace": "5:41",
         "weekly_cumulative_km": 7.64
-      },
-      {
-        "date": "2026-09-04",
-        "athlete_id": "203636939",
-        "name": "Adil Kurikkal",
-        "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
-        "daily_distance_km": 0.0,
-        "daily_runs": 0,
-        "daily_elev_gain_m": 0,
-        "avg_pace": "6:20",
-        "weekly_cumulative_km": 6.88
       },
       {
         "date": "2026-09-04",
@@ -2079,21 +2079,21 @@
       "excel_name": "Adil Kurikkal",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
       "mobile": "9072610410",
-      "total_challenge_km": 3.1,
+      "total_challenge_km": 8.17,
       "target_km": 100.0,
-      "active_days": 1,
-      "current_streak": 0,
-      "best_day_km": 3.1,
-      "pct_completed": 3.1,
+      "active_days": 2,
+      "current_streak": 1,
+      "best_day_km": 5.07,
+      "pct_completed": 8.2,
       "is_finisher": false,
-      "remaining_km": 96.9,
+      "remaining_km": 91.83,
       "daily_breakdown": {
         "2026-09-01": 3.1,
         "2026-09-02": 0.0,
         "2026-09-03": 0.0,
-        "2026-09-04": 0.0
+        "2026-09-04": 5.07
       },
-      "latest_pace": "6:20"
+      "latest_pace": "6:02"
     },
     "206125985": {
       "athlete_id": "206125985",
