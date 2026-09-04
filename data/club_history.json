@@ -1,7 +1,7 @@
 {
   "club_name": "Wandoor Runners Monsoon 100k challenge 2026",
   "target_km": 100.0,
-  "last_updated": "2026-09-04T14:04:25.102117+05:30",
+  "last_updated": "2026-09-04T18:43:48.989874+05:30",
   "dates": [
     "2026-09-01",
     "2026-09-02",
@@ -1122,6 +1122,17 @@
       },
       {
         "date": "2026-09-04",
+        "athlete_id": "61176348",
+        "name": "Porur Sarath",
+        "avatar_url": "https://graph.facebook.com/1357027104491215/picture?height=256&width=256",
+        "daily_distance_km": 5.25,
+        "daily_runs": 1,
+        "daily_elev_gain_m": 109,
+        "avg_pace": "6:13",
+        "weekly_cumulative_km": 23.87
+      },
+      {
+        "date": "2026-09-04",
         "athlete_id": "188992089",
         "name": "Ali Faisal",
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocL_zlX94UMReiJ7AC1vVKu8rUpUzkIvEZOyy8QY7IQz3FNwIRnh=s96-c",
@@ -1251,17 +1262,6 @@
         "daily_elev_gain_m": 0,
         "avg_pace": "6:35",
         "weekly_cumulative_km": 25.07
-      },
-      {
-        "date": "2026-09-04",
-        "athlete_id": "61176348",
-        "name": "Porur Sarath",
-        "avatar_url": "https://graph.facebook.com/1357027104491215/picture?height=256&width=256",
-        "daily_distance_km": 0.0,
-        "daily_runs": 0,
-        "daily_elev_gain_m": 0,
-        "avg_pace": "6:11",
-        "weekly_cumulative_km": 18.62
       },
       {
         "date": "2026-09-04",
@@ -1811,21 +1811,21 @@
       "name": "Nidheesh Porur",
       "avatar_url": "https://graph.facebook.com/1357027104491215/picture?height=256&width=256",
       "mobile": "9495130606",
-      "total_challenge_km": 10.26,
+      "total_challenge_km": 15.51,
       "target_km": 100.0,
-      "active_days": 2,
+      "active_days": 3,
       "current_streak": 0,
-      "best_day_km": 5.24,
-      "pct_completed": 10.3,
+      "best_day_km": 5.25,
+      "pct_completed": 15.5,
       "is_finisher": false,
-      "remaining_km": 89.74,
+      "remaining_km": 84.49,
       "daily_breakdown": {
         "2026-09-01": 5.24,
         "2026-09-02": 5.02,
         "2026-09-03": 0.0,
-        "2026-09-04": 0.0
+        "2026-09-04": 5.25
       },
-      "latest_pace": "6:11"
+      "latest_pace": "6:13"
     },
     "49239362": {
       "athlete_id": "49239362",
