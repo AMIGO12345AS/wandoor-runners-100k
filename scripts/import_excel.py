@@ -37,13 +37,17 @@ def import_from_excel(excel_path="aseem.xlsx"):
         with open(snapshot_file, "r") as f:
             strava_athletes = json.load(f).get("athletes", [])
 
-    strava_map = {}
-    for sa in strava_athletes:
-        norm = normalize_for_match(sa["name"])
-        strava_map[norm] = sa
-        parts = sa["name"].lower().split()
-        if parts:
-            strava_map[parts[0]] = sa
+    strava_by_id = {str(sa["athlete_id"]): sa for sa in strava_athletes}
+    strava_by_norm = {normalize_for_match(sa["name"]): sa for sa in strava_athletes}
+
+    # Explicit known mappings between Excel registrations and Strava profiles
+    EXPLICIT_MAP = {
+        "nidheeshporur": "40420193",      # Nidheesh Porur (Excel) -> Nidheesh Edappalli (Strava)
+        "sarathporur": "61176348",        # Sarath porur (Excel) -> Porur Sarath (Strava)
+        "arunnarayanuc": "49239362",      # Arun narayanan UC (Excel) -> Arun Savitha (Strava)
+        "arunnarayananuc": "49239362",
+        "fahis": "201415432",             # Fahis (Excel) -> Fahis Fahi (Strava)
+    }
 
     dates = ["2026-09-01", "2026-09-02", "2026-09-03"]
     daily_records = {d: [] for d in dates}
@@ -83,17 +87,25 @@ def import_from_excel(excel_path="aseem.xlsx"):
         total_km = round(d1_km + d2_km + d3_km, 2)
 
         # Match with Strava profile if available
-        matched_strava = strava_map.get(norm_name)
-        if not matched_strava:
-            for k, v in strava_map.items():
-                if norm_name in k or k in norm_name:
-                    matched_strava = v
+        matched_strava = None
+        if norm_name in EXPLICIT_MAP:
+            matched_strava = strava_by_id.get(EXPLICIT_MAP[norm_name])
+        elif norm_name in strava_by_norm:
+            matched_strava = strava_by_norm[norm_name]
+        else:
+            for snorm, sa in strava_by_norm.items():
+                if len(norm_name) >= 6 and len(snorm) >= 6 and (norm_name in snorm or snorm in norm_name):
+                    matched_strava = sa
                     break
 
-        athlete_id = str(matched_strava["athlete_id"]) if matched_strava else f"athlete_{sl or norm_name}"
-        avatar_url = matched_strava["avatar_url"] if matched_strava else "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png"
-        
-        display_name = name
+        if matched_strava:
+            athlete_id = str(matched_strava["athlete_id"])
+            avatar_url = matched_strava.get("avatar_url", "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png")
+            display_name = clean_name(matched_strava["name"])
+        else:
+            athlete_id = f"athlete_{sl or norm_name}"
+            avatar_url = "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png"
+            display_name = name
 
         days_data = [
             ("2026-09-01", d1_km, p1, t1),

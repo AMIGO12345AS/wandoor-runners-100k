@@ -174,6 +174,7 @@ def process_daily_delta(current_athletes, today_str=None, data_dir="data", targe
             }
 
         rec = athlete_totals[aid]
+        rec["name"] = log["name"]
         rec["avatar_url"] = log["avatar_url"]
         rec["latest_pace"] = log["avg_pace"]
         
