@@ -133,9 +133,13 @@ function renderKPIs() {
   // Active Runners
   document.getElementById("kpiRunnersCount").textContent = athletes.length;
 
-  // Club Mileage Today
+  // Club Mileage Today / Selected Date
   const totalDist = dailyLogs.reduce((sum, l) => sum + (l.daily_distance_km || 0), 0);
   const activeCount = dailyLogs.filter(l => l.daily_distance_km > 0).length;
+  const kpiLabel = document.getElementById("kpiMileageLabel");
+  if (kpiLabel) {
+    kpiLabel.textContent = (selectedDate === getLocalISTDateStr()) ? "Club Mileage Today" : `Club Mileage (${selectedDate})`;
+  }
   document.getElementById("kpiTodayDistance").innerHTML = `${totalDist.toFixed(1)} <span class="unit">km</span>`;
   document.getElementById("kpiTodayCount").textContent = `${activeCount} runners logged`;
 
@@ -249,7 +253,7 @@ function renderTable() {
             <span class="mobile-only-sub">${paceText}</span>
           </div>
         </td>
-        <td class="col-hide-mobile" style="text-align: center;">${r.daily_runs || 1}</td>
+        <td class="col-hide-mobile" style="text-align: center;">${r.daily_distance_km > 0 ? (r.daily_runs || 1) : 0}</td>
         <td class="col-hide-mobile">${paceText}</td>
         <td class="col-hide-mobile">${r.daily_elev_gain_m || 0} <span class="unit-gray">m</span></td>
         <td class="col-hide-mobile" style="color: var(--text-secondary); font-weight: 500;">${(r.weekly_cumulative_km || 0).toFixed(1)} km</td>
@@ -355,7 +359,8 @@ function openAthleteModal(athleteId) {
   document.getElementById("modalTotalDist").textContent = `${athlete.total_challenge_km.toFixed(1)} km`;
   document.getElementById("modalPct").textContent = `${athlete.pct_completed || 0}%`;
   document.getElementById("modalBestDay").textContent = `${athlete.best_day_km ? athlete.best_day_km.toFixed(1) : '0.0'} km`;
-  document.getElementById("modalStreak").textContent = `${athlete.active_days || 0} active days`;
+  const streakText = (athlete.current_streak && athlete.current_streak > 0) ? ` (${athlete.current_streak}d streak)` : "";
+  document.getElementById("modalStreak").textContent = `${athlete.active_days || 0} active days${streakText}`;
 
   const tbody = document.getElementById("modalHistoryTbody");
   tbody.innerHTML = "";
@@ -367,7 +372,7 @@ function openAthleteModal(athleteId) {
 
   dates.forEach(d => {
     const logs = clubData.daily_records[d] || [];
-    const log = logs.find(l => l.athlete_id === athleteId);
+    const log = logs.find(l => String(l.athlete_id) === String(athleteId));
     if (log && log.daily_distance_km > 0) {
       userLogs.push(log);
     }
@@ -434,15 +439,25 @@ function generateWhatsAppMessage() {
 
 function copyWhatsAppText() {
   const ta = document.getElementById("whatsappText");
-  ta.select();
-  document.execCommand("copy");
-
   const btn = document.getElementById("btnCopyWhatsApp");
   const orig = btn.innerHTML;
-  btn.innerHTML = "Copied!";
-  setTimeout(() => {
-    btn.innerHTML = orig;
-  }, 2000);
+
+  const showCopied = () => {
+    btn.innerHTML = "Copied!";
+    setTimeout(() => { btn.innerHTML = orig; }, 2000);
+  };
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(ta.value).then(showCopied).catch(() => {
+      ta.select();
+      document.execCommand("copy");
+      showCopied();
+    });
+  } else {
+    ta.select();
+    document.execCommand("copy");
+    showCopied();
+  }
 }
 
 function getFallbackData() {

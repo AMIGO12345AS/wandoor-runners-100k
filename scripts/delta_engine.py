@@ -58,9 +58,13 @@ def process_daily_delta(current_athletes, today_str=None, data_dir="data", targe
     if not today_str:
         today_str = now_ist.strftime("%Y-%m-%d")
 
-    # Day of week: Monday is 0, Sunday is 6
+    # Day of week in IST: Monday is 0, Sunday is 6
     today_weekday = datetime.strptime(today_str, "%Y-%m-%d").weekday()
     is_monday = (today_weekday == 0)
+
+    # Week start date (Monday) for current week
+    today_dt = datetime.strptime(today_str, "%Y-%m-%d")
+    current_monday_str = (today_dt - timedelta(days=today_weekday)).strftime("%Y-%m-%d")
 
     snapshot_file = os.path.join(data_dir, "latest_snapshot.json")
     baseline_file = os.path.join(data_dir, "yesterday_baseline.json")
@@ -80,7 +84,6 @@ def process_daily_delta(current_athletes, today_str=None, data_dir="data", targe
 
     # Intra-day baseline handling:
     # If the previous snapshot is from a PRIOR day, save it as yesterday's baseline.
-    # If today is Monday, Strava reset to 0 at midnight, so Sunday's distance must NOT be subtracted!
     snapshot_date = previous_snapshot.get("date")
     if snapshot_date and snapshot_date < today_str:
         yesterday_baseline = previous_snapshot
@@ -99,6 +102,7 @@ def process_daily_delta(current_athletes, today_str=None, data_dir="data", targe
         # On Monday, Strava starts at 0.0 km. Baseline is 0 for everyone!
         base_athletes_map = {}
 
+    athlete_totals = history.get("athlete_totals", {})
     daily_logs = []
     
     for a in current_athletes:
@@ -116,8 +120,14 @@ def process_daily_delta(current_athletes, today_str=None, data_dir="data", targe
         else:
             base_a = base_athletes_map.get(aid)
             if base_a is None:
-                # First time seeing this athlete this week
-                daily_dist = curr_dist
+                # First time seeing athlete this week in baseline.
+                # Guard: check if they already have logged runs in current week prior to today.
+                rec_existing = athlete_totals.get(aid, {})
+                prior_week_dist = sum(
+                    dist for d, dist in rec_existing.get("daily_breakdown", {}).items()
+                    if current_monday_str <= d < today_str
+                )
+                daily_dist = max(0.0, round(curr_dist - prior_week_dist, 2))
                 daily_runs = curr_runs
                 daily_elev = curr_elev
             else:
@@ -149,12 +159,28 @@ def process_daily_delta(current_athletes, today_str=None, data_dir="data", targe
         }
         daily_logs.append(daily_log)
 
+    # Ensure all enrolled challenge athletes have a daily log entry (rest day with 0.0 km if not active on Strava today)
+    logged_aids = {log["athlete_id"] for log in daily_logs}
+    for aid, rec in athlete_totals.items():
+        if aid not in logged_aids:
+            daily_logs.append({
+                "date": today_str,
+                "athlete_id": aid,
+                "name": rec["name"],
+                "avatar_url": rec.get("avatar_url", "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png"),
+                "daily_distance_km": 0.0,
+                "daily_runs": 0,
+                "daily_elev_gain_m": 0,
+                "avg_pace": "--",
+                "weekly_cumulative_km": 0.0
+            })
+            if today_str not in rec.get("daily_breakdown", {}):
+                rec["daily_breakdown"][today_str] = 0.0
+
     # Sort today's runners by distance today
     daily_logs.sort(key=lambda x: x["daily_distance_km"], reverse=True)
 
     # Update athlete_totals across the entire challenge
-    athlete_totals = history.get("athlete_totals", {})
-
     for log in daily_logs:
         aid = str(log["athlete_id"])
         dist = log["daily_distance_km"]
@@ -176,22 +202,40 @@ def process_daily_delta(current_athletes, today_str=None, data_dir="data", targe
         rec = athlete_totals[aid]
         rec["name"] = log["name"]
         rec["avatar_url"] = log["avatar_url"]
-        rec["latest_pace"] = log["avg_pace"]
+        if log["avg_pace"] and log["avg_pace"] != "--":
+            rec["latest_pace"] = log["avg_pace"]
         
         prev_today_dist = rec.get("daily_breakdown", {}).get(today_str, 0.0)
-        
         diff = round(dist - prev_today_dist, 2)
         rec["total_challenge_km"] = max(0.0, round(rec.get("total_challenge_km", 0.0) + diff, 2))
         rec["daily_breakdown"][today_str] = dist
 
-        active_days = sum(1 for d, val in rec["daily_breakdown"].items() if val > 0)
-        best_day = max(rec["daily_breakdown"].values()) if rec["daily_breakdown"] else 0.0
+    # Fully recalculate streak, active days, best day, and progress for ALL athletes
+    for aid, rec in athlete_totals.items():
+        bd = rec.get("daily_breakdown", {})
+        active_days = sum(1 for d, val in bd.items() if val > 0)
+        best_day = max(bd.values()) if bd else 0.0
         
         rec["active_days"] = active_days
         rec["best_day_km"] = round(best_day, 2)
         rec["pct_completed"] = min(100.0, round((rec["total_challenge_km"] / target_km) * 100.0, 1))
         rec["is_finisher"] = rec["total_challenge_km"] >= target_km
         rec["remaining_km"] = max(0.0, round(target_km - rec["total_challenge_km"], 2))
+
+        # Consecutive active streak leading up to today (or yesterday if today has not been run yet)
+        streak = 0
+        sorted_dates = sorted(bd.keys())
+        if sorted_dates:
+            last_date = sorted_dates[-1]
+            check_dates = list(reversed(sorted_dates))
+            if bd.get(last_date, 0.0) == 0.0 and len(check_dates) > 1:
+                check_dates = check_dates[1:]
+            for d in check_dates:
+                if bd.get(d, 0.0) > 0.0:
+                    streak += 1
+                else:
+                    break
+        rec["current_streak"] = streak
 
     # Update history dates and daily records
     if today_str not in history["dates"]:
