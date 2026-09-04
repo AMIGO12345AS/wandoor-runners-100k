@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-04T20:25:22.073141+05:30",
+  "timestamp": "2026-09-04T22:55:13.836956+05:30",
   "date": "2026-09-04",
   "athletes": [
     {
@@ -312,6 +312,17 @@
     },
     {
       "rank": 29,
+      "athlete_id": "203636939",
+      "name": "Adil Kurikkal",
+      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
+      "distance_km": 11.95,
+      "runs_count": 3,
+      "longest_km": 5.07,
+      "avg_pace": "6:02",
+      "elev_gain_m": 190
+    },
+    {
+      "rank": 30,
       "athlete_id": "151226639",
       "name": "Ratheesh pm",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/151226639/45474411/1/medium.jpg",
@@ -322,7 +333,7 @@
       "elev_gain_m": 94
     },
     {
-      "rank": 30,
+      "rank": 31,
       "athlete_id": "1994677546",
       "name": "Anoop K",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
@@ -333,7 +344,7 @@
       "elev_gain_m": 153
     },
     {
-      "rank": 31,
+      "rank": 32,
       "athlete_id": "62712350",
       "name": "Sabeel Oravungal",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/62712350/57828553/1/medium.jpg",
@@ -344,7 +355,7 @@
       "elev_gain_m": 183
     },
     {
-      "rank": 32,
+      "rank": 33,
       "athlete_id": "49239362",
       "name": "Arun Savitha",
       "avatar_url": "https://lh5.googleusercontent.com/-jVkxuoxvpOs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcvQClqtxPHzsLdypfr_jngilPTyA/photo.jpg",
@@ -355,7 +366,7 @@
       "elev_gain_m": 86
     },
     {
-      "rank": 33,
+      "rank": 34,
       "athlete_id": "190287524",
       "name": "Anas EV",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/190287524/57772487/1/medium.jpg",
@@ -366,7 +377,7 @@
       "elev_gain_m": 177
     },
     {
-      "rank": 34,
+      "rank": 35,
       "athlete_id": "39295926",
       "name": "khaliq kt",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/39295926/15365395/2/medium.jpg",
@@ -377,7 +388,7 @@
       "elev_gain_m": 176
     },
     {
-      "rank": 35,
+      "rank": 36,
       "athlete_id": "1643927358",
       "name": "Anwer Hussain",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK0uh6ILNKzgK_2bHq0MDIg3ncQxC3kdiS4oOqIGIomnCZRMg=s96-c",
@@ -388,7 +399,7 @@
       "elev_gain_m": 227
     },
     {
-      "rank": 36,
+      "rank": 37,
       "athlete_id": "201415432",
       "name": "Fahis Fahi",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/201415432/57855402/1/medium.jpg",
@@ -399,7 +410,7 @@
       "elev_gain_m": 132
     },
     {
-      "rank": 37,
+      "rank": 38,
       "athlete_id": "197960058",
       "name": "Mohammad Mazin",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJWMlJ1W_hjr2sm_9L91ATM-Yun7SX1yK7E9wGWuVqSaUqGQtsq=s96-c",
@@ -408,17 +419,6 @@
       "longest_km": 7.64,
       "avg_pace": "5:41",
       "elev_gain_m": 120
-    },
-    {
-      "rank": 38,
-      "athlete_id": "203636939",
-      "name": "Adil Kurikkal",
-      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
-      "distance_km": 6.88,
-      "runs_count": 2,
-      "longest_km": 3.77,
-      "avg_pace": "6:20",
-      "elev_gain_m": 92
     },
     {
       "rank": 39,
