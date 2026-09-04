@@ -32,26 +32,12 @@ def main():
     print(f"[*] Target Challenge: {target_km} km")
     print(f"[*] Date: {today_str}")
 
-    # 2. Fetch from Strava
-    athletes = []
-    if session_cookie:
-        print("[*] Fetching live leaderboard with Strava session...")
-        athletes, _ = fetch_club_leaderboard(club_id, session_cookie)
-    else:
-        print("[!] No STRAVA_SESSION_COOKIE provided.")
-        print("[*] Attempting unauthenticated/public fetch...")
-        athletes, _ = fetch_club_leaderboard(club_id, None)
+    # 2. Fetch and synchronize using feed_sync (accurate activity feed starting strictly Sep 1)
+    print("[*] Synchronizing exact run activities from Strava Club Feed...")
+    from scripts.feed_sync import sync_from_feed
+    history = sync_from_feed(data_dir="data", config_file="config.json")
+    daily_logs = history.get("daily_records", {}).get(today_str, [])
 
-    # Safety Protection: If fetch returns 0 athletes (temporary network glitch or cookie expiry),
-    # abort immediately to protect the database from being corrupted.
-    if not athletes:
-        print("[!] Warning: Live fetch returned 0 athletes. Aborting sync to preserve database integrity.")
-        sys.exit(1)
-
-    print(f"[+] Successfully loaded {len(athletes)} athletes.")
-
-    # 3. Compute daily delta & update history
-    daily_logs, history = process_daily_delta(athletes, today_str=today_str, target_km=target_km)
 
     # 4. Sync to Google Sheets if configured
     if webhook_url:
