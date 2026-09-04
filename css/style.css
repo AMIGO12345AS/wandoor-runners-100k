@@ -141,6 +141,52 @@ body {
   box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
 }
 
+.action-btn {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 13px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+  box-shadow: var(--shadow-sm);
+  white-space: nowrap;
+}
+
+.action-btn svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.btn-export {
+  background: var(--bg-surface);
+  color: var(--dark-slate);
+  border: 1px solid var(--border-subtle);
+}
+
+.btn-export:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-light);
+  color: var(--primary-orange);
+  transform: translateY(-1px);
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: #FFFFFF;
+  border: 1px solid #20BA5A;
+}
+
+.btn-whatsapp:hover {
+  background: #20BA5A;
+  transform: translateY(-1px);
+}
+
 .whatsapp-action-btn {
   background: #25D366;
   color: #FFFFFF;
@@ -913,14 +959,19 @@ body {
     font-size: 9.5px;
   }
 
-  .status-indicator {
-    padding: 3px 8px;
-    font-size: 10px;
+  .header-controls {
+    gap: 5px;
+    justify-content: flex-end;
   }
 
-  .whatsapp-action-btn {
-    padding: 5px 10px;
-    font-size: 11px;
+  .status-indicator {
+    display: none;
+  }
+
+  .action-btn {
+    padding: 5px 8px;
+    font-size: 10.5px;
+    gap: 3px;
   }
 
   /* Compact 2x2 KPI grid */
