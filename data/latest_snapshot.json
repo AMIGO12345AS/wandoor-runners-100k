@@ -1,9 +1,20 @@
 {
-  "timestamp": "2026-09-04T08:55:16.521806+05:30",
+  "timestamp": "2026-09-04T14:04:25.102117+05:30",
   "date": "2026-09-04",
   "athletes": [
     {
       "rank": 1,
+      "athlete_id": "157557051",
+      "name": "Mohamed Shajahan Parancheri",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/157557051/40277753/1/medium.jpg",
+      "distance_km": 63.54,
+      "runs_count": 5,
+      "longest_km": 23.12,
+      "avg_pace": "6:26",
+      "elev_gain_m": 1310
+    },
+    {
+      "rank": 2,
       "athlete_id": "206125985",
       "name": "Sarath P Narayanan",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/206125985/43657685/1/medium.jpg",
@@ -14,7 +25,7 @@
       "elev_gain_m": 144
     },
     {
-      "rank": 2,
+      "rank": 3,
       "athlete_id": "197716094",
       "name": "Ajeesh Tp",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIn2BnUnM1erb9PIoCISdpwW45KNA9-0V_9uTJ5Ni4A3zIK7kio=s96-c",
@@ -25,7 +36,7 @@
       "elev_gain_m": 618
     },
     {
-      "rank": 3,
+      "rank": 4,
       "athlete_id": "35422762",
       "name": "JustinTX Cherai   🚴🏃🚴🏃🇮🇳",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/35422762/47666145/1/medium.jpg",
@@ -36,7 +47,7 @@
       "elev_gain_m": 294
     },
     {
-      "rank": 4,
+      "rank": 5,
       "athlete_id": "200401844",
       "name": "Rinshid tp",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
@@ -45,17 +56,6 @@
       "longest_km": 11.01,
       "avg_pace": "5:13",
       "elev_gain_m": 534
-    },
-    {
-      "rank": 5,
-      "athlete_id": "157557051",
-      "name": "Mohamed Shajahan Parancheri",
-      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/157557051/40277753/1/medium.jpg",
-      "distance_km": 40.43,
-      "runs_count": 4,
-      "longest_km": 17.13,
-      "avg_pace": "6:04",
-      "elev_gain_m": 829
     },
     {
       "rank": 6,
@@ -103,6 +103,17 @@
     },
     {
       "rank": 10,
+      "athlete_id": "1065960870",
+      "name": "RAZTHAN FARIS CK",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocKzT7RnayALfckrylsbnE9uSiAeZ-sEpcYdstGh86fYJRar1w=s96-c",
+      "distance_km": 28.71,
+      "runs_count": 5,
+      "longest_km": 7.31,
+      "avg_pace": "6:07",
+      "elev_gain_m": 746
+    },
+    {
+      "rank": 11,
       "athlete_id": "77103625",
       "name": "Razaq Kinassery",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/77103625/19201543/5/medium.jpg",
@@ -113,7 +124,7 @@
       "elev_gain_m": 413
     },
     {
-      "rank": 11,
+      "rank": 12,
       "athlete_id": "188992089",
       "name": "Ali Faisal",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocL_zlX94UMReiJ7AC1vVKu8rUpUzkIvEZOyy8QY7IQz3FNwIRnh=s96-c",
@@ -124,7 +135,7 @@
       "elev_gain_m": 247
     },
     {
-      "rank": 12,
+      "rank": 13,
       "athlete_id": "196277863",
       "name": "ibnusiyad siyad",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/196277863/42165622/1/medium.jpg",
@@ -135,7 +146,7 @@
       "elev_gain_m": 218
     },
     {
-      "rank": 13,
+      "rank": 14,
       "athlete_id": "198876934",
       "name": "Ahamed Shameer",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtzpVGo98siGMvxQDd2RM-DlgWJ7rWMdatRWwS9AeWWZCyA18=s96-c",
@@ -146,7 +157,7 @@
       "elev_gain_m": 420
     },
     {
-      "rank": 14,
+      "rank": 15,
       "athlete_id": "159255088",
       "name": "Muhammed Shafi K",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/159255088/35836758/1/medium.jpg",
@@ -157,7 +168,7 @@
       "elev_gain_m": 316
     },
     {
-      "rank": 15,
+      "rank": 16,
       "athlete_id": "153813910",
       "name": "UNNIKRISHNAN K",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/153813910/34587108/1/medium.jpg",
@@ -166,17 +177,6 @@
       "longest_km": 10.06,
       "avg_pace": "6:05",
       "elev_gain_m": 297
-    },
-    {
-      "rank": 16,
-      "athlete_id": "1065960870",
-      "name": "RAZTHAN FARIS CK",
-      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocKzT7RnayALfckrylsbnE9uSiAeZ-sEpcYdstGh86fYJRar1w=s96-c",
-      "distance_km": 23.29,
-      "runs_count": 4,
-      "longest_km": 7.31,
-      "avg_pace": "6:03",
-      "elev_gain_m": 606
     },
     {
       "rank": 17,
