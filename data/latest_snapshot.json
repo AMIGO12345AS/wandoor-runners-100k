@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-05T19:13:08.497034+05:30",
+  "timestamp": "2026-09-05T22:06:29.671740+05:30",
   "date": "2026-09-05",
   "athletes": [
     {
@@ -169,6 +169,17 @@
     },
     {
       "rank": 16,
+      "athlete_id": "1994677546",
+      "name": "Anoop K",
+      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
+      "distance_km": 19.83,
+      "runs_count": 3,
+      "longest_km": 8.81,
+      "avg_pace": "5:23",
+      "elev_gain_m": 0
+    },
+    {
+      "rank": 17,
       "athlete_id": "1813285393",
       "name": "Firshad p Firshad p",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJa_WRhwvx6bB5h5nbhdgNOC1IizrdLHkvjkYQx3MVsASjiHg=s96-c",
@@ -179,7 +190,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "athlete_id": "1909549551",
       "name": "Subhash Kv",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJ9T2PxlX_3t_ydhMA_h_xUFMQjKPkCrqMIVpTwPloQsQuFlw=s96-c",
@@ -190,7 +201,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "athlete_id": "62712350",
       "name": "Sabeel Oravungal",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/62712350/57828553/1/medium.jpg",
@@ -201,7 +212,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "athlete_id": "418185437",
       "name": "Ajmal V",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
@@ -212,7 +223,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 20,
+      "rank": 21,
       "athlete_id": "40420193",
       "name": "Nidheesh Edappalli",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/40420193/11842503/8/medium.jpg",
@@ -223,7 +234,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 21,
+      "rank": 22,
       "athlete_id": "153813910",
       "name": "UNNIKRISHNAN K",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/153813910/34587108/1/medium.jpg",
@@ -234,7 +245,18 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 22,
+      "rank": 23,
+      "athlete_id": "1463852982",
+      "name": "Mohammed Shafin",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK87pkzhhRwp8fqyLeyY-tx0o2_fi-qcVyN3irHkr_2hPIEsm5j=s96-c",
+      "distance_km": 14.7,
+      "runs_count": 4,
+      "longest_km": 5.13,
+      "avg_pace": "12:12",
+      "elev_gain_m": 0
+    },
+    {
+      "rank": 24,
       "athlete_id": "195111666",
       "name": "SUNEESH K",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK8EUTllQuqmupowzW7MSjGO_EdftITvyXSxKGcJNf8yU_r9put=s96-c",
@@ -245,7 +267,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 23,
+      "rank": 25,
       "athlete_id": "61176348",
       "name": "Porur Sarath",
       "avatar_url": "https://graph.facebook.com/1357027104491215/picture?height=256&width=256",
@@ -256,7 +278,18 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 24,
+      "rank": 26,
+      "athlete_id": "197960058",
+      "name": "Mohammad Mazin",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJWMlJ1W_hjr2sm_9L91ATM-Yun7SX1yK7E9wGWuVqSaUqGQtsq=s96-c",
+      "distance_km": 12.87,
+      "runs_count": 2,
+      "longest_km": 7.63,
+      "avg_pace": "8:38",
+      "elev_gain_m": 0
+    },
+    {
+      "rank": 27,
       "athlete_id": "1643927358",
       "name": "Anwer Hussain",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK0uh6ILNKzgK_2bHq0MDIg3ncQxC3kdiS4oOqIGIomnCZRMg=s96-c",
@@ -267,7 +300,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 25,
+      "rank": 28,
       "athlete_id": "112220469",
       "name": "santhosh porur",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/112220469/48637416/1/medium.jpg",
@@ -278,18 +311,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 26,
-      "athlete_id": "1994677546",
-      "name": "Anoop K",
-      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
-      "distance_km": 11.02,
-      "runs_count": 2,
-      "longest_km": 7.43,
-      "avg_pace": "5:59",
-      "elev_gain_m": 0
-    },
-    {
-      "rank": 27,
+      "rank": 29,
       "athlete_id": "49239362",
       "name": "Arun Savitha",
       "avatar_url": "https://lh5.googleusercontent.com/-jVkxuoxvpOs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcvQClqtxPHzsLdypfr_jngilPTyA/photo.jpg",
@@ -300,18 +322,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 28,
-      "athlete_id": "1463852982",
-      "name": "Mohammed Shafin",
-      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK87pkzhhRwp8fqyLeyY-tx0o2_fi-qcVyN3irHkr_2hPIEsm5j=s96-c",
-      "distance_km": 9.57,
-      "runs_count": 3,
-      "longest_km": 3.58,
-      "avg_pace": "10:07",
-      "elev_gain_m": 0
-    },
-    {
-      "rank": 29,
+      "rank": 30,
       "athlete_id": "190287524",
       "name": "Anas EV",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/190287524/57772487/1/medium.jpg",
@@ -322,7 +333,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 30,
+      "rank": 31,
       "athlete_id": "39295926",
       "name": "khaliq kt",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/39295926/15365395/2/medium.jpg",
@@ -330,17 +341,6 @@
       "runs_count": 3,
       "longest_km": 3.09,
       "avg_pace": "5:42",
-      "elev_gain_m": 0
-    },
-    {
-      "rank": 31,
-      "athlete_id": "197960058",
-      "name": "Mohammad Mazin",
-      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJWMlJ1W_hjr2sm_9L91ATM-Yun7SX1yK7E9wGWuVqSaUqGQtsq=s96-c",
-      "distance_km": 7.63,
-      "runs_count": 1,
-      "longest_km": 7.63,
-      "avg_pace": "7:27",
       "elev_gain_m": 0
     },
     {
@@ -378,6 +378,17 @@
     },
     {
       "rank": 35,
+      "athlete_id": "198406580",
+      "name": "Diyaf T",
+      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
+      "distance_km": 5.01,
+      "runs_count": 1,
+      "longest_km": 5.01,
+      "avg_pace": "7:13",
+      "elev_gain_m": 0
+    },
+    {
+      "rank": 36,
       "athlete_id": "1009893599",
       "name": "Diljith P",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIt1xE8j6dgbNbXnzd-tWkINISp4f8uIrD4IGU0wNcTkyfNlOk=s96-c",
@@ -388,7 +399,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 36,
+      "rank": 37,
       "athlete_id": "1737669347",
       "name": "NITHIN KC",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/1737669347/57713853/1/medium.jpg",
@@ -399,7 +410,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 37,
+      "rank": 38,
       "athlete_id": "203636939",
       "name": "Adil Kurikkal",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
@@ -410,7 +421,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 38,
+      "rank": 39,
       "athlete_id": "1073039953",
       "name": "Lebeeb ap Lebeeb ap",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLuL4IlxpF6IXv2t_iwD-PAMpHaC-_UkotP92Eos7igGIFD6A=s96-c",
@@ -421,25 +432,14 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 39,
-      "athlete_id": "35422762",
-      "name": "JustinTX Cherai",
-      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/35422762/47666145/1/medium.jpg",
-      "distance_km": 0.0,
-      "runs_count": 0,
-      "longest_km": 0.0,
-      "avg_pace": "4:30",
-      "elev_gain_m": 0
-    },
-    {
       "rank": 40,
-      "athlete_id": "athlete_27",
-      "name": "Akhileswary",
-      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+      "athlete_id": "49335106",
+      "name": "Rupesh Shenoy DFCR",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/49335106/13664358/17/medium.jpg",
       "distance_km": 0.0,
       "runs_count": 0,
       "longest_km": 0.0,
-      "avg_pace": "--",
+      "avg_pace": "6:16",
       "elev_gain_m": 0
     },
     {
@@ -455,6 +455,17 @@
     },
     {
       "rank": 42,
+      "athlete_id": "35422762",
+      "name": "JustinTX Cherai",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/35422762/47666145/1/medium.jpg",
+      "distance_km": 0.0,
+      "runs_count": 0,
+      "longest_km": 0.0,
+      "avg_pace": "4:30",
+      "elev_gain_m": 0
+    },
+    {
+      "rank": 43,
       "athlete_id": "1923419136",
       "name": "Gaming With Rahman",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocI81nTBasbwN6at8BA3qUYigFx1RseVCiHe9DDXLG4fy0j_xIk=s96-c",
@@ -465,7 +476,18 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 43,
+      "rank": 44,
+      "athlete_id": "athlete_27",
+      "name": "Akhileswary",
+      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+      "distance_km": 0.0,
+      "runs_count": 0,
+      "longest_km": 0.0,
+      "avg_pace": "--",
+      "elev_gain_m": 0
+    },
+    {
+      "rank": 45,
       "athlete_id": "1882708307",
       "name": "Nijin Prajeesh",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLbLc8FjrMYDUzSHHyuZOzEpK3GFh-9m6Vu-e4BkjlVl5P44CI3=s96-c",
@@ -473,17 +495,6 @@
       "runs_count": 0,
       "longest_km": 0.0,
       "avg_pace": "8:11",
-      "elev_gain_m": 0
-    },
-    {
-      "rank": 44,
-      "athlete_id": "49335106",
-      "name": "Rupesh Shenoy DFCR",
-      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/49335106/13664358/17/medium.jpg",
-      "distance_km": 0.0,
-      "runs_count": 0,
-      "longest_km": 0.0,
-      "avg_pace": "6:16",
       "elev_gain_m": 0
     }
   ]
