@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-06T00:20:45.206849+05:30",
+  "timestamp": "2026-09-06T02:28:45.961646+05:30",
   "date": "2026-09-06",
   "athletes": [
     {
@@ -433,6 +433,17 @@
     },
     {
       "rank": 40,
+      "athlete_id": "49335106",
+      "name": "Rupesh Shenoy DFCR",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/49335106/13664358/17/medium.jpg",
+      "distance_km": 0.0,
+      "runs_count": 0,
+      "longest_km": 0.0,
+      "avg_pace": "6:16",
+      "elev_gain_m": 0
+    },
+    {
+      "rank": 41,
       "athlete_id": "35422762",
       "name": "JustinTX Cherai",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/35422762/47666145/1/medium.jpg",
@@ -443,25 +454,14 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 41,
-      "athlete_id": "151226639",
-      "name": "Ratheesh pm",
-      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/151226639/45474411/1/medium.jpg",
-      "distance_km": 0.0,
-      "runs_count": 0,
-      "longest_km": 0.0,
-      "avg_pace": "6:35",
-      "elev_gain_m": 0
-    },
-    {
       "rank": 42,
-      "athlete_id": "49335106",
-      "name": "Rupesh Shenoy DFCR",
-      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/49335106/13664358/17/medium.jpg",
+      "athlete_id": "1923419136",
+      "name": "Gaming With Rahman",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocI81nTBasbwN6at8BA3qUYigFx1RseVCiHe9DDXLG4fy0j_xIk=s96-c",
       "distance_km": 0.0,
       "runs_count": 0,
       "longest_km": 0.0,
-      "avg_pace": "6:16",
+      "avg_pace": "6:43",
       "elev_gain_m": 0
     },
     {
@@ -477,6 +477,17 @@
     },
     {
       "rank": 44,
+      "athlete_id": "151226639",
+      "name": "Ratheesh pm",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/151226639/45474411/1/medium.jpg",
+      "distance_km": 0.0,
+      "runs_count": 0,
+      "longest_km": 0.0,
+      "avg_pace": "6:35",
+      "elev_gain_m": 0
+    },
+    {
+      "rank": 45,
       "athlete_id": "1882708307",
       "name": "Nijin Prajeesh",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLbLc8FjrMYDUzSHHyuZOzEpK3GFh-9m6Vu-e4BkjlVl5P44CI3=s96-c",
@@ -484,17 +495,6 @@
       "runs_count": 0,
       "longest_km": 0.0,
       "avg_pace": "8:11",
-      "elev_gain_m": 0
-    },
-    {
-      "rank": 45,
-      "athlete_id": "1923419136",
-      "name": "Gaming With Rahman",
-      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocI81nTBasbwN6at8BA3qUYigFx1RseVCiHe9DDXLG4fy0j_xIk=s96-c",
-      "distance_km": 0.0,
-      "runs_count": 0,
-      "longest_km": 0.0,
-      "avg_pace": "6:43",
       "elev_gain_m": 0
     }
   ]
