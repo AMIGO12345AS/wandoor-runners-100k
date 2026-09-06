@@ -1,8 +1,8 @@
 """
 Official Excel Importer & Master Synchronizer
 Imports ground-truth verified records from `aseem - Copy.xlsx` for September 1 to September 4.
-Synchronizes live Strava runs for September 5 (yesterday) and September 6 (today).
-Ensures 100% agreement with client data, multi-run support, and complete weekly reset immunity.
+Captures all verified multi-run activities from Strava feed for any day (Sep 1 to Sep 6+).
+Guarantees zero data loss, exact two-decimal precision, and stores full activity breakdowns.
 """
 
 import os
@@ -27,6 +27,15 @@ def clean_name(name):
 
 def normalize_name(name):
     return re.sub(r"[^a-z0-9]", "", str(name or "").lower())
+
+
+def parse_pace(elapsed_sec, dist_km):
+    if dist_km <= 0 or elapsed_sec <= 0:
+        return "--"
+    sec_per_km = elapsed_sec / dist_km
+    p_min = int(sec_per_km // 60)
+    p_sec = int(sec_per_km % 60)
+    return f"{p_min}:{p_sec:02d}"
 
 
 # Explicit mapping between Excel runner names and known Strava athlete IDs
@@ -133,16 +142,17 @@ def sync_official_data(excel_path="aseem - Copy.xlsx", data_dir="data", config_p
 
     print(f"[+] Loaded {len(excel_athletes)} official athlete rows from {excel_path}.")
 
-    # 4. Fetch live Strava activities for Sep 5 (yesterday) and Sep 6 (today)
+    # 4. Fetch all Strava activities from feed since Sep 1
     from scripts.feed_sync import fetch_all_club_activities
-    live_activities = fetch_all_club_activities(club_id, session_cookie, since_date="2026-09-05")
+    all_strava_activities = fetch_all_club_activities(club_id, session_cookie, since_date="2026-09-01")
 
-    sep5_6_runs = {}
+    # Group Strava activities by (athlete_id, date_ist)
+    strava_by_day = {}
     athlete_live_meta = {}
 
-    for a in live_activities:
+    for a in all_strava_activities:
         d = a["date_ist"]
-        if d in ["2026-09-05", "2026-09-06"]:
+        if d >= "2026-09-01":
             aid = str(a["athlete_id"])
             aname = clean_name(a["athlete_name"])
             avatar = a.get("avatar_url") or "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png"
@@ -153,23 +163,29 @@ def sync_official_data(excel_path="aseem - Copy.xlsx", data_dir="data", config_p
             }
 
             key = (aid, d)
-            if key not in sep5_6_runs:
-                sep5_6_runs[key] = {
+            if key not in strava_by_day:
+                strava_by_day[key] = {
                     "distance_km": 0.0,
                     "runs_count": 0,
                     "elev_gain_m": 0,
                     "elapsed_sec": 0,
-                    "pace": a.get("pace", "--")
+                    "activities": []
                 }
-            rec = sep5_6_runs[key]
+            rec = strava_by_day[key]
             rec["distance_km"] = round(rec["distance_km"] + a["distance_km"], 2)
             rec["runs_count"] += 1
             rec["elev_gain_m"] += a.get("elev_gain_m", 0)
             rec["elapsed_sec"] += a.get("elapsed_sec", 0)
-            if a.get("pace") and a.get("pace") != "--":
-                rec["pace"] = a["pace"]
+            rec["activities"].append({
+                "activity_name": a.get("activity_name", "Run"),
+                "distance_km": a["distance_km"],
+                "pace": a.get("pace", "--"),
+                "duration": a.get("duration", "--"),
+                "elev_gain_m": a.get("elev_gain_m", 0),
+                "time_ist": a.get("dt_ist", d)
+            })
 
-    print(f"[+] Found {len(sep5_6_runs)} aggregated runs for Sep 5 and Sep 6.")
+    print(f"[+] Loaded {len(all_strava_activities)} total Strava runs since Sep 1.")
 
     # 5. Build consolidated athlete database
     dates = ["2026-09-01", "2026-09-02", "2026-09-03", "2026-09-04", "2026-09-05", "2026-09-06"]
@@ -181,7 +197,6 @@ def sync_official_data(excel_path="aseem - Copy.xlsx", data_dir="data", config_p
         # Determine athlete_id
         aid = EXPLICIT_STRAVA_MAP.get(norm_n)
         if not aid:
-            # check existing history
             for ea_id, ea in existing_totals.items():
                 if normalize_name(ea.get("name")) == norm_n or normalize_name(ea.get("excel_name")) == norm_n:
                     aid = ea_id
@@ -194,7 +209,6 @@ def sync_official_data(excel_path="aseem - Copy.xlsx", data_dir="data", config_p
         live_m = athlete_live_meta.get(aid, {})
 
         display_name = ex["excel_name"]
-        # Use cleaner Strava display name if available
         if live_m.get("name"):
             display_name = live_m["name"]
         elif prev.get("name") and prev.get("name") != ex["excel_name"]:
@@ -203,29 +217,79 @@ def sync_official_data(excel_path="aseem - Copy.xlsx", data_dir="data", config_p
         avatar_url = live_m.get("avatar_url") or prev.get("avatar_url") or "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png"
         mobile = prev.get("mobile", "")
 
-        # Days 1 to 4 from Excel
-        d1 = ex["d1"]
-        d2 = ex["d2"]
-        d3 = ex["d3"]
-        d4 = ex["d4"]
+        daily = {}
+        daily_details = {}
 
-        # Days 5 and 6 from Strava
-        d5_data = sep5_6_runs.get((aid, "2026-09-05"))
-        d5 = d5_data["distance_km"] if d5_data else 0.0
-
-        d6_data = sep5_6_runs.get((aid, "2026-09-06"))
-        d6 = d6_data["distance_km"] if d6_data else 0.0
-
-        daily = {
-            "2026-09-01": d1,
-            "2026-09-02": d2,
-            "2026-09-03": d3,
-            "2026-09-04": d4,
-            "2026-09-05": d5,
-            "2026-09-06": d6
+        # Days 1 to 4: Combine Excel ground-truth and Strava multi-runs
+        excel_days = {
+            "2026-09-01": ex["d1"],
+            "2026-09-02": ex["d2"],
+            "2026-09-03": ex["d3"],
+            "2026-09-04": ex["d4"]
         }
 
-        total_km = round(d1 + d2 + d3 + d4 + d5 + d6, 2)
+        for d in dates:
+            s_day = strava_by_day.get((aid, d))
+            if d in excel_days:
+                ex_dist = excel_days[d]
+                s_dist = s_day["distance_km"] if s_day else 0.0
+
+                # If Strava recorded multiple runs or a higher verified total (e.g. Krishna Prasad), take it!
+                if s_dist > ex_dist:
+                    chosen_dist = s_dist
+                    runs_count = s_day["runs_count"]
+                    elev = s_day["elev_gain_m"]
+                    sec = s_day["elapsed_sec"]
+                    pace = parse_pace(sec, chosen_dist)
+                    acts = s_day["activities"]
+                else:
+                    chosen_dist = ex_dist
+                    if s_day and s_day["distance_km"] > 0:
+                        runs_count = s_day["runs_count"]
+                        elev = s_day["elev_gain_m"]
+                        sec = s_day["elapsed_sec"]
+                        pace = parse_pace(sec, chosen_dist)
+                        acts = s_day["activities"]
+                    else:
+                        runs_count = 1 if chosen_dist > 0 else 0
+                        elev = 0
+                        pace = "--"
+                        acts = [{"activity_name": "Logged Run", "distance_km": chosen_dist, "pace": "--", "duration": "--", "elev_gain_m": 0, "time_ist": d}] if chosen_dist > 0 else []
+
+                daily[d] = chosen_dist
+                daily_details[d] = {
+                    "distance_km": chosen_dist,
+                    "runs_count": runs_count,
+                    "elev_gain_m": elev,
+                    "pace": pace,
+                    "activities": acts
+                }
+            else:
+                # Sep 5 and Sep 6 (and beyond): strictly from Strava live feed
+                if s_day and s_day["distance_km"] > 0:
+                    chosen_dist = s_day["distance_km"]
+                    runs_count = s_day["runs_count"]
+                    elev = s_day["elev_gain_m"]
+                    sec = s_day["elapsed_sec"]
+                    pace = parse_pace(sec, chosen_dist)
+                    acts = s_day["activities"]
+                else:
+                    chosen_dist = 0.0
+                    runs_count = 0
+                    elev = 0
+                    pace = "--"
+                    acts = []
+
+                daily[d] = chosen_dist
+                daily_details[d] = {
+                    "distance_km": chosen_dist,
+                    "runs_count": runs_count,
+                    "elev_gain_m": elev,
+                    "pace": pace,
+                    "activities": acts
+                }
+
+        total_km = round(sum(daily.values()), 2)
         active_days = sum(1 for d, val in daily.items() if val > 0)
         best_day = max(daily.values()) if daily else 0.0
 
@@ -240,12 +304,13 @@ def sync_official_data(excel_path="aseem - Copy.xlsx", data_dir="data", config_p
             else:
                 break
 
+        # Latest pace from the most recent active run
         latest_pace = "--"
-        if d6_data and d6_data.get("pace"):
-            latest_pace = d6_data["pace"]
-        elif d5_data and d5_data.get("pace"):
-            latest_pace = d5_data["pace"]
-        else:
+        for d in reversed(dates):
+            if daily_details[d]["pace"] != "--":
+                latest_pace = daily_details[d]["pace"]
+                break
+        if latest_pace == "--":
             latest_pace = prev.get("latest_pace", "--")
 
         pct = min(100.0, round((total_km / target_km) * 100.0, 1))
@@ -269,37 +334,20 @@ def sync_official_data(excel_path="aseem - Copy.xlsx", data_dir="data", config_p
             "daily_breakdown": daily
         }
 
-        # Daily records
+        # Populate daily records
         for d in dates:
-            dist = daily[d]
-            runs = 1 if dist > 0 else 0
-            elev = 0
-            pace = "--"
-            if d == "2026-09-05" and d5_data:
-                runs = d5_data["runs_count"]
-                elev = d5_data["elev_gain_m"]
-                pace = d5_data["pace"]
-            elif d == "2026-09-06" and d6_data:
-                runs = d6_data["runs_count"]
-                elev = d6_data["elev_gain_m"]
-                pace = d6_data["pace"]
-            elif dist > 0:
-                # Retain previous pace/elev if available
-                prev_logs = {r["athlete_id"]: r for r in existing_history.get("daily_records", {}).get(d, [])}
-                if aid in prev_logs:
-                    elev = prev_logs[aid].get("daily_elev_gain_m", 0)
-                    pace = prev_logs[aid].get("avg_pace", "--")
-
+            det = daily_details[d]
             daily_records[d].append({
                 "date": d,
                 "athlete_id": aid,
                 "name": display_name,
                 "avatar_url": avatar_url,
-                "daily_distance_km": dist,
-                "daily_runs": runs,
-                "daily_elev_gain_m": elev,
-                "avg_pace": pace,
-                "weekly_cumulative_km": total_km
+                "daily_distance_km": det["distance_km"],
+                "daily_runs": det["runs_count"],
+                "daily_elev_gain_m": det["elev_gain_m"],
+                "avg_pace": det["pace"],
+                "weekly_cumulative_km": total_km,
+                "activities": det["activities"]
             })
 
     # Also include JustinTX Cherai (enrolled active runner from Strava)
@@ -344,7 +392,8 @@ def sync_official_data(excel_path="aseem - Copy.xlsx", data_dir="data", config_p
                 "daily_runs": 1 if j_daily[d] > 0 else 0,
                 "daily_elev_gain_m": 0,
                 "avg_pace": "5:04" if j_daily[d] > 0 else "--",
-                "weekly_cumulative_km": j_tot
+                "weekly_cumulative_km": j_tot,
+                "activities": [{"activity_name": "Run", "distance_km": j_daily[d], "pace": "5:04", "duration": "--", "elev_gain_m": 0, "time_ist": d}] if j_daily[d] > 0 else []
             })
 
     # Sort daily records by daily_distance_km descending

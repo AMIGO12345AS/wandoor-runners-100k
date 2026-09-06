@@ -220,6 +220,7 @@ function getRangeAthletes(fromDate, toDate) {
   athletes.forEach(a => {
     let rangeDist = 0.0;
     let rangeRuns = 0;
+    let rangeActiveDays = 0;
     const bd = a.daily_breakdown || {};
 
     for (const d of (clubData.dates || [])) {
@@ -227,7 +228,11 @@ function getRangeAthletes(fromDate, toDate) {
         const dist = bd[d] || 0.0;
         if (dist > 0) {
           rangeDist += dist;
-          rangeRuns += 1;
+          rangeActiveDays += 1;
+          const dayRecords = (clubData.daily_records && clubData.daily_records[d]) || [];
+          const log = dayRecords.find(l => String(l.athlete_id) === String(a.athlete_id));
+          const runsOnDay = (log && log.daily_runs) ? log.daily_runs : 1;
+          rangeRuns += runsOnDay;
         }
       }
     }
@@ -238,7 +243,7 @@ function getRangeAthletes(fromDate, toDate) {
       ...a,
       range_distance_km: rangeDist,
       range_runs: rangeRuns,
-      range_active_days: rangeRuns,
+      range_active_days: rangeActiveDays,
       range_pct: Math.min(100, Math.round((rangeDist / targetKm) * 100))
     });
   });
@@ -265,7 +270,7 @@ function renderKPIs() {
     if (kpiLabel) {
       kpiLabel.textContent = (selectedDate === todayStr) ? "Club Mileage Today" : `Club Mileage (${selectedDate})`;
     }
-    document.getElementById("kpiTodayDistance").innerHTML = `${totalDist.toFixed(1)} <span class="unit">km</span>`;
+    document.getElementById("kpiTodayDistance").innerHTML = `${totalDist.toFixed(2)} <span class="unit">km</span>`;
     document.getElementById("kpiTodayCount").textContent = `${activeCount} runners logged`;
 
   } else if (currentTab === "range") {
@@ -276,7 +281,7 @@ function renderKPIs() {
     if (kpiLabel) {
       kpiLabel.textContent = `Club Mileage (${rangeFromDate.slice(5)} to ${rangeToDate.slice(5)})`;
     }
-    document.getElementById("kpiTodayDistance").innerHTML = `${totalDist.toFixed(1)} <span class="unit">km</span>`;
+    document.getElementById("kpiTodayDistance").innerHTML = `${totalDist.toFixed(2)} <span class="unit">km</span>`;
     document.getElementById("kpiTodayCount").textContent = `${activeCount} runners active`;
 
   } else {
@@ -287,7 +292,7 @@ function renderKPIs() {
     if (kpiLabel) {
       kpiLabel.textContent = "Total Challenge Mileage";
     }
-    document.getElementById("kpiTodayDistance").innerHTML = `${totalDist.toFixed(1)} <span class="unit">km</span>`;
+    document.getElementById("kpiTodayDistance").innerHTML = `${totalDist.toFixed(2)} <span class="unit">km</span>`;
     document.getElementById("kpiTodayCount").textContent = `${activeCount} active participants`;
   }
 
@@ -344,7 +349,7 @@ function renderPodium() {
   podiumOrder.forEach(item => {
     const a = item.athlete;
     const cleanName = cleanAthleteName(a.name);
-    const dist = (a[distKey] || 0).toFixed(1);
+    const dist = (a[distKey] || 0).toFixed(2);
     const subText = (currentTab === "daily") 
       ? (a.avg_pace && a.avg_pace !== '--' ? `${a.avg_pace} /km` : "Top Run") 
       : `${a.pct_completed || a.range_pct || 0}% of 100k`;
@@ -413,6 +418,10 @@ function renderTable() {
       else if (idx === 2) rankClass += " rank-top-3";
 
       const paceText = (r.avg_pace && r.avg_pace !== '--') ? `${r.avg_pace} /km` : '--';
+      const runsCount = r.daily_distance_km > 0 ? (r.daily_runs || 1) : 0;
+      const runsDisplay = (runsCount > 1) 
+        ? `<span style="background: rgba(252, 82, 0, 0.15); color: var(--primary-orange); padding: 2px 7px; border-radius: 10px; font-weight: 700; font-size: 11.5px;">${runsCount}</span>`
+        : runsCount;
 
       tr.innerHTML = `
         <td style="text-align: center;"><span class="${rankClass}">#${idx + 1}</span></td>
@@ -426,14 +435,14 @@ function renderTable() {
         </td>
         <td style="text-align: right;">
           <div class="stat-cell-stack">
-            <span class="distance-bold">${r.daily_distance_km.toFixed(1)} <span class="unit-gray">km</span></span>
+            <span class="distance-bold">${r.daily_distance_km.toFixed(2)} <span class="unit-gray">km</span></span>
             <span class="mobile-only-sub">${paceText}</span>
           </div>
         </td>
-        <td class="col-hide-mobile" style="text-align: center;">${r.daily_distance_km > 0 ? (r.daily_runs || 1) : 0}</td>
+        <td class="col-hide-mobile" style="text-align: center;">${runsDisplay}</td>
         <td class="col-hide-mobile">${paceText}</td>
         <td class="col-hide-mobile">${r.daily_elev_gain_m || 0} <span class="unit-gray">m</span></td>
-        <td class="col-hide-mobile" style="color: var(--text-secondary); font-weight: 500;">${(r.weekly_cumulative_km || 0).toFixed(1)} km</td>
+        <td class="col-hide-mobile" style="color: var(--text-secondary); font-weight: 500;">${(r.weekly_cumulative_km || 0).toFixed(2)} km</td>
         <td class="col-hide-mobile" style="text-align: right;">
           <button class="btn-details">${chartIconSvg}Days</button>
         </td>
@@ -449,7 +458,7 @@ function renderTable() {
       <th style="width: 44px; text-align: center;">Rank</th>
       <th>Athlete</th>
       <th style="text-align: right;">Range Distance</th>
-      <th class="col-hide-mobile" style="text-align: center; width: 80px;">Active Days</th>
+      <th class="col-hide-mobile" style="text-align: center; width: 80px;">Runs</th>
       <th class="col-hide-mobile" style="text-align: right; width: 100px;">100k Total</th>
       <th class="col-hide-mobile" style="text-align: right; width: 90px;">% of 100k</th>
       <th class="col-hide-mobile" style="text-align: right; width: 85px;">Details</th>
@@ -493,12 +502,12 @@ function renderTable() {
         </td>
         <td style="text-align: right;">
           <div class="stat-cell-stack">
-            <span class="distance-bold">${a.range_distance_km.toFixed(1)} <span class="unit-gray">km</span></span>
-            <span class="mobile-only-sub">${a.range_active_days} active days</span>
+            <span class="distance-bold">${a.range_distance_km.toFixed(2)} <span class="unit-gray">km</span></span>
+            <span class="mobile-only-sub">${a.range_runs} runs (${a.range_active_days}d)</span>
           </div>
         </td>
-        <td class="col-hide-mobile" style="text-align: center; font-weight: 600;">${a.range_active_days}d</td>
-        <td class="col-hide-mobile" style="text-align: right; color: var(--text-secondary); font-weight: 600;">${a.total_challenge_km.toFixed(1)} km</td>
+        <td class="col-hide-mobile" style="text-align: center; font-weight: 600;">${a.range_runs} (${a.range_active_days}d)</td>
+        <td class="col-hide-mobile" style="text-align: right; color: var(--text-secondary); font-weight: 600;">${a.total_challenge_km.toFixed(2)} km</td>
         <td class="col-hide-mobile" style="text-align: right; font-weight: 700; color: var(--primary-orange);">${pct}%</td>
         <td class="col-hide-mobile" style="text-align: right;">
           <button class="btn-details">${chartIconSvg}Days</button>
@@ -546,7 +555,7 @@ function renderTable() {
       const cleanName = cleanAthleteName(a.name);
       const pct = Math.min(100, Math.round((a.total_challenge_km / targetKm) * 100));
       const isDone = a.total_challenge_km >= targetKm;
-      const remaining = Math.max(0, targetKm - a.total_challenge_km).toFixed(1);
+      const remaining = Math.max(0, targetKm - a.total_challenge_km).toFixed(2);
 
       let rankClass = "rank-num";
       if (idx === 0) rankClass += " rank-top-1";
@@ -569,14 +578,14 @@ function renderTable() {
         </td>
         <td style="text-align: right;">
           <div class="stat-cell-stack">
-            <span class="distance-bold">${a.total_challenge_km.toFixed(1)} <span class="unit-gray">km</span></span>
+            <span class="distance-bold">${a.total_challenge_km.toFixed(2)} <span class="unit-gray">km</span></span>
             <div class="progress-track-bg" style="height: 4px; margin-top: 3px; width: 100%;">
               <div class="progress-fill-bar ${isDone ? 'complete' : ''}" style="width: ${pct}%"></div>
             </div>
             <span class="mobile-only-sub">${pct}% of 100k</span>
           </div>
         </td>
-        <td class="col-hide-mobile" style="text-align: right;"><span class="distance-bold">${a.total_challenge_km.toFixed(1)}</span> <span class="unit-gray">km</span></td>
+        <td class="col-hide-mobile" style="text-align: right;"><span class="distance-bold">${a.total_challenge_km.toFixed(2)}</span> <span class="unit-gray">km</span></td>
         <td class="col-hide-mobile" style="text-align: right;">${remaining} <span class="unit-gray">km</span></td>
         <td class="col-hide-mobile" style="text-align: center;">${a.active_days || 0}d</td>
         <td class="col-hide-mobile">${statusBadge}</td>
@@ -599,9 +608,9 @@ function openAthleteModal(athleteId) {
 
   document.getElementById("modalName").textContent = cleanName;
   document.getElementById("modalAvatar").src = athlete.avatar_url || "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png";
-  document.getElementById("modalTotalDist").textContent = `${athlete.total_challenge_km.toFixed(1)} km`;
+  document.getElementById("modalTotalDist").textContent = `${athlete.total_challenge_km.toFixed(2)} km`;
   document.getElementById("modalPct").textContent = `${athlete.pct_completed || 0}%`;
-  document.getElementById("modalBestDay").textContent = `${athlete.best_day_km ? athlete.best_day_km.toFixed(1) : '0.0'} km`;
+  document.getElementById("modalBestDay").textContent = `${athlete.best_day_km ? athlete.best_day_km.toFixed(2) : '0.00'} km`;
   const streakText = (athlete.current_streak && athlete.current_streak > 0) ? ` (${athlete.current_streak}d streak)` : "";
   document.getElementById("modalStreak").textContent = `${athlete.active_days || 0} active days${streakText}`;
 
@@ -631,7 +640,7 @@ function openAthleteModal(athleteId) {
       const col = document.createElement("div");
       col.style.cssText = "flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; min-width: 32px;";
       col.innerHTML = `
-        <span style="font-size: 9.5px; font-weight: 700; color: var(--primary-orange); margin-bottom: 3px;">${l.daily_distance_km.toFixed(1)}k</span>
+        <span style="font-size: 9.5px; font-weight: 700; color: var(--primary-orange); margin-bottom: 3px;">${l.daily_distance_km.toFixed(2)}k</span>
         <div style="width: 100%; height: ${heightPct}%; background: var(--primary-orange); border-radius: 3px 3px 0 0;"></div>
         <span style="font-size: 9px; color: var(--text-secondary); margin-top: 4px; white-space: nowrap;">${l.date.slice(5)}</span>
       `;
@@ -640,11 +649,32 @@ function openAthleteModal(athleteId) {
 
     [...userLogs].reverse().forEach(l => {
       const tr = document.createElement("tr");
+      const hasMultiple = l.activities && l.activities.length > 1;
+      let runsCell = `${l.daily_runs || 1}`;
+      if (hasMultiple) {
+        runsCell = `<span class="runs-badge" style="background: rgba(252,82,0,0.15); color: var(--primary-orange); padding: 2px 8px; border-radius: 12px; font-weight: 700; font-size: 11px;">${l.daily_runs} runs</span>`;
+      }
+
+      let activitiesSub = "";
+      if (hasMultiple) {
+        activitiesSub = `<div style="margin-top: 5px; font-size: 11px; color: var(--text-muted); display: flex; flex-direction: column; gap: 3px;">` +
+          l.activities.map((act, i) => `
+            <div style="display: flex; justify-content: space-between; gap: 8px; padding: 2px 6px; background: rgba(255,255,255,0.04); border-radius: 4px;">
+              <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 130px;">#${i+1} ${act.activity_name || 'Run'}</span>
+              <span style="color: var(--text-primary); font-weight: 600; white-space: nowrap;">${act.distance_km.toFixed(2)} km <span style="font-weight: 400; color: var(--text-muted);">@ ${act.pace || '--'}</span></span>
+            </div>
+          `).join("") +
+          `</div>`;
+      }
+
       tr.innerHTML = `
-        <td>${l.date}</td>
-        <td style="font-weight: 700; color: var(--primary-orange);">${l.daily_distance_km.toFixed(1)} km</td>
-        <td>${l.avg_pace || '--'}/km</td>
-        <td>${l.daily_runs || 1}</td>
+        <td style="vertical-align: top;">${l.date}</td>
+        <td style="vertical-align: top;">
+          <div style="font-weight: 700; color: var(--primary-orange);">${l.daily_distance_km.toFixed(2)} km</div>
+          ${activitiesSub}
+        </td>
+        <td style="vertical-align: top;">${l.avg_pace || '--'}/km</td>
+        <td style="vertical-align: top;">${runsCell}</td>
       `;
       tbody.appendChild(tr);
     });
@@ -682,12 +712,12 @@ function generateWhatsAppMessage() {
   } else {
     list.forEach((r, idx) => {
       const cleanName = cleanAthleteName(r.name);
-      const km = (currentTab === "daily" ? r.daily_distance_km : (currentTab === "range" ? r.range_distance_km : r.total_challenge_km)).toFixed(1);
+      const km = (currentTab === "daily" ? r.daily_distance_km : (currentTab === "range" ? r.range_distance_km : r.total_challenge_km)).toFixed(2);
       msg += `${idx + 1}. *${cleanName}* - ${km} km\n`;
     });
   }
 
-  msg += `\n*Club Total:* ${totalKm.toFixed(1)} km\n`;
+  msg += `\n*Club Total:* ${totalKm.toFixed(2)} km\n`;
   msg += `Challenge Target: 100 km\n`;
   msg += `View Live Dashboard: https://amigo12345as.github.io/wandoor-runners-100k/\n`;
 
@@ -769,7 +799,7 @@ function buildExportDOM() {
 
   const totalKm = athletesList.reduce((sum, a) => sum + (distGetter(a) || 0), 0);
   const activeCount = athletesList.length;
-  const topDist = athletesList.length > 0 ? distGetter(athletesList[0]).toFixed(1) : "0.0";
+  const topDist = athletesList.length > 0 ? distGetter(athletesList[0]).toFixed(2) : "0.00";
   const nowIST = new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata", dateStyle: "medium", timeStyle: "short" });
 
   let podiumHTML = "";
@@ -782,19 +812,19 @@ function buildExportDOM() {
         <div style="flex: 1; background: #161B22; border: 1px solid #30363D; border-radius: 8px; padding: 14px; text-align: center;">
           <div style="display: inline-block; width: 24px; height: 24px; border-radius: 50%; background: #30363D; color: #8B949E; font-weight: 800; font-size: 12px; line-height: 24px; margin-bottom: 6px;">2</div>
           <div style="font-weight: 700; font-size: 13px; color: #FFFFFF; margin-bottom: 4px;">${cleanAthleteName(p2.name)}</div>
-          <div style="font-weight: 800; font-size: 16px; color: #FC5200;">${distGetter(p2).toFixed(1)} <span style="font-size: 11px; color: #8B949E;">km</span></div>
+          <div style="font-weight: 800; font-size: 16px; color: #FC5200;">${distGetter(p2).toFixed(2)} <span style="font-size: 11px; color: #8B949E;">km</span></div>
           <div style="font-size: 10px; color: #8B949E;">${subGetter(p2)}</div>
         </div>
         <div style="flex: 1.1; background: #1F1914; border: 1px solid #D29922; border-radius: 8px; padding: 16px; text-align: center;">
           <div style="display: inline-block; width: 28px; height: 28px; border-radius: 50%; background: #D29922; color: #0D1117; font-weight: 900; font-size: 14px; line-height: 28px; margin-bottom: 6px;">1</div>
           <div style="font-weight: 800; font-size: 14px; color: #FFFFFF; margin-bottom: 4px;">${cleanAthleteName(p1.name)}</div>
-          <div style="font-weight: 900; font-size: 19px; color: #FC5200;">${distGetter(p1).toFixed(1)} <span style="font-size: 12px; color: #8B949E;">km</span></div>
+          <div style="font-weight: 900; font-size: 19px; color: #FC5200;">${distGetter(p1).toFixed(2)} <span style="font-size: 12px; color: #8B949E;">km</span></div>
           <div style="font-size: 10.5px; color: #D29922; font-weight: 600;">Leader • ${subGetter(p1)}</div>
         </div>
         <div style="flex: 1; background: #161B22; border: 1px solid #30363D; border-radius: 8px; padding: 14px; text-align: center;">
           <div style="display: inline-block; width: 24px; height: 24px; border-radius: 50%; background: #9E6A03; color: #FFFFFF; font-weight: 800; font-size: 12px; line-height: 24px; margin-bottom: 6px;">3</div>
           <div style="font-weight: 700; font-size: 13px; color: #FFFFFF; margin-bottom: 4px;">${cleanAthleteName(p3.name)}</div>
-          <div style="font-weight: 800; font-size: 16px; color: #FC5200;">${distGetter(p3).toFixed(1)} <span style="font-size: 11px; color: #8B949E;">km</span></div>
+          <div style="font-weight: 800; font-size: 16px; color: #FC5200;">${distGetter(p3).toFixed(2)} <span style="font-size: 11px; color: #8B949E;">km</span></div>
           <div style="font-size: 10px; color: #8B949E;">${subGetter(p3)}</div>
         </div>
       </div>
@@ -804,7 +834,7 @@ function buildExportDOM() {
   let rowsHTML = "";
   athletesList.forEach((a, idx) => {
     const cleanName = cleanAthleteName(a.name);
-    const dist = distGetter(a).toFixed(1);
+    const dist = distGetter(a).toFixed(2);
     const sub = subGetter(a);
     const rank = idx + 1;
     let rankColor = "#8B949E";
@@ -843,7 +873,7 @@ function buildExportDOM() {
     <div style="display: flex; gap: 12px; margin-bottom: 22px;">
       <div style="flex: 1; background: #161B22; border: 1px solid #30363D; border-radius: 8px; padding: 10px 14px;">
         <div style="font-size: 10px; font-weight: 700; color: #8B949E; text-transform: uppercase;">Total Distance</div>
-        <div style="font-size: 18px; font-weight: 900; color: #FC5200; margin-top: 2px;">${totalKm.toFixed(1)} <span style="font-size: 11px; color: #8B949E;">km</span></div>
+        <div style="font-size: 18px; font-weight: 900; color: #FC5200; margin-top: 2px;">${totalKm.toFixed(2)} <span style="font-size: 11px; color: #8B949E;">km</span></div>
       </div>
       <div style="flex: 1; background: #161B22; border: 1px solid #30363D; border-radius: 8px; padding: 10px 14px;">
         <div style="font-size: 10px; font-weight: 700; color: #8B949E; text-transform: uppercase;">Active Athletes</div>
