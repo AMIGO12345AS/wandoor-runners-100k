@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-06T16:23:36.002221+05:30",
+  "timestamp": "2026-09-06T16:45:44.486250+05:30",
   "date": "2026-09-06",
   "athletes": [
     {
@@ -455,7 +455,7 @@
     },
     {
       "rank": 42,
-      "athlete_id": "athlete_akt",
+      "athlete_id": "659794089",
       "name": "Ak T",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
       "distance_km": 3.21,
@@ -466,7 +466,7 @@
     },
     {
       "rank": 43,
-      "athlete_id": "athlete_ansiyamk",
+      "athlete_id": "1806354742",
       "name": "Ansiya Mk",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
       "distance_km": 0.0,
@@ -488,7 +488,7 @@
     },
     {
       "rank": 45,
-      "athlete_id": "athlete_drvarunvasudev",
+      "athlete_id": "1009398140",
       "name": "Dr Varun Vasudev",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
       "distance_km": 0.0,
@@ -510,7 +510,7 @@
     },
     {
       "rank": 47,
-      "athlete_id": "athlete_lineeshmalangadan",
+      "athlete_id": "108819380",
       "name": "Lineesh Malangadan",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
       "distance_km": 0.0,
@@ -521,7 +521,7 @@
     },
     {
       "rank": 48,
-      "athlete_id": "athlete_shajikoodamth",
+      "athlete_id": "153813828",
       "name": "Shaji Koodamth",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
       "distance_km": 0.0,

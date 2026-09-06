@@ -1,9 +1,9 @@
 {
-  "audit_timestamp": "2026-09-06 16:22:38 IST",
+  "audit_timestamp": "2026-09-06 16:44:32 IST",
   "total_athletes": 48,
-  "public_count": 43,
+  "public_count": 48,
   "private_count": 0,
-  "excel_only_count": 5,
+  "excel_only_count": 0,
   "athletes": [
     {
       "athlete_id": "157557051",
@@ -375,19 +375,19 @@
       "runs": []
     },
     {
-      "athlete_id": "athlete_akt",
+      "athlete_id": "659794089",
       "name": "Ak T",
-      "status": "excel_only",
-      "is_private": null,
+      "status": "public",
+      "is_private": false,
       "board_km": 3.21,
       "profile_runs_found": 0,
       "runs": []
     },
     {
-      "athlete_id": "athlete_ansiyamk",
+      "athlete_id": "1806354742",
       "name": "Ansiya Mk",
-      "status": "excel_only",
-      "is_private": null,
+      "status": "public",
+      "is_private": false,
       "board_km": 0.0,
       "profile_runs_found": 0,
       "runs": []
@@ -402,10 +402,10 @@
       "runs": []
     },
     {
-      "athlete_id": "athlete_drvarunvasudev",
+      "athlete_id": "1009398140",
       "name": "Dr Varun Vasudev",
-      "status": "excel_only",
-      "is_private": null,
+      "status": "public",
+      "is_private": false,
       "board_km": 0.0,
       "profile_runs_found": 0,
       "runs": []
@@ -420,19 +420,19 @@
       "runs": []
     },
     {
-      "athlete_id": "athlete_lineeshmalangadan",
+      "athlete_id": "108819380",
       "name": "Lineesh Malangadan",
-      "status": "excel_only",
-      "is_private": null,
+      "status": "public",
+      "is_private": false,
       "board_km": 0.0,
       "profile_runs_found": 0,
       "runs": []
     },
     {
-      "athlete_id": "athlete_shajikoodamth",
+      "athlete_id": "153813828",
       "name": "Shaji Koodamth",
-      "status": "excel_only",
-      "is_private": null,
+      "status": "public",
+      "is_private": false,
       "board_km": 0.0,
       "profile_runs_found": 0,
       "runs": []
