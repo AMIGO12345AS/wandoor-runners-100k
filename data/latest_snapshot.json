@@ -15,13 +15,13 @@
     },
     {
       "rank": 2,
-      "athlete_id": "154857428",
-      "name": "Mohandas K",
-      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtELjRhLZv7nKW99d0QXJHfE1aVCcYHGeavjCSn-riLgoGbA=s96-c",
-      "distance_km": 46.32,
-      "runs_count": 3,
-      "longest_km": 20.56,
-      "avg_pace": "6:47",
+      "athlete_id": "197716094",
+      "name": "Ajeesh Tp",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIn2BnUnM1erb9PIoCISdpwW45KNA9-0V_9uTJ5Ni4A3zIK7kio=s96-c",
+      "distance_km": 71.22,
+      "runs_count": 6,
+      "longest_km": 15.03,
+      "avg_pace": "6:50",
       "elev_gain_m": 0
     },
     {
@@ -29,21 +29,21 @@
       "athlete_id": "1753145775",
       "name": "binu naduvath",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIwpGeXvJCbM6mTqM3mWlGJMOCz52tDIFjuwhC5wI-7hCPwQxEM=s96-c",
-      "distance_km": 45.73,
-      "runs_count": 4,
+      "distance_km": 68.4,
+      "runs_count": 6,
       "longest_km": 13.81,
-      "avg_pace": "5:32",
+      "avg_pace": "5:50",
       "elev_gain_m": 0
     },
     {
       "rank": 4,
-      "athlete_id": "197716094",
-      "name": "Ajeesh Tp",
-      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIn2BnUnM1erb9PIoCISdpwW45KNA9-0V_9uTJ5Ni4A3zIK7kio=s96-c",
-      "distance_km": 45.2,
-      "runs_count": 4,
-      "longest_km": 15.03,
-      "avg_pace": "5:43",
+      "athlete_id": "154857428",
+      "name": "Mohandas K",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtELjRhLZv7nKW99d0QXJHfE1aVCcYHGeavjCSn-riLgoGbA=s96-c",
+      "distance_km": 64.53,
+      "runs_count": 5,
+      "longest_km": 20.56,
+      "avg_pace": "5:19",
       "elev_gain_m": 0
     },
     {
@@ -62,10 +62,10 @@
       "athlete_id": "206125985",
       "name": "Sarath P Narayanan",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/206125985/43657685/1/medium.jpg",
-      "distance_km": 35.03,
-      "runs_count": 2,
+      "distance_km": 40.06,
+      "runs_count": 3,
       "longest_km": 30.01,
-      "avg_pace": "6:54",
+      "avg_pace": "5:44",
       "elev_gain_m": 0
     },
     {
@@ -306,8 +306,8 @@
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/62712350/57828553/1/medium.jpg",
       "distance_km": 10.67,
       "runs_count": 3,
-      "longest_km": 5.94,
-      "avg_pace": "14:16",
+      "longest_km": 4.07,
+      "avg_pace": "4:53",
       "elev_gain_m": 0
     },
     {
