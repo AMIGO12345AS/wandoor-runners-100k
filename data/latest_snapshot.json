@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-06T16:46:38.712504+05:30",
+  "timestamp": "2026-09-06T19:29:45.985917+05:30",
   "date": "2026-09-06",
   "athletes": [
     {
@@ -15,6 +15,17 @@
     },
     {
       "rank": 2,
+      "athlete_id": "200401844",
+      "name": "Rinshid tp",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
+      "distance_km": 75.28,
+      "runs_count": 6,
+      "longest_km": 21.21,
+      "avg_pace": "5:46",
+      "elev_gain_m": 0
+    },
+    {
+      "rank": 3,
       "athlete_id": "197716094",
       "name": "Ajeesh Tp",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIn2BnUnM1erb9PIoCISdpwW45KNA9-0V_9uTJ5Ni4A3zIK7kio=s96-c",
@@ -25,7 +36,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 3,
+      "rank": 4,
       "athlete_id": "1753145775",
       "name": "binu naduvath",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIwpGeXvJCbM6mTqM3mWlGJMOCz52tDIFjuwhC5wI-7hCPwQxEM=s96-c",
@@ -36,7 +47,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 4,
+      "rank": 5,
       "athlete_id": "154857428",
       "name": "Mohandas K",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtELjRhLZv7nKW99d0QXJHfE1aVCcYHGeavjCSn-riLgoGbA=s96-c",
@@ -44,17 +55,6 @@
       "runs_count": 6,
       "longest_km": 20.56,
       "avg_pace": "5:19",
-      "elev_gain_m": 0
-    },
-    {
-      "rank": 5,
-      "athlete_id": "200401844",
-      "name": "Rinshid tp",
-      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
-      "distance_km": 62.26,
-      "runs_count": 5,
-      "longest_km": 21.21,
-      "avg_pace": "5:51",
       "elev_gain_m": 0
     },
     {

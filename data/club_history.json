@@ -1,7 +1,7 @@
 {
   "club_name": "Wandoor Runners Monsoon 100k challenge 2026",
   "target_km": 100.0,
-  "last_updated": "2026-09-06T16:46:38.704650+05:30",
+  "last_updated": "2026-09-06T19:29:45.978425+05:30",
   "dates": [
     "2026-09-01",
     "2026-09-02",
@@ -126,7 +126,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 5,
         "avg_pace": "5:10",
-        "weekly_cumulative_km": 62.26,
+        "weekly_cumulative_km": 75.28,
         "activities": [
           {
             "activity_name": "Morning Run",
@@ -999,7 +999,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 5,
         "avg_pace": "5:01",
-        "weekly_cumulative_km": 62.26,
+        "weekly_cumulative_km": 75.28,
         "activities": [
           {
             "activity_name": "Morning Run",
@@ -1835,7 +1835,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 5,
         "avg_pace": "5:39",
-        "weekly_cumulative_km": 62.26,
+        "weekly_cumulative_km": 75.28,
         "activities": [
           {
             "activity_name": "Morning Run",
@@ -2796,7 +2796,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 5,
         "avg_pace": "5:04",
-        "weekly_cumulative_km": 62.26,
+        "weekly_cumulative_km": 75.28,
         "activities": [
           {
             "activity_name": "Morning Run",
@@ -3458,7 +3458,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 5,
         "avg_pace": "5:51",
-        "weekly_cumulative_km": 62.26,
+        "weekly_cumulative_km": 75.28,
         "activities": [
           {
             "activity_name": "Morning Run",
@@ -4110,6 +4110,27 @@
       },
       {
         "date": "2026-09-06",
+        "athlete_id": "200401844",
+        "name": "Rinshid tp",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
+        "daily_distance_km": 13.02,
+        "daily_runs": 1,
+        "daily_elev_gain_m": 306,
+        "avg_pace": "5:46",
+        "weekly_cumulative_km": 75.28,
+        "activities": [
+          {
+            "activity_name": "Evening Run",
+            "distance_km": 13.02,
+            "pace": "5:46",
+            "duration": "1 h 14 m",
+            "elev_gain_m": 306,
+            "time_ist": "2026-09-06 18:05:41"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-06",
         "athlete_id": "1753145775",
         "name": "binu naduvath",
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIwpGeXvJCbM6mTqM3mWlGJMOCz52tDIFjuwhC5wI-7hCPwQxEM=s96-c",
@@ -4685,18 +4706,6 @@
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
         "weekly_cumulative_km": 23.43,
-        "activities": []
-      },
-      {
-        "date": "2026-09-06",
-        "athlete_id": "200401844",
-        "name": "Rinshid tp",
-        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
-        "daily_distance_km": 0.0,
-        "daily_runs": 0,
-        "daily_elev_gain_m": 0,
-        "avg_pace": "--",
-        "weekly_cumulative_km": 62.26,
         "activities": []
       },
       {
@@ -5731,22 +5740,22 @@
       "excel_name": "Rinshid tp",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
       "mobile": "7025389330",
-      "total_challenge_km": 62.26,
+      "total_challenge_km": 75.28,
       "target_km": 100.0,
-      "active_days": 5,
-      "current_streak": 5,
+      "active_days": 6,
+      "current_streak": 6,
       "best_day_km": 21.21,
-      "latest_pace": "5:51",
-      "pct_completed": 62.3,
+      "latest_pace": "5:46",
+      "pct_completed": 75.3,
       "is_finisher": false,
-      "remaining_km": 37.74,
+      "remaining_km": 24.72,
       "daily_breakdown": {
         "2026-09-01": 10.03,
         "2026-09-02": 10.01,
         "2026-09-03": 11.01,
         "2026-09-04": 10.0,
         "2026-09-05": 21.21,
-        "2026-09-06": 0.0
+        "2026-09-06": 13.02
       }
     },
     "193322479": {
