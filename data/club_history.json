@@ -1,7 +1,7 @@
 {
   "club_name": "Wandoor Runners Monsoon 100k challenge 2026",
   "target_km": 100.0,
-  "last_updated": "2026-09-06T14:34:36.994720+05:30",
+  "last_updated": "2026-09-06T14:35:53.886714+05:30",
   "dates": [
     "2026-09-01",
     "2026-09-02",
@@ -1046,105 +1046,6 @@
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 3.1
-      },
-      {
-        "date": "2026-09-02",
-        "athlete_id": "1106664010",
-        "name": "Biju Mon",
-        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJspa7xT9_CM5EnvdhLf7pXENN6tyO9N7CVtQd1GpHiypNKmA=s96-c",
-        "daily_distance_km": 0.0,
-        "daily_runs": 0,
-        "daily_elev_gain_m": 0,
-        "avg_pace": "--",
-        "weekly_cumulative_km": 6.69
-      },
-      {
-        "date": "2026-09-02",
-        "athlete_id": "190287524",
-        "name": "Anas EV",
-        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/190287524/57772487/1/medium.jpg",
-        "daily_distance_km": 0.0,
-        "daily_runs": 0,
-        "daily_elev_gain_m": 0,
-        "avg_pace": "--",
-        "weekly_cumulative_km": 3.05
-      },
-      {
-        "date": "2026-09-02",
-        "athlete_id": "159255088",
-        "name": "Muhammed Shafi K",
-        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/159255088/35836758/1/medium.jpg",
-        "daily_distance_km": 0.0,
-        "daily_runs": 0,
-        "daily_elev_gain_m": 0,
-        "avg_pace": "--",
-        "weekly_cumulative_km": 10.03
-      },
-      {
-        "date": "2026-09-02",
-        "athlete_id": "1737669347",
-        "name": "NITHIN KC",
-        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/1737669347/57713853/1/medium.jpg",
-        "daily_distance_km": 0.0,
-        "daily_runs": 0,
-        "daily_elev_gain_m": 0,
-        "avg_pace": "--",
-        "weekly_cumulative_km": 0.0
-      },
-      {
-        "date": "2026-09-02",
-        "athlete_id": "172504669",
-        "name": "Sunil Babu",
-        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/172504669/57940066/1/medium.jpg",
-        "daily_distance_km": 0.0,
-        "daily_runs": 0,
-        "daily_elev_gain_m": 0,
-        "avg_pace": "--",
-        "weekly_cumulative_km": 8.08
-      },
-      {
-        "date": "2026-09-02",
-        "athlete_id": "158361240",
-        "name": "Prakasan C T",
-        "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
-        "daily_distance_km": 0.0,
-        "daily_runs": 0,
-        "daily_elev_gain_m": 0,
-        "avg_pace": "--",
-        "weekly_cumulative_km": 5.72
-      },
-      {
-        "date": "2026-09-02",
-        "athlete_id": "198406580",
-        "name": "Diyaf T",
-        "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
-        "daily_distance_km": 0.0,
-        "daily_runs": 0,
-        "daily_elev_gain_m": 0,
-        "avg_pace": "--",
-        "weekly_cumulative_km": 0.0
-      },
-      {
-        "date": "2026-09-02",
-        "athlete_id": "198876934",
-        "name": "Ahamed Shameer",
-        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtzpVGo98siGMvxQDd2RM-DlgWJ7rWMdatRWwS9AeWWZCyA18=s96-c",
-        "daily_distance_km": 0.0,
-        "daily_runs": 0,
-        "daily_elev_gain_m": 0,
-        "avg_pace": "--",
-        "weekly_cumulative_km": 4.29
-      },
-      {
-        "date": "2026-09-02",
-        "athlete_id": "athlete_27",
-        "name": "Akhileswary",
-        "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
-        "daily_distance_km": 0.0,
-        "daily_runs": 0,
-        "daily_elev_gain_m": 0,
-        "avg_pace": "--",
         "weekly_cumulative_km": 0.0
       },
       {
@@ -2011,9 +1912,9 @@
       },
       {
         "date": "2026-09-04",
-        "athlete_id": "1009893599",
-        "name": "Diljith P",
-        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIt1xE8j6dgbNbXnzd-tWkINISp4f8uIrD4IGU0wNcTkyfNlOk=s96-c",
+        "athlete_id": "49239362",
+        "name": "Arun Savitha",
+        "avatar_url": "https://lh5.googleusercontent.com/-jVkxuoxvpOs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcvQClqtxPHzsLdypfr_jngilPTyA/photo.jpg",
         "daily_distance_km": 0.0,
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
