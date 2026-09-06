@@ -32,11 +32,12 @@ def main():
     print(f"[*] Target Challenge: {target_km} km")
     print(f"[*] Date: {today_str}")
 
-    # 2. Fetch and synchronize using feed_sync (accurate activity feed starting strictly Sep 1)
-    print("[*] Synchronizing exact run activities from Strava Club Feed...")
-    from scripts.feed_sync import sync_from_feed
-    history = sync_from_feed(data_dir="data", config_file="config.json")
+    # 2. Synchronize official Excel data for Sep 1-4 and live Strava feed for Sep 5+
+    print("[*] Synchronizing official Excel ground truth (Sep 1-4) and live Strava activities (Sep 5+)...")
+    from scripts.import_official_excel import sync_official_data
+    history = sync_official_data(excel_path="aseem - Copy.xlsx", data_dir="data", config_path="config.json")
     daily_logs = history.get("daily_records", {}).get(today_str, [])
+
 
 
     # 4. Sync to Google Sheets if configured
