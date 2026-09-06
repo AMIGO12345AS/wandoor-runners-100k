@@ -1,7 +1,7 @@
 {
   "club_name": "Wandoor Runners Monsoon 100k challenge 2026",
   "target_km": 100.0,
-  "last_updated": "2026-09-06T19:29:45.978425+05:30",
+  "last_updated": "2026-09-06T22:24:32.012628+05:30",
   "dates": [
     "2026-09-01",
     "2026-09-02",
@@ -667,7 +667,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 5,
         "avg_pace": "7:11",
-        "weekly_cumulative_km": 5.81,
+        "weekly_cumulative_km": 6.0,
         "activities": [
           {
             "activity_name": "Morning Run",
@@ -1629,7 +1629,7 @@
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 5.81,
+        "weekly_cumulative_km": 6.0,
         "activities": []
       },
       {
@@ -2213,7 +2213,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 6,
         "avg_pace": "6:13",
-        "weekly_cumulative_km": 5.81,
+        "weekly_cumulative_km": 6.0,
         "activities": [
           {
             "activity_name": "Morning Run",
@@ -3291,7 +3291,7 @@
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 5.81,
+        "weekly_cumulative_km": 6.0,
         "activities": []
       },
       {
@@ -3806,7 +3806,7 @@
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 5.81,
+        "weekly_cumulative_km": 6.0,
         "activities": []
       },
       {
@@ -4362,6 +4362,27 @@
       },
       {
         "date": "2026-09-06",
+        "athlete_id": "201415432",
+        "name": "Fahis Fahi",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/201415432/57855402/1/medium.jpg",
+        "daily_distance_km": 0.19,
+        "daily_runs": 1,
+        "daily_elev_gain_m": 4,
+        "avg_pace": "6:08",
+        "weekly_cumulative_km": 6.0,
+        "activities": [
+          {
+            "activity_name": "Night Run",
+            "distance_km": 0.19,
+            "pace": "6:08",
+            "duration": "1 m 4 s",
+            "elev_gain_m": 4,
+            "time_ist": "2026-09-06 21:32:23"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-06",
         "athlete_id": "136932402",
         "name": "Sunil Babu",
         "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
@@ -4550,18 +4571,6 @@
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
         "weekly_cumulative_km": 0.0,
-        "activities": []
-      },
-      {
-        "date": "2026-09-06",
-        "athlete_id": "201415432",
-        "name": "Fahis Fahi",
-        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/201415432/57855402/1/medium.jpg",
-        "daily_distance_km": 0.0,
-        "daily_runs": 0,
-        "daily_elev_gain_m": 0,
-        "avg_pace": "--",
-        "weekly_cumulative_km": 5.81,
         "activities": []
       },
       {
@@ -5290,22 +5299,22 @@
       "excel_name": "Fahis Fahi",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/201415432/57855402/1/medium.jpg",
       "mobile": "9567402014",
-      "total_challenge_km": 5.81,
+      "total_challenge_km": 6.0,
       "target_km": 100.0,
-      "active_days": 2,
-      "current_streak": 0,
+      "active_days": 3,
+      "current_streak": 1,
       "best_day_km": 3.76,
-      "latest_pace": "6:13",
-      "pct_completed": 5.8,
+      "latest_pace": "6:08",
+      "pct_completed": 6.0,
       "is_finisher": false,
-      "remaining_km": 94.19,
+      "remaining_km": 94.0,
       "daily_breakdown": {
         "2026-09-01": 2.05,
         "2026-09-02": 0.0,
         "2026-09-03": 3.76,
         "2026-09-04": 0.0,
         "2026-09-05": 0.0,
-        "2026-09-06": 0.0
+        "2026-09-06": 0.19
       }
     },
     "198305096": {

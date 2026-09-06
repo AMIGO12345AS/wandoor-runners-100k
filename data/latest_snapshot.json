@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-06T19:29:45.985917+05:30",
+  "timestamp": "2026-09-06T22:24:32.020292+05:30",
   "date": "2026-09-06",
   "athletes": [
     {
@@ -414,10 +414,10 @@
       "athlete_id": "201415432",
       "name": "Fahis Fahi",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/201415432/57855402/1/medium.jpg",
-      "distance_km": 5.81,
-      "runs_count": 2,
+      "distance_km": 6.0,
+      "runs_count": 3,
       "longest_km": 3.76,
-      "avg_pace": "6:13",
+      "avg_pace": "6:08",
       "elev_gain_m": 0
     },
     {
