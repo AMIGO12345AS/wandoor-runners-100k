@@ -1,7 +1,7 @@
 {
   "club_name": "Wandoor Runners Monsoon 100k challenge 2026",
   "target_km": 100.0,
-  "last_updated": "2026-09-09T05:24:16.932579+05:30",
+  "last_updated": "2026-09-09T09:07:48.100796+05:30",
   "dates": [
     "2026-09-01",
     "2026-09-02",
@@ -140,35 +140,6 @@
       },
       {
         "date": "2026-09-01",
-        "athlete_id": "159419010",
-        "name": "krishna prasad. M Kp",
-        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/159419010/43242834/2/medium.jpg",
-        "daily_distance_km": 8.72,
-        "daily_runs": 2,
-        "daily_elev_gain_m": 11,
-        "avg_pace": "8:55",
-        "weekly_cumulative_km": 38.84,
-        "activities": [
-          {
-            "activity_name": "Evening Run at medical college palakkad",
-            "distance_km": 5.2,
-            "pace": "7:39",
-            "duration": "36 m 43 s",
-            "elev_gain_m": 7,
-            "time_ist": "2026-09-01 18:58:35"
-          },
-          {
-            "activity_name": "Evening Outdoor Run",
-            "distance_km": 3.52,
-            "pace": "10:47",
-            "duration": "15 m 0 s",
-            "elev_gain_m": 4,
-            "time_ist": "2026-09-01 18:57:00"
-          }
-        ]
-      },
-      {
-        "date": "2026-09-01",
         "athlete_id": "136932402",
         "name": "Sunil Babu",
         "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
@@ -214,27 +185,19 @@
         "athlete_id": "1909549551",
         "name": "Subhash Kv",
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJ9T2PxlX_3t_ydhMA_h_xUFMQjKPkCrqMIVpTwPloQsQuFlw=s96-c",
-        "daily_distance_km": 7.1,
-        "daily_runs": 2,
-        "daily_elev_gain_m": 153,
-        "avg_pace": "5:18",
-        "weekly_cumulative_km": 31.62,
+        "daily_distance_km": 7.09,
+        "daily_runs": 1,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
+        "weekly_cumulative_km": 31.61,
         "activities": [
           {
-            "activity_name": "Evening Run",
+            "activity_name": "Logged Run",
             "distance_km": 7.09,
-            "pace": "5:17",
-            "duration": "37 m 32 s",
-            "elev_gain_m": 143,
-            "time_ist": "2026-09-01 18:23:41"
-          },
-          {
-            "activity_name": "Evening Run",
-            "distance_km": 0.01,
-            "pace": "11:40",
-            "duration": "7 s",
-            "elev_gain_m": 10,
-            "time_ist": "2026-09-01 18:20:02"
+            "pace": "--",
+            "duration": "--",
+            "elev_gain_m": 0,
+            "time_ist": "2026-09-01"
           }
         ]
       },
@@ -471,6 +434,27 @@
       },
       {
         "date": "2026-09-01",
+        "athlete_id": "159419010",
+        "name": "krishna prasad. M Kp",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/159419010/43242834/2/medium.jpg",
+        "daily_distance_km": 5.2,
+        "daily_runs": 1,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
+        "weekly_cumulative_km": 35.32,
+        "activities": [
+          {
+            "activity_name": "Logged Run",
+            "distance_km": 5.2,
+            "pace": "--",
+            "duration": "--",
+            "elev_gain_m": 0,
+            "time_ist": "2026-09-01"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-01",
         "athlete_id": "199859556",
         "name": "SUNEESH K",
         "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
@@ -560,17 +544,17 @@
         "avatar_url": "https://graph.facebook.com/1357027104491215/picture?height=256&width=256",
         "daily_distance_km": 4.48,
         "daily_runs": 1,
-        "daily_elev_gain_m": 6,
-        "avg_pace": "6:06",
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
         "weekly_cumulative_km": 19.78,
         "activities": [
           {
-            "activity_name": "Evening Run",
+            "activity_name": "Logged Run",
             "distance_km": 4.48,
-            "pace": "6:06",
-            "duration": "27 m 24 s",
-            "elev_gain_m": 6,
-            "time_ist": "2026-09-01 18:05:26"
+            "pace": "--",
+            "duration": "--",
+            "elev_gain_m": 0,
+            "time_ist": "2026-09-01"
           }
         ]
       },
@@ -602,17 +586,17 @@
         "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
         "daily_distance_km": 3.1,
         "daily_runs": 1,
-        "daily_elev_gain_m": 5,
-        "avg_pace": "5:49",
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
         "weekly_cumulative_km": 8.17,
         "activities": [
           {
-            "activity_name": "Afternoon Run",
+            "activity_name": "Logged Run",
             "distance_km": 3.1,
-            "pace": "5:49",
-            "duration": "18 m 2 s",
-            "elev_gain_m": 5,
-            "time_ist": "2026-09-01 16:10:53"
+            "pace": "--",
+            "duration": "--",
+            "elev_gain_m": 0,
+            "time_ist": "2026-09-01"
           }
         ]
       },
@@ -644,17 +628,17 @@
         "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/190287524/57772487/1/medium.jpg",
         "daily_distance_km": 3.05,
         "daily_runs": 1,
-        "daily_elev_gain_m": 60,
-        "avg_pace": "7:42",
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
         "weekly_cumulative_km": 9.19,
         "activities": [
           {
-            "activity_name": "Morning Run",
+            "activity_name": "Logged Run",
             "distance_km": 3.05,
-            "pace": "7:42",
-            "duration": "21 m 55 s",
-            "elev_gain_m": 60,
-            "time_ist": "2026-09-01 07:21:36"
+            "pace": "--",
+            "duration": "--",
+            "elev_gain_m": 0,
+            "time_ist": "2026-09-01"
           }
         ]
       },
@@ -957,7 +941,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 216,
         "avg_pace": "6:41",
-        "weekly_cumulative_km": 31.62,
+        "weekly_cumulative_km": 31.61,
         "activities": [
           {
             "activity_name": "Morning Run",
@@ -1419,7 +1403,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 6,
         "avg_pace": "9:18",
-        "weekly_cumulative_km": 38.84,
+        "weekly_cumulative_km": 35.32,
         "activities": [
           {
             "activity_name": "Early Morning Outdoor Run",
@@ -2477,7 +2461,7 @@
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 38.84,
+        "weekly_cumulative_km": 35.32,
         "activities": []
       },
       {
@@ -2561,7 +2545,7 @@
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 31.62,
+        "weekly_cumulative_km": 31.61,
         "activities": []
       },
       {
@@ -2641,7 +2625,7 @@
         "daily_runs": 2,
         "daily_elev_gain_m": 13,
         "avg_pace": "6:58",
-        "weekly_cumulative_km": 38.84,
+        "weekly_cumulative_km": 35.32,
         "activities": [
           {
             "activity_name": "Morning Run",
@@ -2754,7 +2738,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 31.62,
+        "weekly_cumulative_km": 31.61,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -3854,7 +3838,7 @@
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 38.84,
+        "weekly_cumulative_km": 35.32,
         "activities": []
       },
       {
@@ -4022,7 +4006,7 @@
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 31.62,
+        "weekly_cumulative_km": 31.61,
         "activities": []
       },
       {
@@ -4159,7 +4143,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 7,
         "avg_pace": "7:04",
-        "weekly_cumulative_km": 38.84,
+        "weekly_cumulative_km": 35.32,
         "activities": [
           {
             "activity_name": "Morning Run",
@@ -4285,7 +4269,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 6,
         "avg_pace": "6:30",
-        "weekly_cumulative_km": 31.62,
+        "weekly_cumulative_km": 31.61,
         "activities": [
           {
             "activity_name": "Morning Run",
@@ -5399,17 +5383,17 @@
       "excel_name": "krishna prasad. M Kp",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/159419010/43242834/2/medium.jpg",
       "mobile": "",
-      "total_challenge_km": 38.84,
+      "total_challenge_km": 35.32,
       "target_km": 100.0,
       "active_days": 4,
       "current_streak": 1,
       "best_day_km": 16.35,
       "latest_pace": "7:04",
-      "pct_completed": 38.8,
+      "pct_completed": 35.3,
       "is_finisher": false,
-      "remaining_km": 61.16,
+      "remaining_km": 64.68,
       "daily_breakdown": {
-        "2026-09-01": 8.72,
+        "2026-09-01": 5.2,
         "2026-09-02": 3.76,
         "2026-09-03": 0.0,
         "2026-09-04": 16.35,
@@ -5849,7 +5833,7 @@
       "excel_name": "Subhash Kv",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJ9T2PxlX_3t_ydhMA_h_xUFMQjKPkCrqMIVpTwPloQsQuFlw=s96-c",
       "mobile": "9149699374",
-      "total_challenge_km": 31.62,
+      "total_challenge_km": 31.61,
       "target_km": 100.0,
       "active_days": 4,
       "current_streak": 1,
@@ -5857,9 +5841,9 @@
       "latest_pace": "6:30",
       "pct_completed": 31.6,
       "is_finisher": false,
-      "remaining_km": 68.38,
+      "remaining_km": 68.39,
       "daily_breakdown": {
-        "2026-09-01": 7.1,
+        "2026-09-01": 7.09,
         "2026-09-02": 10.47,
         "2026-09-03": 0.0,
         "2026-09-04": 10.04,

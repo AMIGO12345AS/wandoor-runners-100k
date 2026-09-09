@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-09T05:24:16.938054+05:30",
+  "timestamp": "2026-09-09T09:07:48.107237+05:30",
   "date": "2026-09-06",
   "athletes": [
     {
@@ -73,7 +73,7 @@
       "athlete_id": "159419010",
       "name": "krishna prasad. M Kp",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/159419010/43242834/2/medium.jpg",
-      "distance_km": 38.84,
+      "distance_km": 35.32,
       "runs_count": 4,
       "longest_km": 16.35,
       "avg_pace": "7:04",
@@ -84,7 +84,7 @@
       "athlete_id": "1909549551",
       "name": "Subhash Kv",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJ9T2PxlX_3t_ydhMA_h_xUFMQjKPkCrqMIVpTwPloQsQuFlw=s96-c",
-      "distance_km": 31.62,
+      "distance_km": 31.61,
       "runs_count": 4,
       "longest_km": 10.47,
       "avg_pace": "6:30",
