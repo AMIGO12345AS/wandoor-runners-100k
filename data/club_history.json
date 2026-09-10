@@ -1,7 +1,7 @@
 {
   "club_name": "Wandoor Runners Monsoon 100k challenge 2026",
   "target_km": 100.0,
-  "last_updated": "2026-09-10T04:30:47.636234+05:30",
+  "last_updated": "2026-09-10T09:05:14.063501+05:30",
   "dates": [
     "2026-09-01",
     "2026-09-02",
@@ -876,17 +876,17 @@
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtELjRhLZv7nKW99d0QXJHfE1aVCcYHGeavjCSn-riLgoGbA=s96-c",
         "daily_distance_km": 15.63,
         "daily_runs": 1,
-        "daily_elev_gain_m": 6,
-        "avg_pace": "6:06",
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
         "weekly_cumulative_km": 67.68,
         "activities": [
           {
-            "activity_name": "Morning Run",
+            "activity_name": "Logged Run",
             "distance_km": 15.63,
-            "pace": "6:06",
-            "duration": "1 h 35 m",
-            "elev_gain_m": 6,
-            "time_ist": "2026-09-02 05:58:23"
+            "pace": "--",
+            "duration": "--",
+            "elev_gain_m": 0,
+            "time_ist": "2026-09-02"
           }
         ]
       },
@@ -918,17 +918,17 @@
         "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/157557051/40277753/1/medium.jpg",
         "daily_distance_km": 11.16,
         "daily_runs": 1,
-        "daily_elev_gain_m": 258,
-        "avg_pace": "5:34",
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
         "weekly_cumulative_km": 105.99,
         "activities": [
           {
-            "activity_name": "2/9/26 Morning run",
+            "activity_name": "Logged Run",
             "distance_km": 11.16,
-            "pace": "5:34",
-            "duration": "1 h 2 m",
-            "elev_gain_m": 258,
-            "time_ist": "2026-09-02 07:11:56"
+            "pace": "--",
+            "duration": "--",
+            "elev_gain_m": 0,
+            "time_ist": "2026-09-02"
           }
         ]
       },
@@ -939,17 +939,17 @@
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJ9T2PxlX_3t_ydhMA_h_xUFMQjKPkCrqMIVpTwPloQsQuFlw=s96-c",
         "daily_distance_km": 10.47,
         "daily_runs": 1,
-        "daily_elev_gain_m": 216,
-        "avg_pace": "6:41",
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
         "weekly_cumulative_km": 31.61,
         "activities": [
           {
-            "activity_name": "Morning Run",
+            "activity_name": "Logged Run",
             "distance_km": 10.47,
-            "pace": "6:41",
-            "duration": "49 m 16 s",
-            "elev_gain_m": 216,
-            "time_ist": "2026-09-02 07:07:39"
+            "pace": "--",
+            "duration": "--",
+            "elev_gain_m": 0,
+            "time_ist": "2026-09-02"
           }
         ]
       },
@@ -960,17 +960,17 @@
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIn2BnUnM1erb9PIoCISdpwW45KNA9-0V_9uTJ5Ni4A3zIK7kio=s96-c",
         "daily_distance_km": 10.02,
         "daily_runs": 1,
-        "daily_elev_gain_m": 5,
-        "avg_pace": "5:41",
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
         "weekly_cumulative_km": 71.22,
         "activities": [
           {
-            "activity_name": "Morning Run",
+            "activity_name": "Logged Run",
             "distance_km": 10.02,
-            "pace": "5:41",
-            "duration": "56 m 53 s",
-            "elev_gain_m": 5,
-            "time_ist": "2026-09-02 06:05:20"
+            "pace": "--",
+            "duration": "--",
+            "elev_gain_m": 0,
+            "time_ist": "2026-09-02"
           }
         ]
       },
@@ -981,17 +981,17 @@
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
         "daily_distance_km": 10.01,
         "daily_runs": 1,
-        "daily_elev_gain_m": 5,
-        "avg_pace": "5:01",
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
         "weekly_cumulative_km": 75.28,
         "activities": [
           {
-            "activity_name": "Morning Run",
+            "activity_name": "Logged Run",
             "distance_km": 10.01,
-            "pace": "5:01",
-            "duration": "50 m 9 s",
-            "elev_gain_m": 5,
-            "time_ist": "2026-09-02 06:06:02"
+            "pace": "--",
+            "duration": "--",
+            "elev_gain_m": 0,
+            "time_ist": "2026-09-02"
           }
         ]
       },
@@ -1002,17 +1002,17 @@
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIwpGeXvJCbM6mTqM3mWlGJMOCz52tDIFjuwhC5wI-7hCPwQxEM=s96-c",
         "daily_distance_km": 9.66,
         "daily_runs": 1,
-        "daily_elev_gain_m": 5,
-        "avg_pace": "5:27",
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
         "weekly_cumulative_km": 68.4,
         "activities": [
           {
-            "activity_name": "Morning Run",
+            "activity_name": "Logged Run",
             "distance_km": 9.66,
-            "pace": "5:27",
-            "duration": "52 m 26 s",
-            "elev_gain_m": 5,
-            "time_ist": "2026-09-02 06:05:02"
+            "pace": "--",
+            "duration": "--",
+            "elev_gain_m": 0,
+            "time_ist": "2026-09-02"
           }
         ]
       },
@@ -1380,17 +1380,17 @@
         "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
         "daily_distance_km": 5.0,
         "daily_runs": 1,
-        "daily_elev_gain_m": 5,
-        "avg_pace": "6:34",
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
         "weekly_cumulative_km": 26.02,
         "activities": [
           {
-            "activity_name": "Morning Run",
+            "activity_name": "Logged Run",
             "distance_km": 5.0,
-            "pace": "6:34",
-            "duration": "28 m 5 s",
-            "elev_gain_m": 5,
-            "time_ist": "2026-09-02 06:31:38"
+            "pace": "--",
+            "duration": "--",
+            "elev_gain_m": 0,
+            "time_ist": "2026-09-02"
           }
         ]
       },
@@ -1401,17 +1401,17 @@
         "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/159419010/43242834/2/medium.jpg",
         "daily_distance_km": 3.76,
         "daily_runs": 1,
-        "daily_elev_gain_m": 6,
-        "avg_pace": "9:18",
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
         "weekly_cumulative_km": 35.32,
         "activities": [
           {
-            "activity_name": "Early Morning Outdoor Run",
+            "activity_name": "Logged Run",
             "distance_km": 3.76,
-            "pace": "9:18",
-            "duration": "24 m 0 s",
-            "elev_gain_m": 6,
-            "time_ist": "2026-09-02 06:37:00"
+            "pace": "--",
+            "duration": "--",
+            "elev_gain_m": 0,
+            "time_ist": "2026-09-02"
           }
         ]
       },
@@ -1422,17 +1422,17 @@
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK87pkzhhRwp8fqyLeyY-tx0o2_fi-qcVyN3irHkr_2hPIEsm5j=s96-c",
         "daily_distance_km": 3.58,
         "daily_runs": 1,
-        "daily_elev_gain_m": 95,
-        "avg_pace": "12:26",
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
         "weekly_cumulative_km": 22.27,
         "activities": [
           {
-            "activity_name": "Morning Run",
+            "activity_name": "Logged Run",
             "distance_km": 3.58,
-            "pace": "12:26",
-            "duration": "38 m 33 s",
-            "elev_gain_m": 95,
-            "time_ist": "2026-09-02 06:47:48"
+            "pace": "--",
+            "duration": "--",
+            "elev_gain_m": 0,
+            "time_ist": "2026-09-02"
           }
         ]
       },
