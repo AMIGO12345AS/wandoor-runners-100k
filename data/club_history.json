@@ -1,7 +1,7 @@
 {
   "club_name": "Wandoor Runners Monsoon 100k challenge 2026",
   "target_km": 100.0,
-  "last_updated": "2026-09-11T04:28:07.015222+05:30",
+  "last_updated": "2026-09-11T06:26:07.800453+05:30",
   "dates": [
     "2026-09-01",
     "2026-09-02",
@@ -847,7 +847,7 @@
         "date": "2026-09-01",
         "athlete_id": "659794089",
         "name": "Ak T",
-        "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/659794089/57720464/1/medium.jpg",
         "daily_distance_km": 0.0,
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
@@ -1704,7 +1704,7 @@
         "date": "2026-09-02",
         "athlete_id": "659794089",
         "name": "Ak T",
-        "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/659794089/57720464/1/medium.jpg",
         "daily_distance_km": 0.0,
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
@@ -1985,17 +1985,17 @@
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocL_zlX94UMReiJ7AC1vVKu8rUpUzkIvEZOyy8QY7IQz3FNwIRnh=s96-c",
         "daily_distance_km": 5.23,
         "daily_runs": 1,
-        "daily_elev_gain_m": 6,
-        "avg_pace": "6:09",
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
         "weekly_cumulative_km": 29.86,
         "activities": [
           {
-            "activity_name": "Morning Run",
+            "activity_name": "Logged Run",
             "distance_km": 5.23,
-            "pace": "6:09",
-            "duration": "32 m 2 s",
-            "elev_gain_m": 6,
-            "time_ist": "2026-09-03 06:06:26"
+            "pace": "--",
+            "duration": "--",
+            "elev_gain_m": 0,
+            "time_ist": "2026-09-03"
           }
         ]
       },
@@ -2006,17 +2006,17 @@
         "avatar_url": "https://lh5.googleusercontent.com/-jVkxuoxvpOs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcvQClqtxPHzsLdypfr_jngilPTyA/photo.jpg",
         "daily_distance_km": 5.06,
         "daily_runs": 1,
-        "daily_elev_gain_m": 6,
-        "avg_pace": "6:41",
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
         "weekly_cumulative_km": 10.11,
         "activities": [
           {
-            "activity_name": "Morning Run",
+            "activity_name": "Logged Run",
             "distance_km": 5.06,
-            "pace": "6:41",
-            "duration": "33 m 54 s",
-            "elev_gain_m": 6,
-            "time_ist": "2026-09-03 05:47:32"
+            "pace": "--",
+            "duration": "--",
+            "elev_gain_m": 0,
+            "time_ist": "2026-09-03"
           }
         ]
       },
@@ -2255,7 +2255,7 @@
         "date": "2026-09-03",
         "athlete_id": "659794089",
         "name": "Ak T",
-        "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/659794089/57720464/1/medium.jpg",
         "daily_distance_km": 3.21,
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
@@ -2342,17 +2342,17 @@
         "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/1549040789/57786553/1/medium.jpg",
         "daily_distance_km": 1.01,
         "daily_runs": 1,
-        "daily_elev_gain_m": 26,
-        "avg_pace": "4:47",
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
         "weekly_cumulative_km": 12.79,
         "activities": [
           {
-            "activity_name": "Morning Run",
+            "activity_name": "Logged Run",
             "distance_km": 1.01,
-            "pace": "4:47",
-            "duration": "4 m 50 s",
-            "elev_gain_m": 26,
-            "time_ist": "2026-09-03 06:35:26"
+            "pace": "--",
+            "duration": "--",
+            "elev_gain_m": 0,
+            "time_ist": "2026-09-03"
           }
         ]
       },
@@ -3402,7 +3402,7 @@
         "date": "2026-09-04",
         "athlete_id": "659794089",
         "name": "Ak T",
-        "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/659794089/57720464/1/medium.jpg",
         "daily_distance_km": 0.0,
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
@@ -4037,7 +4037,7 @@
         "date": "2026-09-05",
         "athlete_id": "659794089",
         "name": "Ak T",
-        "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/659794089/57720464/1/medium.jpg",
         "daily_distance_km": 0.0,
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
@@ -4741,7 +4741,7 @@
         "date": "2026-09-06",
         "athlete_id": "659794089",
         "name": "Ak T",
-        "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/659794089/57720464/1/medium.jpg",
         "daily_distance_km": 0.0,
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
@@ -5906,7 +5906,7 @@
       "sl_no": 46,
       "name": "Ak T",
       "excel_name": "Ak T",
-      "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/659794089/57720464/1/medium.jpg",
       "mobile": "",
       "total_challenge_km": 3.21,
       "target_km": 100.0,
