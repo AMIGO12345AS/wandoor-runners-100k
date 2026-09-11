@@ -1,7 +1,7 @@
 {
   "club_name": "Wandoor Runners Monsoon 100k challenge 2026",
   "target_km": 100.0,
-  "last_updated": "2026-09-11T20:22:16.015973+05:30",
+  "last_updated": "2026-09-11T23:43:32.455633+05:30",
   "dates": [
     "2026-09-01",
     "2026-09-02",
@@ -2048,17 +2048,17 @@
         "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
         "daily_distance_km": 5.01,
         "daily_runs": 1,
-        "daily_elev_gain_m": 99,
-        "avg_pace": "7:13",
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
         "weekly_cumulative_km": 10.1,
         "activities": [
           {
-            "activity_name": "Night Ride",
+            "activity_name": "Logged Run",
             "distance_km": 5.01,
-            "pace": "7:13",
-            "duration": "35 m 45 s",
-            "elev_gain_m": 99,
-            "time_ist": "2026-09-03 20:37:16"
+            "pace": "--",
+            "duration": "--",
+            "elev_gain_m": 0,
+            "time_ist": "2026-09-03"
           }
         ]
       },
