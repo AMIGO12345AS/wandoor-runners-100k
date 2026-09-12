@@ -1,7 +1,7 @@
 {
   "club_name": "Wandoor Runners Monsoon 100k challenge 2026",
   "target_km": 100.0,
-  "last_updated": "2026-09-12T21:33:43.644332+05:30",
+  "last_updated": "2026-09-13T00:30:15.349743+05:30",
   "dates": [
     "2026-09-01",
     "2026-09-02",
@@ -441,7 +441,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 35.32,
+        "weekly_cumulative_km": 27.23,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -1403,7 +1403,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 35.32,
+        "weekly_cumulative_km": 27.23,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -2461,7 +2461,7 @@
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 35.32,
+        "weekly_cumulative_km": 27.23,
         "activities": []
       },
       {
@@ -2618,35 +2618,6 @@
       },
       {
         "date": "2026-09-04",
-        "athlete_id": "159419010",
-        "name": "krishna prasad. M Kp",
-        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/159419010/43242834/2/medium.jpg",
-        "daily_distance_km": 16.35,
-        "daily_runs": 2,
-        "daily_elev_gain_m": 13,
-        "avg_pace": "6:58",
-        "weekly_cumulative_km": 35.32,
-        "activities": [
-          {
-            "activity_name": "Morning Run",
-            "distance_km": 8.26,
-            "pace": "6:53",
-            "duration": "56 m 53 s",
-            "elev_gain_m": 6,
-            "time_ist": "2026-09-04 06:31:57"
-          },
-          {
-            "activity_name": "Early Morning Outdoor Run",
-            "distance_km": 8.09,
-            "pace": "7:02",
-            "duration": "57 m 0 s",
-            "elev_gain_m": 7,
-            "time_ist": "2026-09-04 06:31:00"
-          }
-        ]
-      },
-      {
-        "date": "2026-09-04",
         "athlete_id": "197716094",
         "name": "Ajeesh Tp",
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIn2BnUnM1erb9PIoCISdpwW45KNA9-0V_9uTJ5Ni4A3zIK7kio=s96-c",
@@ -2785,6 +2756,27 @@
           {
             "activity_name": "Logged Run",
             "distance_km": 10.0,
+            "pace": "--",
+            "duration": "--",
+            "elev_gain_m": 0,
+            "time_ist": "2026-09-04"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-04",
+        "athlete_id": "159419010",
+        "name": "krishna prasad. M Kp",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/159419010/43242834/2/medium.jpg",
+        "daily_distance_km": 8.26,
+        "daily_runs": 1,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
+        "weekly_cumulative_km": 27.23,
+        "activities": [
+          {
+            "activity_name": "Logged Run",
+            "distance_km": 8.26,
             "pace": "--",
             "duration": "--",
             "elev_gain_m": 0,
@@ -3838,7 +3830,7 @@
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 35.32,
+        "weekly_cumulative_km": 27.23,
         "activities": []
       },
       {
@@ -4143,7 +4135,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 7,
         "avg_pace": "7:04",
-        "weekly_cumulative_km": 35.32,
+        "weekly_cumulative_km": 27.23,
         "activities": [
           {
             "activity_name": "Morning Run",
@@ -5383,20 +5375,20 @@
       "excel_name": "krishna prasad. M Kp",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/159419010/43242834/2/medium.jpg",
       "mobile": "",
-      "total_challenge_km": 35.32,
+      "total_challenge_km": 27.23,
       "target_km": 100.0,
       "active_days": 4,
       "current_streak": 1,
-      "best_day_km": 16.35,
+      "best_day_km": 10.01,
       "latest_pace": "7:04",
-      "pct_completed": 35.3,
+      "pct_completed": 27.2,
       "is_finisher": false,
-      "remaining_km": 64.68,
+      "remaining_km": 72.77,
       "daily_breakdown": {
         "2026-09-01": 5.2,
         "2026-09-02": 3.76,
         "2026-09-03": 0.0,
-        "2026-09-04": 16.35,
+        "2026-09-04": 8.26,
         "2026-09-05": 0.0,
         "2026-09-06": 10.01
       }

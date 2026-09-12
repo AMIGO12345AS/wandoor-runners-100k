@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-12T21:33:43.651914+05:30",
+  "timestamp": "2026-09-13T00:30:15.357448+05:30",
   "date": "2026-09-06",
   "athletes": [
     {
@@ -70,17 +70,6 @@
     },
     {
       "rank": 7,
-      "athlete_id": "159419010",
-      "name": "krishna prasad. M Kp",
-      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/159419010/43242834/2/medium.jpg",
-      "distance_km": 35.32,
-      "runs_count": 4,
-      "longest_km": 16.35,
-      "avg_pace": "7:04",
-      "elev_gain_m": 0
-    },
-    {
-      "rank": 8,
       "athlete_id": "1909549551",
       "name": "Subhash Kv",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJ9T2PxlX_3t_ydhMA_h_xUFMQjKPkCrqMIVpTwPloQsQuFlw=s96-c",
@@ -91,7 +80,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 9,
+      "rank": 8,
       "athlete_id": "158361240",
       "name": "Prakasan C T",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
@@ -102,7 +91,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 10,
+      "rank": 9,
       "athlete_id": "198876934",
       "name": "Ahamed Shameer",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtzpVGo98siGMvxQDd2RM-DlgWJ7rWMdatRWwS9AeWWZCyA18=s96-c",
@@ -113,7 +102,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 11,
+      "rank": 10,
       "athlete_id": "136932402",
       "name": "Sunil Babu",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
@@ -124,7 +113,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 12,
+      "rank": 11,
       "athlete_id": "188992089",
       "name": "Ali Faisal",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocL_zlX94UMReiJ7AC1vVKu8rUpUzkIvEZOyy8QY7IQz3FNwIRnh=s96-c",
@@ -132,6 +121,17 @@
       "runs_count": 6,
       "longest_km": 6.08,
       "avg_pace": "6:42",
+      "elev_gain_m": 0
+    },
+    {
+      "rank": 12,
+      "athlete_id": "159419010",
+      "name": "krishna prasad. M Kp",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/159419010/43242834/2/medium.jpg",
+      "distance_km": 27.23,
+      "runs_count": 4,
+      "longest_km": 10.01,
+      "avg_pace": "7:04",
       "elev_gain_m": 0
     },
     {
