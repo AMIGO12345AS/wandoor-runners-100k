@@ -1,7 +1,7 @@
 {
   "club_name": "Wandoor Runners Monsoon 100k challenge 2026",
   "target_km": 100.0,
-  "last_updated": "2026-09-13T09:15:05.258890+05:30",
+  "last_updated": "2026-09-13T14:44:32.138878+05:30",
   "dates": [
     "2026-09-01",
     "2026-09-02",
@@ -399,7 +399,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 29.86,
+        "weekly_cumulative_km": 24.73,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -1130,7 +1130,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 29.86,
+        "weekly_cumulative_km": 24.73,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -1987,7 +1987,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 29.86,
+        "weekly_cumulative_km": 24.73,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -2898,7 +2898,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 29.86,
+        "weekly_cumulative_km": 24.73,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -3532,27 +3532,6 @@
       },
       {
         "date": "2026-09-05",
-        "athlete_id": "188992089",
-        "name": "Ali Faisal",
-        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocL_zlX94UMReiJ7AC1vVKu8rUpUzkIvEZOyy8QY7IQz3FNwIRnh=s96-c",
-        "daily_distance_km": 5.13,
-        "daily_runs": 1,
-        "daily_elev_gain_m": 5,
-        "avg_pace": "5:42",
-        "weekly_cumulative_km": 29.86,
-        "activities": [
-          {
-            "activity_name": "Morning Run",
-            "distance_km": 5.13,
-            "pace": "5:42",
-            "duration": "29 m 13 s",
-            "elev_gain_m": 5,
-            "time_ist": "2026-09-05 05:52:22"
-          }
-        ]
-      },
-      {
-        "date": "2026-09-05",
         "athlete_id": "1463852982",
         "name": "Mohammed Shafin",
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK87pkzhhRwp8fqyLeyY-tx0o2_fi-qcVyN3irHkr_2hPIEsm5j=s96-c",
@@ -3687,6 +3666,18 @@
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
         "weekly_cumulative_km": 26.02,
+        "activities": []
+      },
+      {
+        "date": "2026-09-05",
+        "athlete_id": "188992089",
+        "name": "Ali Faisal",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocL_zlX94UMReiJ7AC1vVKu8rUpUzkIvEZOyy8QY7IQz3FNwIRnh=s96-c",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
+        "weekly_cumulative_km": 24.73,
         "activities": []
       },
       {
@@ -4282,7 +4273,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 6,
         "avg_pace": "6:42",
-        "weekly_cumulative_km": 29.86,
+        "weekly_cumulative_km": 24.73,
         "activities": [
           {
             "activity_name": "Morning Run",
@@ -5025,21 +5016,21 @@
       "excel_name": "Ali Faisal",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocL_zlX94UMReiJ7AC1vVKu8rUpUzkIvEZOyy8QY7IQz3FNwIRnh=s96-c",
       "mobile": "9447771583",
-      "total_challenge_km": 29.86,
+      "total_challenge_km": 24.73,
       "target_km": 100.0,
-      "active_days": 6,
-      "current_streak": 6,
+      "active_days": 5,
+      "current_streak": 1,
       "best_day_km": 6.08,
       "latest_pace": "6:42",
-      "pct_completed": 29.9,
+      "pct_completed": 24.7,
       "is_finisher": false,
-      "remaining_km": 70.14,
+      "remaining_km": 75.27,
       "daily_breakdown": {
         "2026-09-01": 5.23,
         "2026-09-02": 6.08,
         "2026-09-03": 5.23,
         "2026-09-04": 5.14,
-        "2026-09-05": 5.13,
+        "2026-09-05": 0.0,
         "2026-09-06": 3.05
       }
     },

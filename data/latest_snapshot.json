@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-13T09:15:05.266555+05:30",
+  "timestamp": "2026-09-13T14:44:32.146288+05:30",
   "date": "2026-09-06",
   "athletes": [
     {
@@ -114,17 +114,6 @@
     },
     {
       "rank": 11,
-      "athlete_id": "188992089",
-      "name": "Ali Faisal",
-      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocL_zlX94UMReiJ7AC1vVKu8rUpUzkIvEZOyy8QY7IQz3FNwIRnh=s96-c",
-      "distance_km": 29.86,
-      "runs_count": 6,
-      "longest_km": 6.08,
-      "avg_pace": "6:42",
-      "elev_gain_m": 0
-    },
-    {
-      "rank": 12,
       "athlete_id": "159419010",
       "name": "krishna prasad. M Kp",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/159419010/43242834/2/medium.jpg",
@@ -135,7 +124,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 13,
+      "rank": 12,
       "athlete_id": "153813910",
       "name": "UNNIKRISHNAN K",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/153813910/34587108/1/medium.jpg",
@@ -146,7 +135,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 14,
+      "rank": 13,
       "athlete_id": "158356973",
       "name": "Razaq Kinassery",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
@@ -157,7 +146,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 15,
+      "rank": 14,
       "athlete_id": "418185437",
       "name": "Ajmal V",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
@@ -168,7 +157,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 16,
+      "rank": 15,
       "athlete_id": "184918231",
       "name": "ibnusiyad siyad",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
@@ -179,7 +168,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 17,
+      "rank": 16,
       "athlete_id": "199411985",
       "name": "Muhammed Shafi K",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
@@ -187,6 +176,17 @@
       "runs_count": 3,
       "longest_km": 10.33,
       "avg_pace": "--",
+      "elev_gain_m": 0
+    },
+    {
+      "rank": 17,
+      "athlete_id": "188992089",
+      "name": "Ali Faisal",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocL_zlX94UMReiJ7AC1vVKu8rUpUzkIvEZOyy8QY7IQz3FNwIRnh=s96-c",
+      "distance_km": 24.73,
+      "runs_count": 5,
+      "longest_km": 6.08,
+      "avg_pace": "6:42",
       "elev_gain_m": 0
     },
     {
