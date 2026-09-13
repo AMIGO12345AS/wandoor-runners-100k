@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-13T14:44:32.146288+05:30",
+  "timestamp": "2026-09-13T19:38:54.265317+05:30",
   "date": "2026-09-06",
   "athletes": [
     {
@@ -62,8 +62,8 @@
       "athlete_id": "206125985",
       "name": "Sarath P Narayanan",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/206125985/43657685/1/medium.jpg",
-      "distance_km": 40.06,
-      "runs_count": 3,
+      "distance_km": 35.03,
+      "runs_count": 2,
       "longest_km": 30.01,
       "avg_pace": "5:44",
       "elev_gain_m": 0

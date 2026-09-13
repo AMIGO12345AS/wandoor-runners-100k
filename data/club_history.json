@@ -1,7 +1,7 @@
 {
   "club_name": "Wandoor Runners Monsoon 100k challenge 2026",
   "target_km": 100.0,
-  "last_updated": "2026-09-13T14:44:32.138878+05:30",
+  "last_updated": "2026-09-13T19:38:54.259123+05:30",
   "dates": [
     "2026-09-01",
     "2026-09-02",
@@ -828,7 +828,7 @@
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 40.06,
+        "weekly_cumulative_km": 35.03,
         "activities": []
       },
       {
@@ -1319,7 +1319,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 40.06,
+        "weekly_cumulative_km": 35.03,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -2521,7 +2521,7 @@
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 40.06,
+        "weekly_cumulative_km": 35.03,
         "activities": []
       },
       {
@@ -2583,7 +2583,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 40.06,
+        "weekly_cumulative_km": 35.03,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -3965,7 +3965,7 @@
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 40.06,
+        "weekly_cumulative_km": 35.03,
         "activities": []
       },
       {
@@ -4219,27 +4219,6 @@
             "duration": "27 m 1 s",
             "elev_gain_m": 5,
             "time_ist": "2026-09-06 06:48:23"
-          }
-        ]
-      },
-      {
-        "date": "2026-09-06",
-        "athlete_id": "206125985",
-        "name": "Sarath P Narayanan",
-        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/206125985/43657685/1/medium.jpg",
-        "daily_distance_km": 5.03,
-        "daily_runs": 1,
-        "daily_elev_gain_m": 5,
-        "avg_pace": "5:44",
-        "weekly_cumulative_km": 40.06,
-        "activities": [
-          {
-            "activity_name": "Morning Run",
-            "distance_km": 5.03,
-            "pace": "5:44",
-            "duration": "28 m 42 s",
-            "elev_gain_m": 5,
-            "time_ist": "2026-09-06 06:03:40"
           }
         ]
       },
@@ -4694,6 +4673,18 @@
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
         "weekly_cumulative_km": 7.99,
+        "activities": []
+      },
+      {
+        "date": "2026-09-06",
+        "athlete_id": "206125985",
+        "name": "Sarath P Narayanan",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/206125985/43657685/1/medium.jpg",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
+        "weekly_cumulative_km": 35.03,
         "activities": []
       },
       {
@@ -5766,22 +5757,22 @@
       "excel_name": "Sarath P Narayanan",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/206125985/43657685/1/medium.jpg",
       "mobile": "",
-      "total_challenge_km": 40.06,
+      "total_challenge_km": 35.03,
       "target_km": 100.0,
-      "active_days": 3,
-      "current_streak": 1,
+      "active_days": 2,
+      "current_streak": 0,
       "best_day_km": 30.01,
       "latest_pace": "5:44",
-      "pct_completed": 40.1,
+      "pct_completed": 35.0,
       "is_finisher": false,
-      "remaining_km": 59.94,
+      "remaining_km": 64.97,
       "daily_breakdown": {
         "2026-09-01": 0.0,
         "2026-09-02": 5.02,
         "2026-09-03": 0.0,
         "2026-09-04": 30.01,
         "2026-09-05": 0.0,
-        "2026-09-06": 5.03
+        "2026-09-06": 0.0
       }
     },
     "153813828": {
