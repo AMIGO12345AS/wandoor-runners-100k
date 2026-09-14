@@ -1,7 +1,7 @@
 {
   "club_name": "Wandoor Runners Monsoon 100k challenge 2026",
   "target_km": 100.0,
-  "last_updated": "2026-09-14T04:27:43.284725+05:30",
+  "last_updated": "2026-09-14T06:24:26.729095+05:30",
   "dates": [
     "2026-09-01",
     "2026-09-02",
@@ -21,7 +21,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 68.4,
+        "weekly_cumulative_km": 57.57,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -1004,7 +1004,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 68.4,
+        "weekly_cumulative_km": 57.57,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -1777,7 +1777,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 68.4,
+        "weekly_cumulative_km": 57.57,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -2667,7 +2667,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 68.4,
+        "weekly_cumulative_km": 57.57,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -3490,27 +3490,6 @@
       },
       {
         "date": "2026-09-05",
-        "athlete_id": "1753145775",
-        "name": "binu naduvath",
-        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIwpGeXvJCbM6mTqM3mWlGJMOCz52tDIFjuwhC5wI-7hCPwQxEM=s96-c",
-        "daily_distance_km": 10.83,
-        "daily_runs": 1,
-        "daily_elev_gain_m": 5,
-        "avg_pace": "5:49",
-        "weekly_cumulative_km": 68.4,
-        "activities": [
-          {
-            "activity_name": "Morning Run",
-            "distance_km": 10.83,
-            "pace": "5:49",
-            "duration": "1 h 2 m",
-            "elev_gain_m": 5,
-            "time_ist": "2026-09-05 05:55:53"
-          }
-        ]
-      },
-      {
-        "date": "2026-09-05",
         "athlete_id": "198876934",
         "name": "Ahamed Shameer",
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtzpVGo98siGMvxQDd2RM-DlgWJ7rWMdatRWwS9AeWWZCyA18=s96-c",
@@ -3726,6 +3705,18 @@
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
         "weekly_cumulative_km": 6.69,
+        "activities": []
+      },
+      {
+        "date": "2026-09-05",
+        "athlete_id": "1753145775",
+        "name": "binu naduvath",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIwpGeXvJCbM6mTqM3mWlGJMOCz52tDIFjuwhC5wI-7hCPwQxEM=s96-c",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
+        "weekly_cumulative_km": 57.57,
         "activities": []
       },
       {
@@ -4105,7 +4096,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 5,
         "avg_pace": "5:50",
-        "weekly_cumulative_km": 68.4,
+        "weekly_cumulative_km": 57.57,
         "activities": [
           {
             "activity_name": "Morning Run",
@@ -5157,21 +5148,21 @@
       "excel_name": "binu naduvath",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIwpGeXvJCbM6mTqM3mWlGJMOCz52tDIFjuwhC5wI-7hCPwQxEM=s96-c",
       "mobile": "9995463548",
-      "total_challenge_km": 68.4,
+      "total_challenge_km": 57.57,
       "target_km": 100.0,
-      "active_days": 6,
-      "current_streak": 6,
+      "active_days": 5,
+      "current_streak": 1,
       "best_day_km": 13.81,
       "latest_pace": "5:50",
-      "pct_completed": 68.4,
+      "pct_completed": 57.6,
       "is_finisher": false,
-      "remaining_km": 31.6,
+      "remaining_km": 42.43,
       "daily_breakdown": {
         "2026-09-01": 13.81,
         "2026-09-02": 9.66,
         "2026-09-03": 11.26,
         "2026-09-04": 11.0,
-        "2026-09-05": 10.83,
+        "2026-09-05": 0.0,
         "2026-09-06": 11.84
       }
     },
