@@ -1,7 +1,7 @@
 {
   "club_name": "Wandoor Runners Monsoon 100k challenge 2026",
   "target_km": 100.0,
-  "last_updated": "2026-09-14T17:36:23.515890+05:30",
+  "last_updated": "2026-09-14T23:54:28.473703+05:30",
   "dates": [
     "2026-09-01",
     "2026-09-02",
@@ -504,7 +504,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 22.27,
+        "weekly_cumulative_km": 17.14,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -1424,7 +1424,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 22.27,
+        "weekly_cumulative_km": 17.14,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -2323,7 +2323,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 22.27,
+        "weekly_cumulative_km": 17.14,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -3129,7 +3129,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 22.27,
+        "weekly_cumulative_km": 17.14,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -3404,27 +3404,6 @@
       }
     ],
     "2026-09-05": [
-      {
-        "date": "2026-09-05",
-        "athlete_id": "1463852982",
-        "name": "Mohammed Shafin",
-        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK87pkzhhRwp8fqyLeyY-tx0o2_fi-qcVyN3irHkr_2hPIEsm5j=s96-c",
-        "daily_distance_km": 5.13,
-        "daily_runs": 1,
-        "daily_elev_gain_m": 123,
-        "avg_pace": "12:12",
-        "weekly_cumulative_km": 22.27,
-        "activities": [
-          {
-            "activity_name": "Evening Run",
-            "distance_km": 5.13,
-            "pace": "12:12",
-            "duration": "59 m 46 s",
-            "elev_gain_m": 123,
-            "time_ist": "2026-09-05 18:17:19"
-          }
-        ]
-      },
       {
         "date": "2026-09-05",
         "athlete_id": "136932402",
@@ -3771,6 +3750,18 @@
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
         "weekly_cumulative_km": 7.63,
+        "activities": []
+      },
+      {
+        "date": "2026-09-05",
+        "athlete_id": "1463852982",
+        "name": "Mohammed Shafin",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK87pkzhhRwp8fqyLeyY-tx0o2_fi-qcVyN3irHkr_2hPIEsm5j=s96-c",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
+        "weekly_cumulative_km": 17.14,
         "activities": []
       },
       {
@@ -4210,7 +4201,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 62,
         "avg_pace": "9:02",
-        "weekly_cumulative_km": 22.27,
+        "weekly_cumulative_km": 17.14,
         "activities": [
           {
             "activity_name": "Morning Run",
@@ -5419,21 +5410,21 @@
       "excel_name": "Mohammed Shafin",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK87pkzhhRwp8fqyLeyY-tx0o2_fi-qcVyN3irHkr_2hPIEsm5j=s96-c",
       "mobile": "7994648644",
-      "total_challenge_km": 22.27,
+      "total_challenge_km": 17.14,
       "target_km": 100.0,
-      "active_days": 6,
-      "current_streak": 6,
-      "best_day_km": 5.13,
+      "active_days": 5,
+      "current_streak": 1,
+      "best_day_km": 5.01,
       "latest_pace": "9:02",
-      "pct_completed": 22.3,
+      "pct_completed": 17.1,
       "is_finisher": false,
-      "remaining_km": 77.73,
+      "remaining_km": 82.86,
       "daily_breakdown": {
         "2026-09-01": 5.01,
         "2026-09-02": 3.58,
         "2026-09-03": 2.69,
         "2026-09-04": 3.3,
-        "2026-09-05": 5.13,
+        "2026-09-05": 0.0,
         "2026-09-06": 2.56
       }
     },

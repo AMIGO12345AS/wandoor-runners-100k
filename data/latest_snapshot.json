@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-14T17:36:23.521221+05:30",
+  "timestamp": "2026-09-14T23:54:28.478275+05:30",
   "date": "2026-09-06",
   "athletes": [
     {
@@ -202,17 +202,6 @@
     },
     {
       "rank": 19,
-      "athlete_id": "1463852982",
-      "name": "Mohammed Shafin",
-      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK87pkzhhRwp8fqyLeyY-tx0o2_fi-qcVyN3irHkr_2hPIEsm5j=s96-c",
-      "distance_km": 22.27,
-      "runs_count": 6,
-      "longest_km": 5.13,
-      "avg_pace": "9:02",
-      "elev_gain_m": 0
-    },
-    {
-      "rank": 20,
       "athlete_id": "40420193",
       "name": "Nidheesh Edappalli",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/40420193/11842503/8/medium.jpg",
@@ -223,7 +212,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 21,
+      "rank": 20,
       "athlete_id": "198305096",
       "name": "Firshad p Firshad p",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
@@ -234,7 +223,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 22,
+      "rank": 21,
       "athlete_id": "198876934",
       "name": "Ahamed Shameer",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtzpVGo98siGMvxQDd2RM-DlgWJ7rWMdatRWwS9AeWWZCyA18=s96-c",
@@ -245,7 +234,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 23,
+      "rank": 22,
       "athlete_id": "61176348",
       "name": "Porur Sarath",
       "avatar_url": "https://graph.facebook.com/1357027104491215/picture?height=256&width=256",
@@ -253,6 +242,17 @@
       "runs_count": 4,
       "longest_km": 5.53,
       "avg_pace": "6:20",
+      "elev_gain_m": 0
+    },
+    {
+      "rank": 23,
+      "athlete_id": "1463852982",
+      "name": "Mohammed Shafin",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK87pkzhhRwp8fqyLeyY-tx0o2_fi-qcVyN3irHkr_2hPIEsm5j=s96-c",
+      "distance_km": 17.14,
+      "runs_count": 5,
+      "longest_km": 5.01,
+      "avg_pace": "9:02",
       "elev_gain_m": 0
     },
     {
