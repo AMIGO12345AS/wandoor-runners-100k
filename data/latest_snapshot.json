@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-15T06:44:44.952574+05:30",
+  "timestamp": "2026-09-15T12:51:17.157902+05:30",
   "date": "2026-09-06",
   "athletes": [
     {
@@ -7,47 +7,14 @@
       "athlete_id": "157557051",
       "name": "Mohamed Shajahan Parancheri",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/157557051/40277753/1/medium.jpg",
-      "distance_km": 63.72,
-      "runs_count": 5,
+      "distance_km": 58.52,
+      "runs_count": 4,
       "longest_km": 23.11,
       "avg_pace": "6:07",
       "elev_gain_m": 0
     },
     {
       "rank": 2,
-      "athlete_id": "197716094",
-      "name": "Ajeesh Tp",
-      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIn2BnUnM1erb9PIoCISdpwW45KNA9-0V_9uTJ5Ni4A3zIK7kio=s96-c",
-      "distance_km": 60.21,
-      "runs_count": 5,
-      "longest_km": 15.03,
-      "avg_pace": "6:50",
-      "elev_gain_m": 0
-    },
-    {
-      "rank": 3,
-      "athlete_id": "1753145775",
-      "name": "binu naduvath",
-      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIwpGeXvJCbM6mTqM3mWlGJMOCz52tDIFjuwhC5wI-7hCPwQxEM=s96-c",
-      "distance_km": 57.57,
-      "runs_count": 5,
-      "longest_km": 13.81,
-      "avg_pace": "5:50",
-      "elev_gain_m": 0
-    },
-    {
-      "rank": 4,
-      "athlete_id": "154857428",
-      "name": "Mohandas K",
-      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtELjRhLZv7nKW99d0QXJHfE1aVCcYHGeavjCSn-riLgoGbA=s96-c",
-      "distance_km": 54.54,
-      "runs_count": 5,
-      "longest_km": 20.56,
-      "avg_pace": "5:19",
-      "elev_gain_m": 0
-    },
-    {
-      "rank": 5,
       "athlete_id": "200401844",
       "name": "Rinshid tp",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
@@ -55,6 +22,39 @@
       "runs_count": 5,
       "longest_km": 13.02,
       "avg_pace": "5:46",
+      "elev_gain_m": 0
+    },
+    {
+      "rank": 3,
+      "athlete_id": "154857428",
+      "name": "Mohandas K",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtELjRhLZv7nKW99d0QXJHfE1aVCcYHGeavjCSn-riLgoGbA=s96-c",
+      "distance_km": 49.47,
+      "runs_count": 4,
+      "longest_km": 20.56,
+      "avg_pace": "5:19",
+      "elev_gain_m": 0
+    },
+    {
+      "rank": 4,
+      "athlete_id": "1753145775",
+      "name": "binu naduvath",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIwpGeXvJCbM6mTqM3mWlGJMOCz52tDIFjuwhC5wI-7hCPwQxEM=s96-c",
+      "distance_km": 45.73,
+      "runs_count": 4,
+      "longest_km": 13.81,
+      "avg_pace": "5:50",
+      "elev_gain_m": 0
+    },
+    {
+      "rank": 5,
+      "athlete_id": "197716094",
+      "name": "Ajeesh Tp",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIn2BnUnM1erb9PIoCISdpwW45KNA9-0V_9uTJ5Ni4A3zIK7kio=s96-c",
+      "distance_km": 45.2,
+      "runs_count": 4,
+      "longest_km": 15.03,
+      "avg_pace": "6:50",
       "elev_gain_m": 0
     },
     {
@@ -70,17 +70,6 @@
     },
     {
       "rank": 7,
-      "athlete_id": "1909549551",
-      "name": "Subhash Kv",
-      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJ9T2PxlX_3t_ydhMA_h_xUFMQjKPkCrqMIVpTwPloQsQuFlw=s96-c",
-      "distance_km": 31.61,
-      "runs_count": 4,
-      "longest_km": 10.47,
-      "avg_pace": "6:30",
-      "elev_gain_m": 0
-    },
-    {
-      "rank": 8,
       "athlete_id": "158361240",
       "name": "Prakasan C T",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
@@ -91,7 +80,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 9,
+      "rank": 8,
       "athlete_id": "136932402",
       "name": "Sunil Babu",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
@@ -102,29 +91,18 @@
       "elev_gain_m": 0
     },
     {
+      "rank": 9,
+      "athlete_id": "1909549551",
+      "name": "Subhash Kv",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJ9T2PxlX_3t_ydhMA_h_xUFMQjKPkCrqMIVpTwPloQsQuFlw=s96-c",
+      "distance_km": 27.6,
+      "runs_count": 3,
+      "longest_km": 10.47,
+      "avg_pace": "6:30",
+      "elev_gain_m": 0
+    },
+    {
       "rank": 10,
-      "athlete_id": "159419010",
-      "name": "krishna prasad. M Kp",
-      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/159419010/43242834/2/medium.jpg",
-      "distance_km": 27.23,
-      "runs_count": 4,
-      "longest_km": 10.01,
-      "avg_pace": "7:04",
-      "elev_gain_m": 0
-    },
-    {
-      "rank": 11,
-      "athlete_id": "153813910",
-      "name": "UNNIKRISHNAN K",
-      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/153813910/34587108/1/medium.jpg",
-      "distance_km": 27.01,
-      "runs_count": 4,
-      "longest_km": 10.06,
-      "avg_pace": "6:05",
-      "elev_gain_m": 0
-    },
-    {
-      "rank": 12,
       "athlete_id": "158356973",
       "name": "Razaq Kinassery",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
@@ -135,7 +113,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 13,
+      "rank": 11,
       "athlete_id": "418185437",
       "name": "Ajmal V",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/assets/avatar/athlete/medium-9a368f25fa758e7f8b1104e9f34b0a5880f9eaf43bb8e41d4dfdaeff787beb33.png",
@@ -146,7 +124,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 14,
+      "rank": 12,
       "athlete_id": "184918231",
       "name": "ibnusiyad siyad",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
@@ -157,7 +135,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 15,
+      "rank": 13,
       "athlete_id": "199411985",
       "name": "Muhammed Shafi K",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
@@ -168,18 +146,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 16,
-      "athlete_id": "188992089",
-      "name": "Ali Faisal",
-      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocL_zlX94UMReiJ7AC1vVKu8rUpUzkIvEZOyy8QY7IQz3FNwIRnh=s96-c",
-      "distance_km": 24.73,
-      "runs_count": 5,
-      "longest_km": 6.08,
-      "avg_pace": "6:42",
-      "elev_gain_m": 0
-    },
-    {
-      "rank": 17,
+      "rank": 14,
       "athlete_id": "35422762",
       "name": "JustinTX Cherai",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/35422762/47666145/1/medium.jpg",
@@ -190,7 +157,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 18,
+      "rank": 15,
       "athlete_id": "199182362",
       "name": "RAZTHAN FARIS CK",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
@@ -201,18 +168,29 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 19,
-      "athlete_id": "40420193",
-      "name": "Nidheesh Edappalli",
-      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/40420193/11842503/8/medium.jpg",
-      "distance_km": 20.44,
-      "runs_count": 4,
-      "longest_km": 5.24,
-      "avg_pace": "8:10",
+      "rank": 16,
+      "athlete_id": "153813910",
+      "name": "UNNIKRISHNAN K",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/153813910/34587108/1/medium.jpg",
+      "distance_km": 21.76,
+      "runs_count": 3,
+      "longest_km": 10.06,
+      "avg_pace": "6:05",
       "elev_gain_m": 0
     },
     {
-      "rank": 20,
+      "rank": 17,
+      "athlete_id": "188992089",
+      "name": "Ali Faisal",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocL_zlX94UMReiJ7AC1vVKu8rUpUzkIvEZOyy8QY7IQz3FNwIRnh=s96-c",
+      "distance_km": 21.68,
+      "runs_count": 4,
+      "longest_km": 6.08,
+      "avg_pace": "6:42",
+      "elev_gain_m": 0
+    },
+    {
+      "rank": 18,
       "athlete_id": "198305096",
       "name": "Firshad p Firshad p",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
@@ -223,7 +201,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 21,
+      "rank": 19,
       "athlete_id": "198876934",
       "name": "Ahamed Shameer",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtzpVGo98siGMvxQDd2RM-DlgWJ7rWMdatRWwS9AeWWZCyA18=s96-c",
@@ -234,7 +212,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 22,
+      "rank": 20,
       "athlete_id": "61176348",
       "name": "Porur Sarath",
       "avatar_url": "https://graph.facebook.com/1357027104491215/picture?height=256&width=256",
@@ -245,18 +223,29 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 23,
-      "athlete_id": "1463852982",
-      "name": "Mohammed Shafin",
-      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK87pkzhhRwp8fqyLeyY-tx0o2_fi-qcVyN3irHkr_2hPIEsm5j=s96-c",
-      "distance_km": 17.14,
-      "runs_count": 5,
-      "longest_km": 5.01,
-      "avg_pace": "9:02",
+      "rank": 21,
+      "athlete_id": "159419010",
+      "name": "krishna prasad. M Kp",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/159419010/43242834/2/medium.jpg",
+      "distance_km": 17.22,
+      "runs_count": 3,
+      "longest_km": 8.26,
+      "avg_pace": "7:04",
       "elev_gain_m": 0
     },
     {
-      "rank": 24,
+      "rank": 22,
+      "athlete_id": "40420193",
+      "name": "Nidheesh Edappalli",
+      "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/40420193/11842503/8/medium.jpg",
+      "distance_km": 15.28,
+      "runs_count": 3,
+      "longest_km": 5.24,
+      "avg_pace": "8:10",
+      "elev_gain_m": 0
+    },
+    {
+      "rank": 23,
       "athlete_id": "199859556",
       "name": "SUNEESH K",
       "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
@@ -264,6 +253,17 @@
       "runs_count": 3,
       "longest_km": 5.18,
       "avg_pace": "--",
+      "elev_gain_m": 0
+    },
+    {
+      "rank": 24,
+      "athlete_id": "1463852982",
+      "name": "Mohammed Shafin",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK87pkzhhRwp8fqyLeyY-tx0o2_fi-qcVyN3irHkr_2hPIEsm5j=s96-c",
+      "distance_km": 14.58,
+      "runs_count": 4,
+      "longest_km": 5.01,
+      "avg_pace": "9:02",
       "elev_gain_m": 0
     },
     {
