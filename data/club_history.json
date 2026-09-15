@@ -1,7 +1,7 @@
 {
   "club_name": "Wandoor Runners Monsoon 100k challenge 2026",
   "target_km": 100.0,
-  "last_updated": "2026-09-15T18:44:46.129441+05:30",
+  "last_updated": "2026-09-15T23:30:07.857052+05:30",
   "dates": [
     "2026-09-01",
     "2026-09-02",
@@ -126,7 +126,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 54.07,
+        "weekly_cumulative_km": 41.05,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -651,7 +651,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 6.0,
+        "weekly_cumulative_km": 5.81,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -983,7 +983,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 54.07,
+        "weekly_cumulative_km": 41.05,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -1613,7 +1613,7 @@
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 6.0,
+        "weekly_cumulative_km": 5.81,
         "activities": []
       },
       {
@@ -1819,7 +1819,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 54.07,
+        "weekly_cumulative_km": 41.05,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -2197,7 +2197,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 6.0,
+        "weekly_cumulative_km": 5.81,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -2751,7 +2751,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 54.07,
+        "weekly_cumulative_km": 41.05,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -3267,7 +3267,7 @@
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 6.0,
+        "weekly_cumulative_km": 5.81,
         "activities": []
       },
       {
@@ -3653,7 +3653,7 @@
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 6.0,
+        "weekly_cumulative_km": 5.81,
         "activities": []
       },
       {
@@ -3869,7 +3869,7 @@
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 54.07,
+        "weekly_cumulative_km": 41.05,
         "activities": []
       },
       {
@@ -3982,48 +3982,6 @@
       }
     ],
     "2026-09-06": [
-      {
-        "date": "2026-09-06",
-        "athlete_id": "200401844",
-        "name": "Rinshid tp",
-        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
-        "daily_distance_km": 13.02,
-        "daily_runs": 1,
-        "daily_elev_gain_m": 306,
-        "avg_pace": "5:46",
-        "weekly_cumulative_km": 54.07,
-        "activities": [
-          {
-            "activity_name": "Evening Run",
-            "distance_km": 13.02,
-            "pace": "5:46",
-            "duration": "1 h 14 m",
-            "elev_gain_m": 306,
-            "time_ist": "2026-09-06 18:05:41"
-          }
-        ]
-      },
-      {
-        "date": "2026-09-06",
-        "athlete_id": "201415432",
-        "name": "Fahis Fahi",
-        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/201415432/57855402/1/medium.jpg",
-        "daily_distance_km": 0.19,
-        "daily_runs": 1,
-        "daily_elev_gain_m": 4,
-        "avg_pace": "6:08",
-        "weekly_cumulative_km": 6.0,
-        "activities": [
-          {
-            "activity_name": "Night Run",
-            "distance_km": 0.19,
-            "pace": "6:08",
-            "duration": "1 m 4 s",
-            "elev_gain_m": 4,
-            "time_ist": "2026-09-06 21:32:23"
-          }
-        ]
-      },
       {
         "date": "2026-09-06",
         "athlete_id": "136932402",
@@ -4266,6 +4224,18 @@
       },
       {
         "date": "2026-09-06",
+        "athlete_id": "201415432",
+        "name": "Fahis Fahi",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/201415432/57855402/1/medium.jpg",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
+        "weekly_cumulative_km": 5.81,
+        "activities": []
+      },
+      {
+        "date": "2026-09-06",
         "athlete_id": "198305096",
         "name": "Firshad p Firshad p",
         "avatar_url": "https://d3nn82uaxijpm6.cloudfront.net/sweaters/assets/large.png",
@@ -4466,6 +4436,18 @@
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
         "weekly_cumulative_km": 23.43,
+        "activities": []
+      },
+      {
+        "date": "2026-09-06",
+        "athlete_id": "200401844",
+        "name": "Rinshid tp",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
+        "weekly_cumulative_km": 41.05,
         "activities": []
       },
       {
@@ -5086,22 +5068,22 @@
       "excel_name": "Fahis Fahi",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/201415432/57855402/1/medium.jpg",
       "mobile": "9567402014",
-      "total_challenge_km": 6.0,
+      "total_challenge_km": 5.81,
       "target_km": 100.0,
-      "active_days": 3,
-      "current_streak": 1,
+      "active_days": 2,
+      "current_streak": 0,
       "best_day_km": 3.76,
       "latest_pace": "6:08",
-      "pct_completed": 6.0,
+      "pct_completed": 5.8,
       "is_finisher": false,
-      "remaining_km": 94.0,
+      "remaining_km": 94.19,
       "daily_breakdown": {
         "2026-09-01": 2.05,
         "2026-09-02": 0.0,
         "2026-09-03": 3.76,
         "2026-09-04": 0.0,
         "2026-09-05": 0.0,
-        "2026-09-06": 0.19
+        "2026-09-06": 0.0
       }
     },
     "198305096": {
@@ -5536,22 +5518,22 @@
       "excel_name": "Rinshid tp",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
       "mobile": "7025389330",
-      "total_challenge_km": 54.07,
+      "total_challenge_km": 41.05,
       "target_km": 100.0,
-      "active_days": 5,
-      "current_streak": 1,
-      "best_day_km": 13.02,
+      "active_days": 4,
+      "current_streak": 0,
+      "best_day_km": 11.01,
       "latest_pace": "5:46",
-      "pct_completed": 54.1,
+      "pct_completed": 41.0,
       "is_finisher": false,
-      "remaining_km": 45.93,
+      "remaining_km": 58.95,
       "daily_breakdown": {
         "2026-09-01": 10.03,
         "2026-09-02": 10.01,
         "2026-09-03": 11.01,
         "2026-09-04": 10.0,
         "2026-09-05": 0.0,
-        "2026-09-06": 13.02
+        "2026-09-06": 0.0
       }
     },
     "193322479": {

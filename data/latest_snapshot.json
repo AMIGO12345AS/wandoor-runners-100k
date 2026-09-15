@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-15T18:44:46.136865+05:30",
+  "timestamp": "2026-09-15T23:30:07.863298+05:30",
   "date": "2026-09-06",
   "athletes": [
     {
@@ -15,17 +15,6 @@
     },
     {
       "rank": 2,
-      "athlete_id": "200401844",
-      "name": "Rinshid tp",
-      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
-      "distance_km": 54.07,
-      "runs_count": 5,
-      "longest_km": 13.02,
-      "avg_pace": "5:46",
-      "elev_gain_m": 0
-    },
-    {
-      "rank": 3,
       "athlete_id": "154857428",
       "name": "Mohandas K",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocJtELjRhLZv7nKW99d0QXJHfE1aVCcYHGeavjCSn-riLgoGbA=s96-c",
@@ -36,7 +25,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 4,
+      "rank": 3,
       "athlete_id": "1753145775",
       "name": "binu naduvath",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIwpGeXvJCbM6mTqM3mWlGJMOCz52tDIFjuwhC5wI-7hCPwQxEM=s96-c",
@@ -47,7 +36,7 @@
       "elev_gain_m": 0
     },
     {
-      "rank": 5,
+      "rank": 4,
       "athlete_id": "197716094",
       "name": "Ajeesh Tp",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocIn2BnUnM1erb9PIoCISdpwW45KNA9-0V_9uTJ5Ni4A3zIK7kio=s96-c",
@@ -55,6 +44,17 @@
       "runs_count": 4,
       "longest_km": 15.03,
       "avg_pace": "6:50",
+      "elev_gain_m": 0
+    },
+    {
+      "rank": 5,
+      "athlete_id": "200401844",
+      "name": "Rinshid tp",
+      "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
+      "distance_km": 41.05,
+      "runs_count": 4,
+      "longest_km": 11.01,
+      "avg_pace": "5:46",
       "elev_gain_m": 0
     },
     {
@@ -414,8 +414,8 @@
       "athlete_id": "201415432",
       "name": "Fahis Fahi",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/201415432/57855402/1/medium.jpg",
-      "distance_km": 6.0,
-      "runs_count": 3,
+      "distance_km": 5.81,
+      "runs_count": 2,
       "longest_km": 3.76,
       "avg_pace": "6:08",
       "elev_gain_m": 0
