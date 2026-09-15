@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-15T03:49:47.239887+05:30",
+  "timestamp": "2026-09-15T06:44:44.952574+05:30",
   "date": "2026-09-06",
   "athletes": [
     {
@@ -282,8 +282,8 @@
       "athlete_id": "1549040789",
       "name": "Muhammed Rishad",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/1549040789/57786553/1/medium.jpg",
-      "distance_km": 12.79,
-      "runs_count": 4,
+      "distance_km": 11.71,
+      "runs_count": 3,
       "longest_km": 5.59,
       "avg_pace": "6:01",
       "elev_gain_m": 0

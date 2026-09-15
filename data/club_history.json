@@ -1,7 +1,7 @@
 {
   "club_name": "Wandoor Runners Monsoon 100k challenge 2026",
   "target_km": 100.0,
-  "last_updated": "2026-09-15T03:49:47.232604+05:30",
+  "last_updated": "2026-09-15T06:44:44.945171+05:30",
   "dates": [
     "2026-09-01",
     "2026-09-02",
@@ -294,7 +294,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 12.79,
+        "weekly_cumulative_km": 11.71,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -1256,7 +1256,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 12.79,
+        "weekly_cumulative_km": 11.71,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -2344,7 +2344,7 @@
         "daily_runs": 1,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 12.79,
+        "weekly_cumulative_km": 11.71,
         "activities": [
           {
             "activity_name": "Logged Run",
@@ -3339,7 +3339,7 @@
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 12.79,
+        "weekly_cumulative_km": 11.71,
         "activities": []
       },
       {
@@ -3785,7 +3785,7 @@
         "daily_runs": 0,
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
-        "weekly_cumulative_km": 12.79,
+        "weekly_cumulative_km": 11.71,
         "activities": []
       },
       {
@@ -4215,27 +4215,6 @@
       },
       {
         "date": "2026-09-06",
-        "athlete_id": "1549040789",
-        "name": "Muhammed Rishad",
-        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/1549040789/57786553/1/medium.jpg",
-        "daily_distance_km": 1.08,
-        "daily_runs": 1,
-        "daily_elev_gain_m": 27,
-        "avg_pace": "6:01",
-        "weekly_cumulative_km": 12.79,
-        "activities": [
-          {
-            "activity_name": "Morning Run",
-            "distance_km": 1.08,
-            "pace": "6:01",
-            "duration": "6 m 30 s",
-            "elev_gain_m": 27,
-            "time_ist": "2026-09-06 06:06:34"
-          }
-        ]
-      },
-      {
-        "date": "2026-09-06",
         "athlete_id": "201415432",
         "name": "Fahis Fahi",
         "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/201415432/57855402/1/medium.jpg",
@@ -4517,6 +4496,18 @@
         "daily_elev_gain_m": 0,
         "avg_pace": "--",
         "weekly_cumulative_km": 7.63,
+        "activities": []
+      },
+      {
+        "date": "2026-09-06",
+        "athlete_id": "1549040789",
+        "name": "Muhammed Rishad",
+        "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/1549040789/57786553/1/medium.jpg",
+        "daily_distance_km": 0.0,
+        "daily_runs": 0,
+        "daily_elev_gain_m": 0,
+        "avg_pace": "--",
+        "weekly_cumulative_km": 11.71,
         "activities": []
       },
       {
@@ -5460,22 +5451,22 @@
       "excel_name": "Muhammed Rishad",
       "avatar_url": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/1549040789/57786553/1/medium.jpg",
       "mobile": "",
-      "total_challenge_km": 12.79,
+      "total_challenge_km": 11.71,
       "target_km": 100.0,
-      "active_days": 4,
-      "current_streak": 1,
+      "active_days": 3,
+      "current_streak": 0,
       "best_day_km": 5.59,
       "latest_pace": "6:01",
-      "pct_completed": 12.8,
+      "pct_completed": 11.7,
       "is_finisher": false,
-      "remaining_km": 87.21,
+      "remaining_km": 88.29,
       "daily_breakdown": {
         "2026-09-01": 5.59,
         "2026-09-02": 5.11,
         "2026-09-03": 1.01,
         "2026-09-04": 0.0,
         "2026-09-05": 0.0,
-        "2026-09-06": 1.08
+        "2026-09-06": 0.0
       }
     },
     "199411985": {
