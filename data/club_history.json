@@ -1,7 +1,7 @@
 {
   "club_name": "Wandoor Runners Monsoon 100k challenge 2026",
   "target_km": 100.0,
-  "last_updated": "2026-09-30T05:36:15.505665+05:30",
+  "last_updated": "2026-09-30T11:51:18.872005+05:30",
   "dates": [
     "2026-09-01",
     "2026-09-02",
@@ -120,7 +120,7 @@
       {
         "date": "2026-09-01",
         "athlete_id": "200401844",
-        "name": "Rinshid tp",
+        "name": "RINSHID TP",
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
         "daily_distance_km": 10.03,
         "daily_runs": 1,
@@ -977,7 +977,7 @@
       {
         "date": "2026-09-02",
         "athlete_id": "200401844",
-        "name": "Rinshid tp",
+        "name": "RINSHID TP",
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
         "daily_distance_km": 10.01,
         "daily_runs": 1,
@@ -1813,7 +1813,7 @@
       {
         "date": "2026-09-03",
         "athlete_id": "200401844",
-        "name": "Rinshid tp",
+        "name": "RINSHID TP",
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
         "daily_distance_km": 11.01,
         "daily_runs": 1,
@@ -2745,7 +2745,7 @@
       {
         "date": "2026-09-04",
         "athlete_id": "200401844",
-        "name": "Rinshid tp",
+        "name": "RINSHID TP",
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
         "daily_distance_km": 10.0,
         "daily_runs": 1,
@@ -3863,7 +3863,7 @@
       {
         "date": "2026-09-05",
         "athlete_id": "200401844",
-        "name": "Rinshid tp",
+        "name": "RINSHID TP",
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
         "daily_distance_km": 0.0,
         "daily_runs": 0,
@@ -4441,7 +4441,7 @@
       {
         "date": "2026-09-06",
         "athlete_id": "200401844",
-        "name": "Rinshid tp",
+        "name": "RINSHID TP",
         "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
         "daily_distance_km": 0.0,
         "daily_runs": 0,
@@ -5514,7 +5514,7 @@
     "200401844": {
       "athlete_id": "200401844",
       "sl_no": 39,
-      "name": "Rinshid tp",
+      "name": "RINSHID TP",
       "excel_name": "Rinshid tp",
       "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLhTkCMA7M9uQJUrpt2_TOjMxMkpfS_JFiQdFTroPT4PooQCbrY=s96-c",
       "mobile": "7025389330",
